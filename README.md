@@ -7,7 +7,7 @@ Compatibility: Google's Chrome browser
 
 ## How to play
 #### Installing:
-1- Download the [latest version here](https://github.com/nt1m/HTML5AudioPlayer/archive/gh-pages.zip);
+1- Download the [latest version here](https://github.com/DaniellMesquita/Phonemon/archive/master.zip);
   
 2- Extract the .crx file from your .zip downloaded file;
   

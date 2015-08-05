@@ -3,10 +3,10 @@
 [![Join the chat at https://gitter.im/DaniellMesquita/Phonemon](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DaniellMesquita/Phonemon?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
   
 Description: Repository for updates, issues and releases.
+
+Compatibility: Google's Chrome browser
   
 Game Engine: Construct 2
-  
-Compatibility: Google's Chrome browser
 
 ## How to play
 #### Installing:
@@ -19,7 +19,7 @@ Compatibility: Google's Chrome browser
 4- Drag the .crx file into Chrome's extencions page and wait for instalation;
 
 #### Playing:
-5- In Google Chrome, open new tab, thn open [the apps page](chrome://apps).
+5- In Google Chrome, open new tab, then open [the apps page](chrome://apps).
   
 6- Find "Phonemon" tile, then click to open;
   

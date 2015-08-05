@@ -28,7 +28,7 @@ Note: If the app gets openned in fullscreen, press ESC to get how game will work
 ## How to contribute
 Test game, and search for bugs.
   
-You can contribute by sending `improvement` (your idea) or `bug` issues.
+You can contribute by sending `improvement` (your idea) or `bug` issues. Don't forget to tell in your comment the build number you're using.
 
 ## Technologies used
 - HTML `<canvas>` tag;

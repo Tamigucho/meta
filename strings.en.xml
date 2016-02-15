@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<string id='touch_to_skip'>Touch to skip</string>
+	<string id='login'>Login</string>
+	<string id='signup'>Signup</string>
+	<string id='about'>About</string>
+	<string id='username'>Username</string>
+	<string id='password'>Password</string>
+	<string id='wrong_authentication'>Oh! Wrong username/password</string>
+	<string id='version'>Version</string>
+	<string id='welcome'>Welcome,</string>
+	<string id='choose_mode'>First, choose an game mode</string>
+	<string id='co-op_online'>Co-op mode online</string>
+	<string id='co-op_npcs'>Co-op mode - with NPCs</string>
+	<string id='single_mode'>Single mode</string>
+	<string id='system_implemented'>Sorry. This system has not been implemented yet.</string>
+	<string id='fly'>Fly!</string>
+	<string id='flying'>Flying!</string>
+	<string id='smartphone'>Smartphone</string>
+	<string id='city'>City</string>
+	<string id='distinctives'>Distinctives</string>
+	<string id='play_time'>Play time</string>
+	<string id='items'>Items</string>
+	<string id='gamer_preview'>Phonemon Pink/Blue - Gamer Preview</string>
+	<string id='evaluation_build'>Evaluation copy. Build </string>
+	<string id='boy_or_girl'>Are you Boy or Girl?</string>
+	<string id='boy'>Boy</string>
+	<string id='girl'>Girl</string>
+	<string id='settings'>Settings</string>
+	<string id='created'>Created in 2011, launched in 2015</string>
+	<string id='how2play'>How to Play</string>
+	<string id='credits'>Credits</string>
+	<string id='resolution_error'>Resolution error!</string>
+	<string id='phonemon_canrun'>Phonemon can run only in smartphones. It sounds that you're trying play Phonemon in other device.</string>
+	<string id='for_desktopbuilds'>For Desktop Builds: Press ESC or resize your window.</string>
+	<string id=''></string>
+	<string id=''></string>
+	<string id=''></string>
+	<string id=''></string>
+	<string id=''></string>
+</strings>

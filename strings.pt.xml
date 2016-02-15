@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<strings>
+	<string id='touch_to_skip'>Toque para pular</string>
+	<string id='wrong_authentication'>Oh! Usuário/senha incorretos</string>
+	<string id='login'>Entrar</string>
+	<string id='signup'>Abrir uma conta</string>
+	<string id='about'>Sobre</string>
+	<string id='username'>Nome de usuário</string>
+	<string id='password'>Senha</string>
+	<string id='welcome'>Bem-vindo(a),</string>
+	<string id='choose_mode'>Primeiramente, escolha um modo de jogo</string>
+	<string id='co-op_online'>Modo co-op online</string>
+	<string id='co-op_npcs'>Modo co-op - com NPCs</string>
+	<string id='solo_mode'>Modo solo</string>
+	<string id='co-op_implemented'>Sorry. Co-op mode has not been implemented, yet</string>
+	<string id='run'>Correr</string>
+	<string id='running'>Correndo</string>
+	<string id='smartphone'>Smartphone</string>
+	<string id='city'>Cidade</string>
+	<string id='distinctives'>Distintivos</string>
+	<string id='play_time'>Tempo de jogo</string>
+	<string id='items'>Itens</string>
+	<string id='gamer_preview'>Phonemon Pink/Blue - Prévia de Gamer</string>
+	<string id='evaluation_build'>Cópia de avaliação. Compilação </string>
+	<string id='boy_or_girl'>Você é um Garoto ou uma Garota?</string>
+	<string id='boy'>Garoto</string>
+	<string id='girl'>Garota</string>
+	<string id='settings'>Configurações</string>
+	<string id='created'>Criado em 2011, lançado em 2015</string>
+	<string id='how2play'>Como Jogar</string>
+	<string id='credits'>Créditos</string>
+	<string id='resolution_error'>Erro de resolução!</string>
+	<string id='phonemon_canrun'>Phonemon pode ser executado apenas em smartphones. Parece que você está tentando jogar Phonemon em outro dispositivo.</string>
+	<string id='for_desktopbuilds'>Para a Build de Desktop: Pressione ESC ou redimensione a janela.</string>
+	<string id=''></string>
+	<string id=''></string>
+	<string id=''></string>
+	<string id=''></string>
+	<string id=''></string>
+</strings>

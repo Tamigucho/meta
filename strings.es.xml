@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<strings>
+	<string id='touch_to_skip'>Toque para pasar</string>
+	<string id='wrong_authentication'>Oh! Nombre de usuario/contraseña incorrecto</string>
+	<string id='login'>Login</string>
+	<string id='signup'>Abrir una cuenta</string>
+	<string id='about'>Acerca de</string>
+	<string id='username'>Username</string>
+	<string id='password'>Password</string>
+	<string id='welcome'>Bienvenido,</string>
+	<string id='choose_mode'>En primer lugar, elegir un modo de juego</string>
+	<string id='co-op_online'>Modo cooperativo online</string>
+	<string id='co-op_npcs'>Modo cooperativo - con NPCs</string>
+	<string id='solo_mode'>Modo solista</string>
+	<string id='co-op_implemented'>Lo siento. El modo cooperativo no está implementado, por ahora</string>
+	<string id='run'>Worldwide Kindness</string>
+	<string id='running'>Worldwide Kindness</string>
+	<string id='smartphone'>Smartphone</string>
+	<string id='city'>Ciudad</string>
+	<string id='distinctives'>Distintivos</string>
+	<string id='play_time'>Tiempo de juego</string>
+	<string id='items'>Worldwide Kindness</string>
+	<string id='gamer_preview'>Phonemon Pink/Blue - Preestreno de Gamer</string>
+	<string id='evaluation_build'>Copia de evaluación. Compilación </string>
+	<string id='boy_or_girl'>Are you Boy or Girl?</string>
+	<string id='boy'>Chico</string>
+	<string id='girl'>Chica</string>
+	<string id='settings'>Ajustes</string>
+	<string id='created'>Creado en 2011, puso en marcha en 2015</string>
+	<string id='how2play'>Cómo Jugar</string>
+	<string id='credits'>Créditos</string>
+	<string id='resolution_error'>Error en la Resolución!</string>
+	<string id='phonemon_canrun'>Phonemon puede funcionar sólo en los teléfonos inteligentes. Suena que usted está tratando de jugar Phonemon en otro dispositivo.</string>
+	<string id='for_desktopbuilds'>Para las Builds de Desktop: Presione ESC o cambiar el tamaño de la ventana.</string>
+	<string id=''></string>
+	<string id=''></string>
+	<string id=''></string>
+	<string id=''></string>
+	<string id=''></string>
+</strings>
+http://www.gamefaqs.com/boards/661226-pokemon-black-version-2/67475031

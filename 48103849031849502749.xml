@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genotype>
+	<string id='name'>Airplane</string>
+	<string id='start_hp'></string>
+	<string id='start_attack'></string>
+	<string id='start_defense'></string>
+	<string id='max_hp'></string>
+	<string id='max_attack'></string>
+	<string id='max_defense'></string>
+	<string id='start_capture_rate'></string>
+	<string id='max_capture_rate'></string>
+	<string id='max_exp'></string>
+	<string id='metamorphose_rate'>18</string>
+	<string id='base_level'>5</string>
+	<string id='types'></string>
+	<string id='gender'></string>
+	<string id='dna_gender'></string>
+	<string id='dna_specie'></string>
+	<string id='dna_variety'></string>
+	<string id='max_strenght'></string>
+</genotype>
+<fenotype>
+	<string id='nickname'>Airplane</string>
+	<string id=''></string>
+</fenotype>
+<status>
+	<string id='hp'></string>
+	<string id='pp'></string>
+	<string id='held_item'></string>
+	<string id='strenght'></string>
+</status>

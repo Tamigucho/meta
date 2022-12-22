@@ -469,3 +469,8 @@ New Tamiguchos idea log:
 - re-draw 2011 mons
 
 - re-draw 2019 mons.
+
+Tamigucho site:
+- Fix the mistakes done from Pokémon (no NFTs for pets like Mew, bias)
+- Bring diversity to the already flourishing niche/genre of mon-catching
+- Stablish a linked multiverse for interoperability

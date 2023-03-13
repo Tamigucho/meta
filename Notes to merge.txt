@@ -464,13 +464,10 @@ Newmon presents the real perspective about what is a mon "evolving" (wasn't it D
 
 4 gen: Tamigucho Salt & Sugar
 
-New Tamiguchos idea log:
-
-- re-draw 2011 mons
-
-- re-draw 2019 mons.
-
 Tamigucho site:
 - Fix the mistakes done from Pokémon (no NFTs for pets like Mew, bias)
 - Bring diversity to the already flourishing niche/genre of mon-catching
 - Stablish a linked multiverse for interoperability
+
+Tami Journey app (like Pokemon Go, but safer and incentive to travel with the uber of buses!)
+Tamigucho 3D with chubbyKen graphics

@@ -1,0 +1,27 @@
+Bairros: Nevacia, Parque Santa Paula, Paula Cristina, Jardim Itália, Centro
+
+Dia 22
+
+* 1º andar Shopping Central Park [FEATURE]
+* Made NPCs for player [FEATURE]
+* Divine phonemon in start screen [FEATURE]
+* Key item: Walkie-Talkie (HELP)
+
+
+Dia 23
+
+* NPCs podem voar junto com o player [FEATURE]
+* Poder falar com os NPC [FEATURE]
+* Rival, sempre seguindo o personagem principal, quer seja no solo ou no co-op [FEATURE]
+* Working Maps (HELP)
+* GPS (HELP)
+
+Dia 24
+
+* Equipe Gatuno
+* caso mc donalds (pat donald) fechado, o player vai ajudar
+* Idiomas crioulo haitiano e africano
+
+Dia 25
+
+* Power pago para background personalizado [FEATURE]

@@ -1,0 +1,13 @@
+Encript register/login password techniques
+Register login data like score in PHP
+Count all users, if > than the maxsignups, dont allow new signups
+Generator: Register in-app system
+
+Individual test the other login system
+If ok, insert login PHP system
+Generator: Login in-app system
+Generator: Store session
+Generator: Splash screen
+Generator: Splash event: if session stored, skip the start page and go directly another page
+
+Ale, ontem eu decidi isto: as criaturas terão uma senha junto do código QR, pois qualquer um poderá adivinhar um número de série e criar os próprios buttons. Outra novidade é que os Tamis durarão 3 gerações estimadamente (300 anos).

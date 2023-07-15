@@ -1,0 +1,25 @@
+Dia 26
+
+* Animated stars;
+* Transparency in all assets;
+* Better design in tabs;
+* Invisibility in navigations menu in Encyclopedia;
+* Tiled earth/grass;
+* SVG tower/icons;
+* City change SFX sound [ADDED]
+* Dupliced bird voice in each enter of city [FIXED]
+* Carros passando na frente do jogador dependendo do horario [FEATURE]
+* Sprite font no menu smartphone [FEATURE]
+
+Dia 27
+
+* Animação dos players ao caminhar [FEATURE]
+* negocios em cima dos predios [FEATURE]
+* RTC influence about assets [FEATURE]
+* Som de queda do player [FEATURE] (HELP)
+* Som de queda no travesseiro [FEATURE]
+* Animações no menu smartphone e outros layouts [FEATURE] (HELP)
+* Poder personalizar o player, caso em modo Co-Op Online;
+* Ovos com design próprio;
+* rocha na start screen;
+* Start screen com influencia do relogio;

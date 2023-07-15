@@ -1,0 +1,4 @@
+Phonemon-peixe que muda de sexo
+
+
+EVs: 4 HP / 252 Atk / 252 Spe

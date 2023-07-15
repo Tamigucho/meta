@@ -1,0 +1,4 @@
+Fight mode: generations
+(strong, normal and weak hits)
+(if attack is of same tipe, increase power)
+status: burn, freeze, poison, sleep, confusion

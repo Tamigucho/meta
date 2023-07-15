@@ -1,0 +1,36 @@
+http://www.noupe.com/development/php-security-tips.html
+http://code.tutsplus.com/tutorials/5-helpful-tips-for-creating-secure-php-applications--net-2260
+https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet
+https://www.lockrite.org/top-10-home-security-tips.php
+http://www.hotscripts.com/category/scripts/php/tutorials-tips/security/
+https://www.conftool.net/en/technical_documentation/security_hints.html
+http://sealsecuritytexas.com/security-tips.php
+http://www.codeforest.net/php-security-tips
+
+https://www.cashbuild.co.za/Security%20tips.php
+http://www.devshed.com/c/a/MySQL/MySQL-Security-Tips/
+https://www.rackaid.com/blog/server-security-tips/
+https://www.mssqltips.com/sql-server-tip-category/19/security/
+
+http://httpd.apache.org/docs/2.2/misc/security_tips.html
+https://blogs.msdn.microsoft.com/sqlsecurity/
+http://www.tecmint.com/apache-security-tips/
+https://www.ibm.com/support/knowledgecenter/ssw_i5_54/rzaie/rzaiesecuritytips.htm
+http://euch6f.chem.emory.edu/manual/misc/security_tips.html
+https://dzone.com/articles/7-security-tips-to-protect-web-servers
+https://www.rosehosting.com/blog/security-tips-for-your-server/
+https://technet.microsoft.com/en-us/security/ff699078.aspx
+
+http://www.databasejournal.com/features/mysql/article.php/3900636/Top-10-Security-Tips-for-MySQL.htm
+http://www.conftool.net/en/technical_documentation/security_hints.html
+http://www.devshed.com/c/a/MySQL/MySQL-Security-Tips/
+http://www.symantec.com/connect/articles/securing-mysql-step-step
+http://www.devshed.com/c/a/MySQL/Security-Issues-with-MySQL/
+
+http://stackoverflow.com/questions/60174/how-can-i-prevent-sql-injection-in-php
+http://sqlmap.org/
+
+Known web attacks
+Known php attacks
+Known server attacks
+How prevent DDOS attacks

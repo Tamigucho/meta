@@ -1,0 +1,10 @@
+ X | Encoste o NFC Card no celular para Liberar/Recolher o Phonemon
+ X | Comunicação Bluetooth/USB com o "Cinturão de Phonemons"
+ X | Criptografia dos Phonemons igual Bitcoins
+ X | Armazenamento de Phonemons em NFC Cards
+
+pause internet acess
+s bios disco local criptografado
+
+* treinadores com nome, e que se encontram com o jogador em outro local;
+* todos os amigos do player;

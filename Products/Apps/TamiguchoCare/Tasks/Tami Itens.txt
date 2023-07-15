@@ -1,0 +1,22 @@
+Poção eMS 5
+Água eMS 1
+Button eMS 20
+Ultimate Button eDS 500
+Raçao de carne eMS 2,90
+Raçao de vegetais eMS 0,50
+Whey protein eDS 20
+Dog house
+Cat nest
+Hamster house
+Fish house
+Bird house
+Tami bed
+
+Categories:
+Smartphone
+Medicine
+Drinks
+Foods
+Tools
+Estimulantes
+Host's houses

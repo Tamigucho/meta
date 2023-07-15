@@ -1,0 +1,7 @@
+Names from Generator
+
+QRs table (print example)
+
+Start menu layout (menu like phone)
+Login system
+Store session

@@ -1,0 +1,12 @@
+QR Reader system
+Pet DNA in-app
+ADs
+
+Generator: IAP
+Generator: Create account first
+Generator: Save codes as pet values SQL
+Generator: Print feature
+Generator: Print confirm button
+Generator: Button backup feature
+Generator: Prize button (for each 8 buttons)
+Generator: security tips: conservation=no water, plastify | security=no show, backup | usability=use needle

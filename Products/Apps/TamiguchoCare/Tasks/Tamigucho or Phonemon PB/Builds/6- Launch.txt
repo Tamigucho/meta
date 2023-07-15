@@ -1,0 +1,49 @@
+﻿Dia 28
+
+* Intro video;
+* Tutorial/video demonstrativo;
+* Suporte para Raidcall;
+* Store;
+* Substituir Gamlr logo and mentions;
+* Push notification for play again (Não perca a prática no Phonemon. Volte a jogar e aprimore suas habilidades)
+* Idioma alemão e português de portugal (HELP)
+- eMoneys das builds anteriores para beta testers via Gamlr account;
+* 
+* 
+
+Dia 29
+
+Dia 30
+
+Dia 01
+
+Dia 02
+
+Dia 03
+
+Dia 04
+
+Dia 05
+
+Dia 06
+
+Dia 07
+
+Dia 08
+
+Dia 09
+
+Dia 10
+
+Dia 11
+
+* Separação das versões opostas;
+* Re-versionamento;
+* Push CO;
+* Girl≠Boy;
+
+Dia 12
+
+* Phonemals when adding purchases;
+
+http://www.indiedb.com/

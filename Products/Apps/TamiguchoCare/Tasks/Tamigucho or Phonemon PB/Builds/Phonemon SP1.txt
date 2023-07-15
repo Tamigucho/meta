@@ -1,0 +1,17 @@
+Date: 24/12/15 12:00 - Message of SP1 in build layout and creators layout
+
+* Fusion of Gamlr Network to Peeper/Peeper Games;
+* Sistema COPA para que menores de 13 anos possam se cadastrar com autorização dos pais;
+* Pais precisam estar confirmados no Peeper para poder cadastrar filhos;
+* App "Feedback" atualizado;
+* App "Encyclopedia" atualizado;
+* Novos Phonemons;
+* Novas entryes de Phonemons;
+* SVG assets;
+* Benchmark/Test: NFC, Bluetooth, RAM, CPU, FPS, Sim Card, GSM;
+* Detect if smartphone or not by Camera, Giroscopio, GPS, Sim Card;
+* Exiging telephone number confirmation after signup like Whatsapp does;
+* Re-signup user by exiging telephone number confirmation;
+- Divino de cada versão adicionado para apenas um jogador capturar;
+- Viagem ao céu em busca do divino;
+& Adicionados os primeiros Buglitch;

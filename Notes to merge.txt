@@ -471,3 +471,49 @@ Tamigucho site:
 
 Tami Journey app (like Pokemon Go, but safer and incentive to travel with the uber of buses!)
 Tamigucho 3D with chubbyKen graphics
+
+ | Redrawn version by <a href="https://www.instagram.com/dultrart/" target="_blank">Adriano Dultra</a>: <img width="500px" src="creatures/2022/Potaseal (copy).png"/>
+https://www.instagram.com/p/CfDKnOwOAl-/
+https://www.instagram.com/p/CfCvoamO9_q/
+https://www.instagram.com/p/CfDKJz2uPOG/
+other archived
+/media/daniella/B/git/Tamigucho/Tamigucho/site/tamipedia/img/Ghostoillet.png
+
+Tamigucho DNA stats:
+- Memory
+- Learn-willingness
+These will be enforced by species but can slighly (or in rare variations highly) vary according to individuals
+- personality/nature
+
+Initially, Tamigucho app will come with limited breeding (eggs won't hatch until an update) and without metamorphing.
+Tamiguchos that should undergo two morphs after the update, will receive a bonus Level Candy 🍭 so instantly going 3rd stage
+- add at least 11 Tamiguchos to each egg group. a fusion can generate two different Tamiguchos and follows Mendel Law
+-
+TamiRanch will support up to  Tamiguchos (because of fusion essence breeding + albino (custom) + radio (custom) + glowing (inverted colors filter))
+TamiRanch will support up to 500,000 Tamis!
+
+tami DAO ideas:
+- Tamigucho DAO General Governance: suggest to tami anime/game, it is secretly accepted and marked as accepted one week after official public launch
+
+tami Pink & Blue ideas:
+Tamigucho P&B alpha will be based in the same glitch city as of the Munnah region's one.
+Buglitch and Missinglitch will appear but not catchable.
+NPCs will talk (also about 440 volts is standard using a biosafe kind of electricity) and there will be doors to travel to cities or enter buildings
+Another NPC phrase: about the chip applied to a caught Tamigucho and how the same method is done for held items
+Another NPC will tell magnectic levitation was prohibitted (that may explain Neurus Phone)
+- Held item assigning animation
+- morph animation and music
+- Mt Olymnet will have a stone drawing for Funry
+- card catch animation, with a round progress bar w/ hrglss
+- a tamigucho can throw tamistorage to any direction, including to hit/take HP from player
+- transformation animation and music; first to receive one: Bulblast and Treearth
+- Tami FusedBreeding study: https://pastebin.com/yuVdqRFC
+
+tami care app ideas:
+- Tamigucho will have OT (Original Tamer), a history of ownership transfers, and Current Tamer (CT).
+
+Insp Tamigucho pet nfts: https://app.zerion.io/nfts/polygon/0x9928a8ea82d86290dfd1920e126b3872890525b3:218497
+
+draw tamiguchos' US and France GYM Leaders
+
+Tamigucho when Dultrart redraw Petayaya/Petayoyo, insp: https://pt.dreamstime.com/ilustra%C3%A7%C3%A3o-stock-%C3%ADcone-do-fruto-do-drag%C3%A3o-estilo-dos-desenhos-animados-image84313291, https://br.freepik.com/vetores-premium/conjunto-de-fresco-inteiro-e-metade-de-pitaya-isolado-fruta-do-dragao-com-sombra-em-um-estilo-moderno-de-desenho-animado_9816005.htm

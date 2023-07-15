@@ -1,0 +1,62 @@
+This folder: /media/daniella/B/git/Tamigucho/Repos/app
+
+  File: ./30.txt
+  Size: 28        	Blocks: 1          IO Block: 4096   regular file
+Device: 8,20	Inode: 3093632     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-04-11 21:18:46.611965200 -0300
+Modify: 2016-07-25 23:26:44.000000000 -0300
+Change: 2023-06-18 17:48:34.654955600 -0300
+ Birth: -
+IPFS hash: QmYoc2Kx4xT9Q4i1KrQE8WB8KQdqRpebTyvqrFD9GcELKk
+------------------------------
+  File: ./Desktop
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 3093567     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-06-19 14:35:52.286167300 -0300
+Modify: 2020-12-10 23:09:37.190210000 -0300
+Change: 2023-06-18 17:48:33.880855600 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Inspirations
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 3093573     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-06-19 14:35:52.287856300 -0300
+Modify: 2023-01-28 16:40:24.973013400 -0300
+Change: 2023-06-18 17:48:34.383447400 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Source
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 3093460     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-06-19 14:35:52.178402000 -0300
+Modify: 2023-01-28 16:41:37.961412600 -0300
+Change: 2023-06-18 17:48:33.807474600 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Tamigucho.pptx
+  Size: 385969    	Blocks: 760        IO Block: 4096   regular file
+Device: 8,20	Inode: 3093633     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-04-11 21:18:46.847181100 -0300
+Modify: 2019-01-19 13:16:22.000000000 -0200
+Change: 2023-06-18 17:48:34.674708500 -0300
+ Birth: -
+IPFS hash: QmaTUTpD5fQStx2o2WUAVkdGGvFRdgv9PVeQz1eVrtjU3p
+------------------------------
+  File: ./Tami Work
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 3093605     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-06-19 14:35:52.320911300 -0300
+Modify: 2023-01-28 16:39:43.681447000 -0300
+Change: 2023-06-18 17:48:34.650871100 -0300
+ Birth: -
+IPFS hash: 
+------------------------------

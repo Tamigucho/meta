@@ -1,0 +1,46 @@
+CREATE TABLE `tami`.`buttons` (
+     `id` VARCHAR( 34 ) NOT NULL AUTO_INCREMENT ,
+     `released` VARCHAR( 1 ) NOT NULL DEFAULT 0 ,
+     `filled` VARCHAR( 1 ) NOT NULL DEFAULT 0 ,
+     `button` VARCHAR( 34 ) NOT NULL DEFAULT 'classic' ,
+     `nickname` VARCHAR( 20 ) NOT NULL ,
+
+
+
+     `owner` VARCHAR( 20 ) NOT NULL , (substituir por quem possui mais afeiçao)
+last released
+
+     `username` VARCHAR( 20 ) NOT NULL ,
+     `email` VARCHAR( 50 ) NOT NULL ,
+     `cash` INT NOT NULL ,
+     PRIMARY KEY ( `id` )
+     ) ENGINE = MYISAM DEFAULT CHARSET = utf8;
+
+ALTER TABLE yourtable ADD q6 VARCHAR( 255 ) after q5
+
+pet values:
+* specie
+* feed
+* health
+* happyness
+* energy
+* libide
+* gender
+* level
+* attacks (6)
+* gender
+* held
+* trait
+* personality
+* vocations
+* resistances
+* doenças
+* sede
+* resistance
+* smartness
+* strenght
+* type: egg/tami
+* 
+* 
+* 
+(inventar IVs e EVs)

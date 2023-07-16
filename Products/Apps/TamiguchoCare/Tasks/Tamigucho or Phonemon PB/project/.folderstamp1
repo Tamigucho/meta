@@ -1,0 +1,42 @@
+This folder: /media/daniell/Seagate Expansion Drive/1/personal/projects/Phonemon/Site/project
+
+  File: ./.folderstamp
+  Size: 94        	Blocks: 1          IO Block: 4096   regular file
+Device: 812h/2066d	Inode: 655696      Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ daniell)   Gid: ( 1000/ daniell)
+Access: 2022-12-15 22:35:39.633507200 -0300
+Modify: 2022-12-15 22:35:39.642042800 -0300
+Change: 2022-12-15 22:35:39.642042800 -0300
+ Birth: -
+IPFS hash: QmXBrBmJ9g6FzSpdjDNKiUTL8YYj9gsy2jUsjKbX5E1a8B
+------------------------------
+  File: ./1. first titles
+  Size: 399       	Blocks: 1          IO Block: 4096   regular file
+Device: 812h/2066d	Inode: 179086      Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ daniell)   Gid: ( 1000/ daniell)
+Access: 2022-05-01 13:25:01.283763400 -0300
+Modify: 2019-12-17 18:31:40.190271000 -0300
+Change: 2022-03-28 22:52:06.981887600 -0300
+ Birth: -
+IPFS hash: QmNQyFAu2LVFXrrMTeR2YdDTWYL9XsMGPWda38mLc5Doc6
+------------------------------
+  File: ./2nd generation
+  Size: 174       	Blocks: 1          IO Block: 4096   regular file
+Device: 812h/2066d	Inode: 179087      Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ daniell)   Gid: ( 1000/ daniell)
+Access: 2022-05-01 13:25:01.286906100 -0300
+Modify: 2019-12-17 18:30:31.432202000 -0300
+Change: 2022-03-28 22:52:06.982694900 -0300
+ Birth: -
+IPFS hash: QmXGjpcuSc3B8FSnAaQ5GtxoDJf2hRwztrUymVEGwi9EfQ
+------------------------------
+  File: ./folderstamp_recursive.sh
+  Size: 2365      	Blocks: 8          IO Block: 4096   regular file
+Device: 812h/2066d	Inode: 655695      Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ daniell)   Gid: ( 1000/ daniell)
+Access: 2022-12-15 22:35:39.570879300 -0300
+Modify: 2022-11-22 18:45:33.375753000 -0300
+Change: 2022-12-15 22:35:34.505973300 -0300
+ Birth: -
+IPFS hash: QmRmYGZyeoWY4jHLex4didmsviDWE3BDhMjuRicfENGBm2
+------------------------------

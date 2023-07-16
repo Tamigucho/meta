@@ -1,0 +1,145 @@
+Dia 04
+
+can select in-game nickname
+fix sounds
+
+* Gravar exata posiçao anterior, apos vir de um estabelecimento/land [FIXED] [ADDED]
+* Confirmação no menu language chooser;
+* Botao de duvida que redireciona para um artigo da base para resetar senha [ADDED] (HELP)
+* exclusive button for sound slider;
+* detect sound strongness;
+* status bar in settings menu;
+* rename from html to htm;
+* Placa animation to frame;
+* Placas especiais que mostram imagem [FEATURE]
+* Placas fullscreen com HTML iframe;
+
+Dia 05
+
+* 2-sides system [ADDED]
+* 2 sides system na Farmacia, Central Park e Banco;
+* Farmacia [COMPLETED]
+* 2 sides system em Cascacity;
+* 2 sides system na Rota 1;
+* Itens escondidos por toda a parte [ADDED]
+* Item array [ADDED] (HELP)
+* Item menu [FEATURE] (HELP)
+* Melhor experiência de phonemon que segue o player [FEATURE]
+* Menu "Help" [ADDED]
+
+Dia 06
+
+* Platrans nao aparecendo [FIX]
+* maintenance message;
+* news page;
+* Better Language menu;
+* Jogador pode abrir e entrar na porta estando fora da area de abertura [FIX]
+* Complexo sistema de divisão e animaçao de textos
+* Opção de segurança, apagar senha da caixinha caso haja falha no login;
+* Completas frases dos idiomas;
+* Unworking eMoneys counter;
+* Validação de email no input;
+
+Dia 07
+
+* Play time isn't rememberingp [FIX]
+* Other settings button in user settings and vice-versa;
+* Complete encyclopedia;
+* Pedir senha anterior ao redefinir pass;
+* Exigir mínimo de caracteres em username;
+* Lutar contra AirMails;
+* Perguntar linguagem logo na entrada;
+* Suspend game if inactive;
+* If inactive about 30 seconds, logout;
+* Error page for: clicking in play and city is worldwide kindness;
+
+
+Dia 08
+
+* Custom message in User menu;
+* Remember user anterior sound when re-enabling by button;
+* Detect search button;
+* Detect back button;
+* Detect menu button;
+* Error when browser viewport resized;
+* Error when have not support for User Media API;
+* Passaro cantando somente de dia;
+* Consertar som duplicado cidades;
+* Tocar musica Novas Oportunidades no Signup;
+
+Dia 09
+
+* Rate app (Você gostou do jogo? - Dê-nos a sua opinião - Sim | Não | Pergunte mais tarde);
+* Poder desativar sons SFX e BGM;
+* Aventura baseada nas escolhas dos jogadores;
+* Árvores com frutas;
+* Passos de cadastro, tudo no layout Signup [FEATURE]
+* Birds flying on sky [FEATURE]
+* Poder colher ingredientes da natureza para cozinhar;
+* Com frutas, poder fazer alimentos para Phonemons;
+* 
+* 
+
+
+Dia 10
+
+* Top bar em todos os menus que nao sao do jogo
+* Multilingue Encyclopedia [CHANGE]
+* Sol e lua em sprites/objetos diferentes;
+* Sol e lua ao mesmo tempo quando é inicio de um meridiano;
+* Poder trocar posiçao dos botoes virtuais;
+* Random phonemon na tela start [FEATURE] (HELP)
+* Sugestoes de username [FEATURE]
+* Salvar jogo no quarto mais proximo, caso bateria esteja critica [FEATURE]
+
+Dia 11
+
+* Performance test (HELP)
+* More buildings and streets in Cascacity;
+* Sistema de distintivos;
+* Laboratorio de sangue Phonemon em Cascacity;
+* C de Cascacity;
+* CrioLab em Cascacity;
+* Added escapada safadinha in route 1 [FEATURE]
+* Platrans se transforma em quem esta mais proximo (HELP)
+* 
+* 
+
+Dia 12
+
+* Poder soltar/recolher Dewhale/Airplane/Aranha/Barco pelo menu (Selecionar Phonemons com base no ID) [FEATURE]
+* Pagina status do Phonemon (incluindo fome dele) [FEATURE]
+* Poderes na tela, de acordo com o Phonemon [FEATURE]
+* Phonemon aranha cavalgante [FEATURE]
+* Phonemons podem cavalgar com você [FEATURE]
+* Phonemon agua p/ navegar;
+* Phonemons podem navegar com você;
+* Não permitir com que o phonemons pesados/enormes montem uns nos outros [FEATURE]
+* Continue flying/cavalgando/navegando after turn off the game [FEATURE]
+* Real Time Clock system [FIXED] [COMPLETED]
+
+Dia 13
+
+- Dictionary/storage for coins' instances
+- Coins value saved in storage
+* Sistema fases da lua com base na escolha do user [FEATURE]
+* Sistema estações com base na escolha do user [FEATURE]
+* Sistema de entrar pelas esquinas [FEATURE]
+* Lembrar todo o estado do jogo apos turned off, inclusive phonemons livres/recolhidos [FEATURE]
+* cant fly/cavalgar-com-velocidade in houses/estabelecimentos [FEATURE]
+* Dias chuvosos/nublados/ensolarados [FEATURE]
+* Olhe para um Phonemon e aperte Y para iniciar o modo face-to-face [FEATURE]
+* face-to-face mode: carinhos, comidinhas, banhos [FEATURE]
+
+Dia 14
+
+* Caso em atividade, manter layouts sem resets [FEATURE]
+* Passaro com posição incorreta [FIX]
+* Capslock validator in passwords [FEATURE]
+* Primeira posição ao mudar de cidade [FIX]
+* passaro nada solido, personagem nao ser platform [FIX]
+* Ter de clicar duas vezes em certos button [FIX]
+* Player podera ler a placa somente se estiver na FRENTE dela
+- Passaro preguiçoso [FIX]
+- Ao sair de um estabelecimento, cair exatamente na porta de fora
+* Sistema de nomeamento de Phonemons [FEATURE]

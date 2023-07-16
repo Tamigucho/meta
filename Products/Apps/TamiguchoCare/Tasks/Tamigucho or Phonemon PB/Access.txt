@@ -1,0 +1,49 @@
+- Delay when releasing bird [FIX]
+- Bird in static position when released [FIX]
+- Total play time of player isn't remembered in local storage [FIX]
+* "Loading" message when user prompt to go to cityes/lands [ADDED]
+* Working "language" layout [ADDED] [COMPLETED]
+* Build changelog's iframe isn't fiting the screen [FIXED]
+- Sound playing desactived in creators layout (ISSUE)
+
+(Search for phonemon-system and follower tips on chrome)
+
+
+Savegame system [COMPLETED]
+"Phonemon" menu [COMPLETED]
+English language pack [COMPLETED]
+Portuguese language pack [COMPLETED]
+Spañol language pack [COMPLETED]
+French language [ADDED]
+Germany language [ADDED]
+eMoneys system [FIXED] [COMPLETED]
+
+novas builds: achievements, trophyes
+
+Actual Build: [12068](https://github.com/DaniellMesquita/Phonemon/releases/tag/12.0.6.8)
+
+lutas: reaçao de elementos com elementos. (ex: um joga gasolina enquanto o outro phonemon lança fogo)
+lutas: P niveis de excitaçao e P rounds
+emoçao: produçao de fumaças com misterio de quem venceu
+HP e PP recuperados gradativamente.
+
+https://www.google.com.br/search?q=what+is+a+service+pack&oq=what+is+a+service&aqs=chrome..69i57.7298j0j1&sourceid=chrome&es_sm=93&ie=UTF-8
+
+(ask help for MIDI-to-8BIT/SFXR)
+
+Build junho rendeu 241 em eMoneys para quem a testou
+
+Phonemon Objectives:
+
+* Obtain all Phonemon varietyes;
+* Obtain all Phonemon entryes;
+* Collect all fragent stones;
+* Visit all streets;
+
+Phonemon: ADDED, COMPLETED, IMPROVED, CHANGED, FIXED, REMOVED
+
+phonemon 2: developers, beta for all, record battles and captures, community translations, verificaçao de numero;
+
+build sep: port languages from xml to json
+
+PEHTML: dual screen support sites | w5nd6ws 1/ b66tscreen

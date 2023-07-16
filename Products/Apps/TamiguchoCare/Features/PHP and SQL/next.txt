@@ -1,0 +1,6 @@
+Presentation: after the 20 seconds, set the next screen to login and lock new presentations
+savegame system
+Can reset email and password
+
+save all values web storage
+can show the video record

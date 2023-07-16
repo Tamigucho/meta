@@ -1,0 +1,8 @@
+chown -h 1000:1000 './.folderstamp1'
+chmod 0777 './.folderstamp1'
+/usr/bin/touch -hcmd "2023-07-15 20:26:03.9072499000 -0300" './.folderstamp1'
+/usr/bin/touch -hcad "2023-07-15 20:38:19.3361103000 -0300" './.folderstamp1'
+chown -h 1000:1000 './.gitmeta'
+chmod 0777 './.gitmeta'
+/usr/bin/touch -hcmd "2023-07-15 20:38:19.4110410000 -0300" './.gitmeta'
+/usr/bin/touch -hcad "2023-07-15 20:38:08.8890634000 -0300" './.gitmeta'

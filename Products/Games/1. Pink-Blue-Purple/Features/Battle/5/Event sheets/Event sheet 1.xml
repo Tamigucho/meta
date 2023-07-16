@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="593552404080524">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="649014678108085" type="System" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="108085048203101" type="MPlayer">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="746524308254102" type="Audio">
+                    <param id="0" name="Folder">1</param>
+                    <param id="1" name="Audio file name">&quot;Pokemon Repainted - Battle! Wild Pokémon&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-10</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,60 @@
+Dia 17
+
+* Login na Gamlr Network [FEATURE] (HELP)
+* g table: "phonemon_version". When login, check if newer version is available. If yes, block plays; (HELP)
+* Termos de Uso [FEATURE]
+* Política de privacidade;
+* Aviso sobre internet e compras in-app [FEATURE]
+* Do you want join Phonemon Insiders Program? [FEATURE] (HELP)
+* Phonemon Feedback [FEATURE] (HELP)
+* Sorry, the server is under maintenance [FEATURE] (HELP)
+* Poder escolher data completa de aniversario [FEATURE] (HELP)
+* Parabenizaçoes ao jogador aniversariante [FEATURE]
+
+Dia 18
+
+* Online savegame [FEATURE] (HELP)
+* Phonemons saved in QR Cards (HELP)
+* Easily connect with bluetooth printers to print phonecards;
+* Anti-hack no modo online [FEATURE] (HELP)
+* Modo luta PvP de até 6 jogadores simultâneos;
+* Modo co-op com mais 2 jogadores online;
+* No modo co-op, a casa dos dois amigos armazenadas no jogo do host;
+* Os 3 jogadores do modo co-op podem batalhar/trocar entre sí;
+* Compra de itens com eMoneys [FEATURE] (HELP)
+* eMoneys seguros contra hackers [FEATURE] (HELP)
+
+Dia 19
+
+* First Phonemon receive system;
+* Wild Phonemons system (HELP)
+* Phonemons albinos (HELP)
+* Trocas de Phonemons via internet;
+* multiplos status dos phonemons;
+* HP/Feed do Phonemon
+* Phonemons precisam ser alimentados;
+* Metamorfoses dos Phonemons
+* Encostar via NFC para conexao de trocas/lutas
+* Bluetooth para conectar trocas/lutas
+
+Dia 20
+
+* Transformações dos Phonemons
+* Phonemons selvagens conforme tempo/lua/horário/estação/aglomeração de pessoas/aglomeração de phonemons
+* Reproduções vivíparas, ovíparas e ovovivíparas
+* Sistema de ovos dos Phonemons
+* Sistema crescimento dos Phonemons
+* Poder soltar o Phonemon na natureza
+* Phonemons com doenças de nascensa
+* Virus de Phonemons
+* Doença sinomose
+* Comidas indiscriminadas acarretam doenças
+
+Dia 21
+
+* Bug na queda do player que resulta no surgimento do Buglitch
+* Sistema de ganho de eMoneys (por ter feedback aprovado, ganhos das builds) [FEATURE]
+* Read Phonemons direct from function/XML [FEATURE]
+* Calcular idade com base na data de aniversario [FEATURE] (HELP)
+* Montar teams e escudos;
+* Phonemons poderao identificar em batalhas quando luta contra bot ou humano. ganhar mais experiencia quanto maior o desafio for.

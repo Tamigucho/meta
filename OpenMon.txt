@@ -1,0 +1,6 @@
+OpenMon Standard
+- All Pokémons are considered valid (wait, some of the new starters shouldn't)
+- Axie is considered valid (they could receive an evolution/metamorphosis)
+- Some Digimons are valid
+- Some Ethermons are valid
+- Some Tami are valid

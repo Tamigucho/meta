@@ -1,0 +1,32 @@
+This folder: /media/daniella/B/git/Tamigucho/&meta/Products/Apps/TamiguchoCare/Resources/Music-SFX-Voices
+
+  File: ./Music
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 3157857     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-15 20:10:06.763982100 -0300
+Modify: 2023-07-15 20:10:05.173348400 -0300
+Change: 2023-07-15 20:10:05.173348400 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./SFX
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 3157858     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-14 19:57:04.281498800 -0300
+Modify: 2023-06-28 20:03:48.136495200 -0300
+Change: 2023-06-28 20:03:49.826806100 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Voices
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 3157859     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-14 19:57:04.281498800 -0300
+Modify: 2023-06-28 20:03:54.201334400 -0300
+Change: 2023-06-28 20:03:58.387178100 -0300
+ Birth: -
+IPFS hash: 
+------------------------------

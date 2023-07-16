@@ -1,0 +1,5 @@
+linked by: ../Apps/Tamigucho Real/Tasks.txt
+
+Use ChatGPT to, paradoxically, make Tamiguchos lesser robotic!
+
+This should also, potentially, add more fields to existing Tamiguchos' DNA.

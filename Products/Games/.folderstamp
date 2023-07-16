@@ -1,0 +1,62 @@
+This folder: /media/daniella/B/git/Tamigucho/&meta/Products/Games
+
+  File: ./1. Pink-Blue-Purple
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 3101905     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-14 23:04:19.989627500 -0300
+Modify: 2023-07-12 12:10:49.944026400 -0300
+Change: 2023-07-14 19:39:55.443958300 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./3. Bow-Arrow
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 3101906     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-15 20:11:23.864381500 -0300
+Modify: 2023-07-15 20:11:11.069485000 -0300
+Change: 2023-07-15 20:11:11.069485000 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./4. A-B
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 3101907     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-15 20:11:23.994517500 -0300
+Modify: 2023-07-15 20:11:14.059187100 -0300
+Change: 2023-07-15 20:11:14.059187100 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./5. C-O-CO2
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 3101908     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-15 20:11:23.995090500 -0300
+Modify: 2023-07-15 20:11:16.061671600 -0300
+Change: 2023-07-15 20:11:16.061671600 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Phonemon Journey.txt
+  Size: 496       	Blocks: 1          IO Block: 4096   regular file
+Device: 8,20	Inode: 2326381     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-15 20:10:56.334814200 -0300
+Modify: 2023-01-28 16:30:38.282742200 -0300
+Change: 2023-06-28 18:08:27.860351400 -0300
+ Birth: -
+IPFS hash: QmQbuyvs6uWDB5zL3uk7ofyZ8uvCkBWpxRBgKSY7ck6SJz
+------------------------------
+  File: ./Phonemon physical.txt
+  Size: 109       	Blocks: 1          IO Block: 4096   regular file
+Device: 8,20	Inode: 3090578     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-15 20:10:56.469627400 -0300
+Modify: 2015-08-31 14:31:14.000000000 -0300
+Change: 2023-06-28 18:54:29.170610400 -0300
+ Birth: -
+IPFS hash: QmfHDhXJieZbUiW8K82FSCaffnzWVpR86w2Pj5bn1cQpkB
+------------------------------

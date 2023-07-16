@@ -1,0 +1,45 @@
+* Player+User photo on menu;
+* Player sprite changes accourding age;
+* Menu smartphone com relogio em tela cheia;
+* Menu smartphone com relogio com menu em abas;
+* Poder arrastar topbar para exibiçao de mais conteúdos;
+* Vista de cima e de plataforma;
+* Modo casual de batalha igual no LoL;
+* Vôos em vista aérea;
+* botoes yes e no redondos e numa linha somente;
+* botao com V e X, mostrando o modo escolhido e os modos rejeitados;
+
+* loader layout;
+* qnd inativo na tela login, mostrar demonstraçao do jogo ao inves de reiniciar;
+* Modo practice;
+* Gráficos aprimorados;
+* Sons aprimorados (SNES);
+* Support to Plasmmer Keyboard;
+* Virus da dengue presente;
+* Acentuação do virus HIV;
+* Avisos de software não-genuino após 30 dias de uso (black bg e build watermark);
+* Subwarner, um heroi que vive nos esgotos que retorna mais incrivel do que no 1º;
+
+* Modo co-op com de até 6 jogadores simultâneos em tempo real;
+* Conversar via voz com colegas;
+* Peeper music;
+* Modo party: chame quantos amigos couberem em tua casa;
+* Idiomas japonês e coreano;
+* Messenger;
+* Contatos;
+* 
+* 
+* 
+
+
+
+* Personalização dos jogadores;
+* Calças masculinas/femininas para os jogadores;
+* Sungas/Biquini para os jogadores;
+* Shorts feminino/masculino para os jogadores;
+* Gravatas femininas/masculinas para os jogadores;
+* Camisas/camisetas/ternos para jogadores;
+* Personalização dos Phonemons;
+* Maquiagens para Phonemons/personagens;
+
+* https://m.facebook.com/groups/358633727571724?view=permalink&id=631297473638680&_rdr#631351070299987;

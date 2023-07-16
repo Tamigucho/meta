@@ -1,0 +1,4 @@
+Country URLs dictionary's values
+User avatars/gender
+Clothes (Tami/Garden/Arena)
+Languages

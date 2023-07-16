@@ -1,0 +1,5 @@
+* Cursor;
+* High Quality Rendering;
+* Effects;
+* Particles;
+* Sistema próprio de patch para atualizações;

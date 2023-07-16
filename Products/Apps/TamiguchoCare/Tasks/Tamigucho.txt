@@ -1,0 +1,8 @@
+Tmgch K OS
+- Start screens
+- Present
+- Introduction screen if first time
+- Login with BrightID
+- 
+
+How an start tmgch can be earnd freely?

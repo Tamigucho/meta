@@ -1,0 +1,16 @@
+Date: 09/04/16 12:00
+
+* Novos Phonemons;
+* Novas entryes de Phonemons;
+* Fixed statusbars;
+* Fixed battery icon;
+* Idiomas adicionais baixados via internet;
+- Visita ao subterrâneo com o Subwarner;
+- Divine encounter removal tool;
+- Humantwo adicionado para apenas um jogador capturar;
+- Viagem ao espaço sideral em busca de Humantwo;
+& Temporraro cabuloso;
+& Tem que pegar essecuidar mais;
+& Expanded Mateland;
+& Expanded Foz of Iguassu;
+& Paraguay;

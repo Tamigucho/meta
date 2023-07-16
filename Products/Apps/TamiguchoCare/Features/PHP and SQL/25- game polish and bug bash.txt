@@ -1,0 +1,5 @@
+tip: checking for new updates
+
+Detectar se ha uma nova atualizaçao fundamental (se sim, lock app)
+Detect GEO and only allow Brazil
+Notify when released in other countries

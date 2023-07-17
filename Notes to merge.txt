@@ -518,6 +518,21 @@ https://www.fiverr.com/pikatchoum/draw-a-pixel-pokemon-battle-background
 Super Gem (Super Morph), X Gem (X Moves)
 Normal, Flying, Bug etc won't be elemental types on Tamigucho, but physical/bodily types.
 -
+Tamigucho types:
+Neutral (weakness: salt, fire, electric)
+Salt (weakness: water / effectiveness: neutral)
+Rubber (weakness: fire)
+Paper (weakness: fire, water, flying/wind, psychic / effectiveness: rock, neutral) - attack: Paper Sword
+Plastic (weakness: fire / resistance: water / effectiveness: neutral) - attack: Feetlego
+Steel (weakness: fire / effectiveness: paper, neutral)
+Silicon (resistance: electric) ?
+
+tamigucho DS gba sound composer discord chat link, add to Pink&Blue Team file
+
+Tamigucho Pink & Blue topview source available before recreating the classic
+-?merge notes about generations/games into meta.
+tell about the gd inscriptions and the unknown one (reference to Paul) and at this temple show tamiguchos of next generations
+
 Tamigucho will have a different count than Pokemon:
 Species, morphs, forms.
 

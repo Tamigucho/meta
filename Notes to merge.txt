@@ -566,4 +566,8 @@ New Wormorphs can be created when breeding solely with Wormorphs
 
 Chockatiel's morph will have AR colors (but normal in the Brava regional variant) ; finally it will morph into Eleagle
 
+Tamigucho's Pink & Blue 6 starters:
+1st row: Sprouterra (ground), Dewhale (water), Birdumont-pre? (air), Firember (fire)
+2nd row: Petalrock (plant), Chockatiel (electric)
+
 change Wormorph's color (now like Bx)

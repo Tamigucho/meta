@@ -596,3 +596,44 @@ https://www.construct.net/en/forum/construct-2/how-do-i-18/jump-street-fighter-1
 https://www.construct.net/en/forum/construct-2/how-do-i-18/streetfighter-style-camera-144762
 https://www.construct.net/en/free-online-games/rec-jp-fight-3779/play
 https://www.construct.net/en/free-online-games/profile/nemezes-246155
+
+Tamigucho Pink legendary: Machape
+Tamigucho Blue legendary: Femantis
+-
+Tamigucho Pink protagonist: Lapis (same for XPB anime)
+Tamigucho Blue protagonist: Rose (same for PB anime)
+
+Femantis will have ant tail with a sting and bee wings
+Machape will have fur and bat wings
+
+Estimated threshold to develop Pink & Blue in less than 3y: 1mBRL
+
+At the top of the Mt. Olymnet: Treeverest, where Femantis and Machape live
+
+Tamigucho need a git-able Trello Board & chat guilds
+
+Tamigucho Bow & Arrow should introduce the Infratitans and Vallysil
+Vallysil (first appearing in Brava) is said to come from the Munnah region
+
+Tamigucho Pink & Blue should reconsider about deploying the platform view, and let it be the last part of development.
+
+Pink & Blue will receive a 3D upgrade: MagentaPink & CyanBlue?
+
+Super gems, X gems AND Ultra gems:
+Ultratype is a gimmick where up to 2 alternate types can be assigned to a Tamigucho. They can transform to these types and get a STAB/boost on atks.
+-
+Form will change according to the new typing.
+Ultratypes can be passed through breeding.
+
+New gimmick: Paraform
+-
+A Tamigucho, in-battle, can acquire its past or future form, with two options: even timeline or parallel timeline
+-
+Paraform will require a Time gem and, as for other gimmicks, a Sync gem attached to a Tamigucho
+
+Tamigucho bttl menu: Pet (Whistle, Pet, Food), Bag (shortcut for TamiStorage), Atk, Run
+
+Can Tamigucho Pink & Blue right on its first launch come with 5 (five) gimmicks?
+Or Super morph, X attack, Ultratype, Kyusion and Paraform will require 2 DLCs/Tamigucho Purple?
+
+Kyusion is known to come from a research made in the Munnah region, but deployed in the region of Carbon/Oxygen

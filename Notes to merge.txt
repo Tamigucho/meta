@@ -625,15 +625,19 @@ Ultratype is a gimmick where up to 2 alternate types can be assigned to a Tamigu
 Form will change according to the new typing.
 Ultratypes can be passed through breeding.
 
-New gimmick: Paraform
+New gimmick: Timeform
 -
 A Tamigucho, in-battle, can acquire its past or future form, with two options: even timeline or parallel timeline
 -
-Paraform will require a Time gem and, as for other gimmicks, a Sync gem attached to a Tamigucho
+Timeform will require a Time gem and, as for other gimmicks, a Sync gem attached to a Tamigucho
+-
+in-game display: [Past], [Future], [ParaPast], [ParaFuture]
 
 Tamigucho bttl menu: Pet (Whistle, Pet, Food), Bag (shortcut for TamiStorage), Atk, Run
 
 Can Tamigucho Pink & Blue right on its first launch come with 5 (five) gimmicks?
-Or Super morph, X attack, Ultratype, Kyusion and Paraform will require 2 DLCs/Tamigucho Purple?
+Or Super morph, X attack, Ultratype, Kyusion and Timeform will require 2 DLCs/Tamigucho Purple?
 
 Kyusion is known to come from a research made in the Munnah region, but deployed in the region of Carbon/Oxygen
+
+Tamiguchos can use gimmicks outside the battles!

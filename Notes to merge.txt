@@ -680,4 +680,6 @@ Applies both to graphics and music
 Merge TamiAnime (PB, PBX) repos, pblsh
 
 Arks will have a Bdf look
+Tami Ark https://twitter.com/PkmLegendArceus/status/1682529620967424000
+-
 DNA will look like E :3

@@ -656,3 +656,28 @@ All generations of Tamigucho will use the same save "file" (Account)
 
 the common ancestor for all tamiguchos is a caterpillar
 with birdy buterfly wings, birdy fish parts and crustacean paws
+
+Before a 3D upgrade/remake, Tamigucho Pink & Blue have to receive a non-pixel 2D upgrade before (somewhat like TamiGPT/TamiCare)
+
+Tamigucho Pink & Blue's title screen should be a 3D animation converted to GBA's color pallette
+-
+this animation should have nice dizzy câmera manobras
+
+Tamigucho Pink & Blue should give Habbo feelings, just as phi.xyz does
+
+Should Tamigucho's first engine be Construct 2?
+-
+Okay, can later upgrade to Construct 3 or even share the same source across these versions MAYBE
+-
+But how that can later be cheaply ported to Godot/Unity/Unreal?
+
+Can a single Tamigucho game handle all of these modes on every new game?
+-
+GB+GBC, GBA, DS, cartoon, 3D
+Applies both to graphics and music
+(except for cartoon and 3D when it comes to music)
+
+Merge TamiAnime (PB, PBX) repos, pblsh
+
+Arks will have a Bdf look
+DNA will look like E :3

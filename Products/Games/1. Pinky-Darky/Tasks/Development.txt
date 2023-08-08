@@ -1,0 +1,6 @@
+insp https://www.polygon.com/interviews/2019/10/24/20929597/game-freak-explains-the-1000-staff-missing-creatures-and-leek-size-of-pokemon-sword-and-shield
+
+Tamigucho Pinky&Darky development teams should have enough ppl amount to develop the game in exact 3 years or less.
+
+Git collaboration:
+A specific team for every kind of part will work on a feature at a separate branch. Every weekend, these branches will be merged.

@@ -12,3 +12,7 @@ tami care app ideas:
 - Tamigucho will have OT (Original Tamer), a history of ownership transfers, and Current Tamer (CT).
 
 Insp Tamigucho pet nfts: https://app.zerion.io/nfts/polygon/0x9928a8ea82d86290dfd1920e126b3872890525b3:218497
+
+- Time of egg conception ; Place of conception
+- Egg transfers
+- Time of hatching ; Place of hatching

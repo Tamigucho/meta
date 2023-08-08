@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br -->
+<html lang="pt-br" runat="server"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><link rel="shortcut icon" href="https://static4.scirra.net/images/fresh/scirra-favicon-02.ico"><link rel="apple-touch-icon" href="https://static4.scirra.net/images/fresh/scirra-favicon-57px-01.png"><link href="./Login básico usando MySQL database BR_files/css" rel="stylesheet" type="text/css"><link href="./Login básico usando MySQL database BR_files/css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://static3.scirra.net/css/fresh.css?v=167">
+    
+    
+    <title>Login básico usando MySQL database</title>
+    <link href="https://www.scirra.com/tutorials/525/simple-login-using-a-mysql-database/pt-br" rel="canonical">
+    
+    <script id="twitter-wjs" src="./Login básico usando MySQL database BR_files/widgets.js"></script><script type="text/javascript" async="" src="./Login básico usando MySQL database BR_files/ga.js"></script><script src="./Login básico usando MySQL database BR_files/cb=gapi.loaded_1" async=""></script><script src="./Login básico usando MySQL database BR_files/cb=gapi.loaded_0" async=""></script><script src="./Login básico usando MySQL database BR_files/shcore.js" type="text/javascript"></script>
+    <script src="./Login básico usando MySQL database BR_files/shbrushjscript.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://static1.scirra.net/css/shcore.css?v=167">
+    <link rel="stylesheet" href="https://static3.scirra.net/css/shthemedefault.css?v=167">
+    <link rel="stylesheet" href="https://static4.scirra.net/css/freshtut.css?v=167">
+    <style>
+        .lang-list {
+            list-style: none;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+        .lang-list li {
+            margin: 0;
+            padding: 0;
+            padding-left: 10px;
+        }
+        .translation-team-wrap {
+            margin-top: -35px;
+            margin-bottom: 25px;
+        }
+        .translation-team-wrap ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 3px;
+            margin-left: -5px;
+        }
+        .translation-team-wrap ul li {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+        .translation-team-wrap img {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            border: 0;
+            margin-left: 5px;
+        }
+        .translation-team-wrap h4 {
+            font-weight: normal;
+            text-shadow: none;
+            font-style: italic;
+        }
+        .trans-warn {
+            text-align: Center;
+            background: #FFFFCC;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            color: #666;
+            font-size: 12px;
+            padding: 3px 0;
+            border: 1px solid #efefef;
+        }
+        .trans-rev-link {
+            font-size: 12px;
+            display: block;
+            margin-top: -3px;
+        }
+        .report-wrap
+        {
+            font-size: 12px;
+            text-align: center;
+            color: #c0c0c0;
+            display: block;
+            margin-bottom: 5px;
+        }
+        #ReportTutForm {
+            display: block;
+            background: #efefef;
+            margin-bottom: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+        #ReportTutForm h3 {
+            margin: 0;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        #ReportTutForm table {
+            display: block;
+            margin: 0 auto;
+            width: 450px;
+
+        }
+        #ReportTutForm span {
+            font-size: 12px;
+            font-style: italic;
+            display: block;
+            margin-top: -5px;
+            margin-bottom: 10px;
+        }
+        .edit-wrap label {
+            font-size: 13px;
+            display: block;
+            margin-top: 0;
+            padding-left: 30px;
+        }
+        .edit-wrap input {
+            float: left;
+        }
+        .dl-table {
+            width: 250px;
+            border-spacing:0;
+            border-collapse:collapse;
+        }
+        .dl-table thead td {
+            background: #00CCCC;
+            text-align: center;
+            color: white;
+            font-size: 13px;
+            padding: 3px 0;
+            font-weight: bold;
+        }
+        .dl-table tbody td {
+
+            font-size: 13px;
+            padding: 3px 0;
+        }
+        pre {
+            font-size: 12px;
+        }
+        #BadgeStatWrapper {
+            margin-bottom: 15px;
+            min-height: 42px;
+        }
+        #BadgeStatWrapper img {
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+    <link rel="alternate" hreflang="en" href="https://www.scirra.com/tutorials/525/simple-login-using-a-mysql-database"><link rel="alternate" hreflang="fr" href="https://www.scirra.com/tutorials/525/login-simple-avec-utilisation-dune-base-de-donnee-mysql/fr"><link rel="alternate" hreflang="id" href="https://www.scirra.com/tutorials/525/login-sederhana-menggunakan-mysql-database/id">
+    
+        <meta name="google" content="notranslate">
+    
+
+<meta name="viewport" content="width=1024"><meta name="theme-color" content="#06c3ab"><title>
+
+</title></head>
+<body data-twttr-rendered="true">
+    
+    <form method="post" action="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br?ID=525&lang=pt-br&bodypage=1" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="kSF5eL1RGqrr/jJGSmcm114xT2PaSCM9XWalinH7715GSIsP/KMIbeKArJ0+Nb2tRUd+auztgbEzyU5QWzRbsxLnOUnc4hHRDYc4SiwA2xsoI3Sa86Z6aBn8mxsFsrrynww8NaxeWswiYsGEph8f4Tm1Xb3rO4sau3aW6fibzKsYXChEpTIp9s7zVc00Kk7s0rG97LpceEZkSM4YGXCVLID8qLnQHLK6ibynZ4r51FS7x8tQVxAdpRcRKlpWwtsI19TMvjeEv4L81MFsW8OJN3v9t8WratjgBn4zNt+o/x2eWur0tlLJQqVcMey0Pss/HrgRQyIzLQqT+qZyRLInWRRud0s79pI3F6XbSBHOC47H2FEvMRwGYJR9QNY9BX+dUtSxJJiTHOnHDHLRqo0DKpLrrKLqzejGZNOJchy9uOsr9Le29N2XSHKDWyeBIccEM6qqZ6lZLBhtYQx7FNMj7WkufFjxFnJV9blXsnStrmEg3VnZ0zwG/A3c5hrLN+8rYBVNCywnQZS27Z6JGYijQL4NRi0lhckvZ99z/hEG0eykCu5ryLnRIbk2+8qJoG/TZXJgPHkgs5nbYteBjqA2DYTxlF56Ngwo4n5PKuoKzpb4waTBlDDv/Wo48kxdLDeFU9GlmsPkKUW+G0pC2epvNJMWXjyFTsdgx4ZDh/wciS2iG9T22Ka2oRUfVgOYluI5ObWssZbyCYIV6jUbVozWpqlPPZ50R4Ozm+Ma/j3rGgknv8JzcOzkCXeb8DepXFd7qRiRT0ievnmp4Y6aZNGX8nuxLbUKrW3UN9ZTzOx3Cpt7ChxmfyodhYXuZH7soTMcML6EV2FN5U1ksZhU/oE7UqJOjO5bKYiqYETk1N7R26aidqHFDfWRKhVOAp7rDStrBQ1G6rns6o5KD+ptHZnQSnNcsFryrt1z826eyKNF6GldTwnzbzJoJ9CKXQ9s0XCijFG9ooCJUH813KmglNbupivcGMkWJ678+zCPQD5gbJkGZx6leoXsiYJAWRvzU1ki8KipOZNI6lzzoRj5uplYSp3zuU3ibzkZVEynyDoLmlMC5+PB2sTuGigkey3oVN5dhx+G9f1jnxgMKZP1akDLQd/7JGf5PCATiUvbmyuMMY9+3ue5nEdNAJn2rfaa72V78vlqtuH3NeVJmgYa1qqEMswWmm9lrH7J4MbxNEX8KHwU01yY5eyZX9NCt+hgXor0uOeNErsSkiPzuVwFElRy2iHbHVzF90k9PIOjuMD2ALNPU1wIYh8x3haHdoAX2niqvkFSMGkYdoceYdzfX8p8AGKPWfF1rFrpjpWSb1ltBZdu7+4ms4eViYuRZLpbeBBntOCL4drQI4ezjXeymKJC0dgU7c+L3Pf/pnD/ocRN3QYQsQ1qx+F5ueMwfqs8GpscJ3vH1tB1dzy5IrFtehArPegk1DVN86ErHv3wthbbPOsJ1FryphzGHVW1zkIvg1j7koeMc1x9A5e8xAC2lN5F5dtFB9Rn3RqIX9Qq+TEhjYZOk4Dvtz+kZ+Pg1xyGtxoV5m+TxL7BGGn0RlKpAhIWr22ZUY/JRjpHV5MyrWdZzvoCAmyVRT/WbXg8sikZ5mEnkBrHb4n6jMiIK+2hi4XmVZK5UX9bbdOc2yNizQfi7FIMb9hNE4fwo1kkatiZrzTEqaCa9Y0X1Xm4fKh3GHDc3m/jrv24s1L/J3ubsohm0TBQQakQanr5NGOClSb9tqZL6zRSipMxfPuBSMBrB4aSkjs4cTheX5ottgtkTffkjKHLhpJnl2MAVxUSjCkZQaonCNI0zxjGz/Qb/GBgJRCogk8+H7U2dkI0bSgXsA5bd+YZR043lULQO5aZ3MWx783y8V5K9q/3crbn1du9h7r977+7TZsBsp++Fl2ihUAaF6LHxvbYng9idElHPA8SaY9FEUNrr0Lgmgi8/dUr4fP+eMzxP3rPXLUr2bNsS4M1AtxEMvhWTou7YmeBdempvlJrEiE1yASNbVqhUtcuR2AeGxXXNVK7EMuVFhzBdiwC+uCsmOdyhp0B/1dNx72fDm4ig2rFvmDQTIf2bVxJlDncY2yqusBMw6k9L1RwIhHqg1EU4GBoJ9dGdWNI50iiBJM2GffFnmUZZxL0qxUBmzQiZhKaclYg8AruhLwYYjQhXcmkoYy6v4nn4O7wVS8jKKyWZ80sxNhSLmLiv+ffx2yMpsQTWjuIiqiAzYR17hV3uQJJZcXXcd6ZNus2WGPOchCTOTadeHMpeEpeWwlAbNoxZNCLbAgwAgGYlE9XUauipCciF/w/oQR+XpUNskAHlhEggAzgBFCwCxaIX033l1hruvM59gNd4vurLg5WVR5FXj8sa9bU0AqHf98qmOURm9YLo4eTbFHhUc0A3EXkCnwzegJhVhWJySLbkdUzRfs8QS9mZycZYQcQu2CD3EnqEcIyyW0Of/Cn6KUYAmIk95uyp2Bqm8LDjlhpkFwM+JSmdL+Kzfokm58ag6D39I0wyWfvSJNeEi9clo7Wf2fCIMRhgVADJI5em0CuIbdWH+A79rqfQArXHIuoR5Ejhc9jhezAOLhn6byNLvpoHEEDjJUt9ij0P3Wimg8nuRjtaZCLRj3BUGZugFE2ZQmMHl49HZoi1838YJJ4aml5jM59AF0PuBQsFXYZUHmGBzwrzoiBvgekD5r7i2omuZIAzAbcc9yZ2cHV3pm1+SaaQynhyei4sO5drFRlCaRBDtdWEzy7V2L5gO5b9Sw4VOpa1LPiywctW1zmGom7ezy/hZ29TJVHvl22jOGqCcTixq/d2Qcqbe+Tur77DxbuiQ0MnUY0+CT9hxNkCLIDBcQqN6yWtmBOYrVh5YN/x1Ww230JeXb2EZ7g2iaqMCQIpcdBZ7VIUrxZww4ZagSUU4A5EGrxvEHNX3doNJz/doFrxe+8K8v+tdXRxheMhZBCqDa6T4njOgSMypLpQITGeAIMYiwm8AJsQTsfpddBAJth42MqOJ19IcrBJiOMHQUHGRaSGnKC6e1VbQZXvDNos6lJkiJTICouVrAAwX+969vwJGD0CMp+/pdspqnq3qcQIyFmsnR8N7Y4Y9F0HL0dMbr/xauAyDzdSoDxOj0IfGjAPNyrm8OxUZTplXKAj0nCX0rYKvbg5hRW2FpKwfRlqwIFV/E64OLB25/lDeNEJCnSzTj4lyZ00Y5mZQzWe7Ia+etXXb6y5DgAedrRN8rHr6Zwow4BiQ4OlQLYLLIihJpjkNA9Moai74cdB7TUJD3hUvgtS05JHYU0TvK3ofZD+qLx2h5Gcly+QZF55f2wR34AjVVlKZdueCKqhPa9RQ67MzukbBvqrp5ShyN39s0iBsw/6fh0qCrfTft0k0EkJezujTweL+o3l6dDg40wxnnO3WdtMIbf5OARYSa60oLS8N1wYqbdTnYYA9PrdAkL4F23a0piPUi8ho5yktjy46p/f1VGF77291QMqGyVqD9ue5gPcSnKAucaA6On227eEXG1kO82+RM4eabVWxN0ju9KAmQ4IT/n1eCwID7kF1q0o9QrUGad1enhhQMUlOQXtHijg9xRIJBFyf8n0bcCYDaBqofon3EdAPXuDtnmkoxf4a7fyN3rRCsb/WPEWnozAlrlHWyLG4+pyNj63RYXhvhMHFTNpAYuQzFgDP73ygeQOcv2BcPpIXHtbFDc3OOqOid0DxWJEgnNLq75u1TZ+baOPuBjV+RAsg8/tQlHDhmF+Uogqs95oi/L7pN310qR7lS5AjYd6EOnabQfLpbHCjT/u4cTf7nGyooSccazV2o3V9MGdA4k1GBigDI9HZ03qBbjHLte9IwkZK6EKe1A0yqS3I4xyXdfFz2F9GQeKwwQ5k6csEoyoDGFXtnK2dKl7EZIbzTeBYwFGn+Hsq5CR965eVtarbwHBaoNCBVLF5m0r9qsFLXUPkut5IeK3/lTdP8nNM4pgfVVLlXE4kaMCG62mf5nBBdsFDTckGyOjdJksOLo9k9jQAefnGyraBIuJh9Res1VGOCztaKJ/h+PlsNRvtJsLbSJiaEp/lzQess0FZKqtU5f8ljUkPITi/S+kibDZiGraCB1FAv5Aij88SOIozZzZEAOtoC3MfrZDHAcLK3lOI4HYt5M8RVJJFrysLJ79psV9nd4dwSst4SHf3gvOMaT7Yox4/gZ4drgbahTb8APmi3kDKsdPUybs6CIGFYg20EmzBtC5DQjTLb2yQwb6i/f1W2wEgbXYsB8nuO4XlyI4JR0qj0KrO+W2Rz0PKXuGreykpRksLoMQ/T8+FYC3PvoU6c/TzgDAaoi9lSCQXgayO84lKFsh5C5c4gdmoj+IaGm1rEM5R9EOSdTsDJsii+3ypC6X3A6bEjZ6BsmSPAGu56blUPrfS0cP67qXpg08zn7eRDU7BjfbGCLiYlcCEOzLbjPozOj8HP5sxchVaFNGzV8+XTiY9fl4t4OLETBJFsAm3SSchhFoR20B8infeBYdM5aK4CvxpEQVZ3JPcQ/wiwt5rq+dpvjFqn4n8u9g5gK7R44v376IJU1BYcSWnyBTUValzkeslkOsxnkj/rnvjSx8I1zd9aw00w9HS1RSShc+Q7Vq9yOOCF9BYWTBH9pXhx290L1IVcA9hffRoyIf1od0eD51BBFXyNEWJsycDMm097wtpyTI1Oz0BMOpPuIRcZHM+MW7yMx8nSJ36065FrZHlTcS5q41MStkBtc6kXXBrM5uTu9eFSLhxr3kfJJr+SBYyhEMrWUl0Dlp1Y1wlIp7SXUbXJwxoquHkBxHEk3NoXuFB+fQ/HnXb67evH87tTjytDbQm+T6NxY1foMjQfhEzGYNR82Q2HSaQgwvxpCGdlZL+dQut1n5SYiAs3Zu+nf25yxH1/NB1iB4++CPU319C9jmXr8rQ4nIH8ceZOPN1A3Rugm/ARdylJdWS8ddSCW/z21+f74AgjRiPg3KDohZfUGM7NDU2IENKr3gc8d7PW//KzvRlTZnNrZh53654De1o+U7+G6uJUTejC9+obp6tR1ZZObNVZk2PoxAi21+908TtUNa/Y5zIRXGj0LrtVOXnMYAMzJw/DACGoRrgyyZxT0IuOKEL39RjvGoAp5XMF9knekhYLJRKNKFksn0mgx1x/VYquVwMTK2F313FSrUcjGTrl+tFU+QSsSggm5E2lWf0gXNcbgVCSCj68vf/L2NcuJVHPE5enlEsO05WhE4cOzdW6xFKZgrQQXLvELv7Z1YgB+BQOBa1tq1j38yYp7Cq4+fqnCs7194hDSEZD3aMea0112WoDbDTK98NjGhibfMhN//asam8N7QZStBJwDGmA/WIWAJVUavQPo8aM/ZQENrNecHKboNjpWacA1ajxTgcKgGhNH8Fj3aU4H9Ps5IVM2TZ0RHq/QRxM7D5VO1gwcnfrKwWSktCrtXsGcpzENwqR3E7yrsQiHm4Hmt5v+RAx5vShyAjIlAlobWApIL4QOfuZ/lfFCO1v11mbEM62aYKK4Vn/Bd7hvjd7MD5jJ93T8vjguLk18yJl9pYp2HVS/0qDlpnOttw3OJSonaBOFWM74+ysNqAW+MbCY4ShDezeHsLSZOo9NFl2NJ4HJST9N/T4qinWM1sgTAfuW9YeUaKXjasA0pDhZHzLyapdN85BactQTquWb5aJl/kQ8xAXKDNmwpme9KEuLK9cx0hijvn1wPQ5PEY2v5HN4z8G2JCkxsysX4GyqG3esXlMsfiodrEgGO4Y+ZfOT5/AvXhhOdPEy+WXtDScqCSLy06k7Vj4J9mj6g0ZzWL4tmvu2sEX5Yuc9doCIpOS8XgrBoi5mrxUWO55AhXruVgPyKeeDNaGH7x6T64hnbls1C4xUEgPt4W+g4z1YeiQd2tAMk4R7ORNpFjI2uslVAmA+s+YxBDRrGSdCmIu4aKy+pNxIQOXNUQOCPzR6vxcTrLrLPdh0gdPrFG9rpzxO2n3y5LkBj9RrCdbEt0wTNLapYH3F1XazsCes/MJ0mwWY0QSPurJHt3ek1+lhKvtn4SlyAWo5y6Dql8brqjpUyahLLFpBhccRwnhqVxNciT773yKQE0WaS/7OmXgWTmYB4LBbi2Chfzp7fq846Ezguuh7JopnHBGqscsfY7L0+BhofapWoQRx3Ij7ekpQGc0HQYI5zcP8hPFvfX/wAt7e2q5EzsMs8MKDLrREqLj6wbBFFsemyMl3+Uh+LMKgzeSgcBBOoFQBPCQGjBzUp+5931bDdUBwBWUkDwSRDFGJKzqOHXmgRi6uOYyopyYLnUX+limW+Z0HXQ1anDaDYYE3EQxZRAJlhuv3Ni3FWMIj05eEHNTR7DkVWeg9CZ2Rq9w9fplBrVWOctC6LbEaNxlHl+FJnM+VQ3UTh/2vo9nHTJS7nFboUfD4mILkaZBcL/aEwZWY9eEH2oReLT2Gvg33bUYbkd4AJXdNobFtO8wZiicgSGRTTOv1E2gBqf4FCTWFnRkUXGshPdfhJSqqAMlGCS6iWxtCnVOZhTMDpGumcY6AXRghHVw+8XC6t9s1jlwJB0OOMkxuxJzol2xEya7wrsj7yzfEK4XCr0vAwt57RsCj/ovD+yPes86oDlMSnOcrY7gp2owcZSvR1UtQj8VD3JhqHuWqn0XCzu8/P9ziXcixbuS+3WYBXYjoJOAX+gOCLOxaNC89lwA+MKLq7JCdPzjVVVyyOraBKNmjLiopDSJd24S82he8lQJoKJ0OIZ1GCMwxYYAXRS8kS2T55zWETTYtjNO8bBb+5Wv6eilgFVq8Y52eAZAy+hVRzHXO0zX1AlyefFTqwy2vcNreynxVrH8jDNIVDACEN6FnjYC+ynss5NW1njI5LxscxnPHYJJXmFtCc/MVPYSWhuxSX38Wi6UOfvBcTeUx0cHQ0lnSgtZC6kTRjWLgfQAJv1GRepPnxVLXfyiXRukNzmZPKsIfoJPrl4h3EwCq0QjfMAbBYNdN3gn8MOV6Vu+ntD9TYXRNb9Ylp3QghJ6OP17sWwfhhI8Fm3qy8obDYgU8QWGHqOFrQbAJgeUIgG6q5vArPez7nqqDLe8jb0+RDXY6GP29FRo5qEhylV6tGECMcYnx/k1iAHzh1j2RGHbgHyoejqZTOD5V39fpPYoR7HBHtkwjioZ09EBaPbKoTmj1HZLPxc30Brjek8R/RAUgUz2tx5SwKVv/WQno4jG3MJN2YsWTdwbbuZcczakZ9GB7UUpjz3iwKRMMTNtCf+Fo1vQCD7pux/und9V5xtVKod/awoA6tW2CTo9urg8N46K1Oes3pk9bxH5dB7g29Z0bRlyqHCmwnPMOzioLsnMFOVL52Y7LmHSeryPhfIHVL/whmYPzOn/b3ULeB95VngIO9j9MnUNgzv0k7N9aR209FPKN3AQkZVt8sIJIajRxSTsZCi36VeApCyoGDX8KWo+vBo+C1lTjzPA+5ggdJ1EOE6AJgg3sKpzKR+bYMEJMMCBRohwzM6LLNPnDPC3Z34Ji4G7JgFTU37eODUu8nnfDk5j135MRff8GnQJzWgvOi1VEQIueUAJCE0D1wSadsqjcvIEL4He29ntOKfnJo56Boj5TIcyTRPBqO6kU7TDsUHk2CWpZq0EYIDPBr419Ts2Pq3lO0XSMvM4FmAFBOnoQcsFd4ZTvtpzlVnBqZ0eES/si/FgJ5rXzFV6Xm8uDeFqQDSurelVGpKKpSzowc0/o4lG5bihbVeQlIfCpCFiG+urlG4ffU9fdhg7A7g4eI7uliOZi3e7K/xshU2m0ZgHs5GOUFpNElO2cbUOSYr/dkpv57W62UUgKebHRoGYxt8nVWr2FN11yoDQkgPIE48F/ozInAjDMh+BV+ZvvHk2iLKaeh63xFy/o80fsqVN9q7p1Icuz81o9EDHBiCDWAeNK5NdKz+PuTI+lSFANtY2jlK9WdXSpInInui98WsjtshRwFgzZlXPUx0yzp410Ym8qB+kV6Pimer/t7hJuY40Wk3M8jykoTFNI9sg8b6oPIbZ+gPNFjGmRTTZ6R7Els7yZQsQC0aFQ9ZsDfKIyMWWAIiO6izf5zni+X86JbFMVzEmAZEU9SYzjfRVAMiI6QSM/h10u2Gw+OEhB+qlEU0S1hSEURaSNnQBZ2zB/jviZ5fP//O2cU/1rGz/n7VbUiwdtAPBoDU+WggwUrQ59q5M8Zxjg9Q/gh+NouSSi9wiENwiWYn8eFDPLbq5mml2Un4ZPr7AAZvNhYiiPLC1USEDeNpRMMBZky+CCr9B/TulgruyXDkTExmjBvwHx0anA1zBRAX2G9aqubgXxglzWUjIYZL/y2Svb8XgzaQ01vPwgB2RUrALj16ELiUehOR0i4qssUO+iYs8W7KqLfHYA60qZ+SXowtSmwfRLWdjk13IAxQbjdAyaOKz86ZCtsVt+POxjWaAyobffVT4O8BYwRs995zD0VYo9XpP/zP8ZVcoz+gtvHZarpCwHL9mdASiMGCXNGjwKHNw/P3rQ7CQHR9IOLAjH8m/4BMfBJAAerbJXfo0AtYVVX/s9L66usG2EDvgy/Ib00iaVLr66MyRmskc4Ew9a1g23M9p0+wXKHg+WXta075CDU+W5SN4+LVBAszXnI0haWzQJ8DA0oHIooJB3m9e40mHgAwkXpoLHUItcG2kckoKK9xLb4ynIDPAypCxrKh7BU9eHl/I1vMC+76IqMbJq2wMh3faXrbTO3YT0UuiTmgxz7Dfpgq9oghWjWxPrtFYrDa1WtkYpPmVT5ZwnGL1e3xvDEfziPrSHHXw2tXi4nEyhcNLWqP1S4by3PvcdX8ZEQ9coTIYOkZR0WXi86eFGb49FGWHOCSIT8RCGRbJkn5eAnsHM0YcbUe3JWZ4pANzngW+VH2/cbNmThwbgjoycWO3QpdZB7SZJMHZTgaaQ2eGcYlGc5NSJNSi5DYcd4qu0E/IK/HMfv8PCdNggg3LB+0VT8OkubN+RxQy5yOjPuYwyVl4we1NU0AmmOca1m/Uzn2P4gqbAbdxQzydtVsiYdu1hMMpADdO/BqG85qxrFql5Qh0aDbMwD8SNagVX04N0q7enNxASSrv4IKyoh4SU1ckhmadhnBlYyIUghNH+HsOU0E63kFh+YrlAyqinFUpvu7oRmIlPKa4ZIkoAf5x9sOSpn77YL453rbgdrm/9JZqoIze8LXKd26eUm5PN4XguUj+pzT9igrSoj5aXdPdKEOchM1IbxA9clDDkwoIv2i6d3QfQtp/LL9WT4Lv0V/3SVtuqGp4ApdqxsVM2YOeUQ4gNh9edpEmZ9mLRmE35lzcL2cIkWGhE6iAA9uv687Ubi/ZpEn0bFX/8WHiAkU7BuNo4lh0xz7N4bwu5oJ5tnQ77vY2Ps4TK/ts39ta/1h8Y21/iI7xmXwlE2iPfaQKpsjFZ1zHRXOR1TpDqJtCEB/ohZwYLxoKcGyHxciyoQUx9PJjIprkfkWukRpW1pKf7ZTD7Ry8hn4gVrMu5RAVNmYPwjuCc0NCPD1FeJQDVlGO/kO8NXjxggPDri912hRXM1UpLE0CCcP1eZbUHzHPSlOWhuzfgvGduru8TTNTKcqpDjiwwoNpl90f8cT6/IrMaEdjAoKg/nsiVPRjiyusUD8rU9P85+mKboh8BUXjuh2OjXte5OJFwhzY/Hu1LVuCpJxoifF4Xzrvls7f4hiWvcxLPGgXaxZl33+sjKXv3fjI0exof/MFGlJt4b3NHjiYxFNlc+si8/5d6RkadIU6eMy2ekZkgu+KZDGw+VX/OdEaVY2tq1/kYggLrqdKIVKrbikIkVlPCHFwKkomLa8Z06OKNL3FtveuJCXiEcweGkZDa7YEHITSbXqdxznvYCUT43Io/BEh46Y2f+T9bL9vUKs5Z3VDTyEy87uT0g7X7t33Z3ufDsDunWGZzHX73AS4tkXdj4tOqXt080pc5jtEf+d0y5uRLeMntlPBoi5RHrTr/hTV8X8itTEWXUNIyTSXRQ+CBFbs9vjs3NxmMwMW+EdLbKXRLPOaTsWqwQZEHIjikpN/M4zt8IhNAT2vgUWn3qEbJm1O5FKLO3lDPO4w1Hrs9gVCmN/nppJeCIBOOdJVtYWtays4sIOt9OfLU0oVySyoLFDkXj6oay1TIn7GHSSyONgi8DoVI6Yzpd668WZBf4ESWxzZ2zBCoUh3/5wk9LekBbwwu1aKuQjIUvqOgoVRNl/7bii9mZpjdiRdj+pKSRHhfdUJAlh6dRJFuikSlfWlvV6m9BGZjJ182iOivX9VoNVhuzNQcWJcBcnEBiHzHrCDdNmQgnwb9YVL9WkNMjSLvgkEVPR5JgLGrKboieR5pckL4oa/A9sgPrejv8AR9SHQFXiUr40PzIf4Crz+e5oIbEg9TyeyUsqo50V7r1xoSDkczZn1oWQkboDwE+3nCO3DPfg1kU9U1lGy184aQO2GSwH0ek60m8lVJkamQsQtySDD89fQio9BcYe03tv+u1pQhSDjKuCZrly17GVCeUU0C3crS4sF34plsCRL+Qhuxz7JcYrEy7XOCGeWUQNAsDLyDj5z4rbhN/YaiXfxjenoUnWt3D336v0GlpESnL7hNgXOoUJsd8XFtZJXEl+JbCKtpbYo6zdTEyL1Pdm0WIlbtg2kZp4BS5pdQNDBRLTI7LiIKyOvNQ1Qrg76KN5LCSAqdlp7/HW6kN4uFN8b3wP+DVRo+JS+4I/UeS0ej/ZGATR+8ZYfLxY7JiGlPBdMr48rMjzSv37sCjZblPUqZc9gEUVTtgnWBakSj0zqwQb5uzTRP2t2klyKhJy4ErAO+Our4JDujGSlHMn0nVm4lTeXwCLtkZiI7KgBtfUUi9FRgQegMFXsMWgxOFQj6+DxlNWXGbPTA5Mpw0yjnrNWDNUCNSFAejfSOz+pAHalvjCoB+j1GEgeuh6L9B6iPgC1ZiIYwJc9OQYYSMyglgc8O1bvwLiMUJNnP1MpQiOR2bcM3Tg5Ur6VFyFLj/tPhCxT/dPwhO93xeDH4fEpaayeI3E4o11GtEjGJt7xUOqYvPCsVdMo2OFm5Kj/FVmEDiY0184+oBh3//vd7YeNtq62EK/wgKRmPKUx9cQeux7y673uWltlLIaOF7fUDMytGXsnBJNtwu7ALL+UPrgGLfuTFZszhDYvyeSkf+3XYDZr0Rk44aUKs+O1vFFoZ5RvCQ4qSMK4qnCxGZL+oO38/47wuEcOcfW+lbQyuXal8URA+NEy9V6r1HNw3bIccPy/JzomgsYy6jzhhsvivQ6njDE+BlfX8qtu+/wwPkkQjy9QvoO2wISZaiiTOhUreV8gzVKjhQawCnYoeRMkampf6IYNP3dPo4E7Y+9IqnwUsUzhhf+jI/0eQJgZQfTs90Z3ZlyVSQOFvSTwAuIhqfStmDcm3AgEEB7cH7KIir7n41W9rQgOiB7mMYpuJAMdAy6L6SlhTy0r3BdTT4aw7naBFMBzvTAsA9PzUH/oRmWyPc/id5xh+iCnGxYY3n6JNhTMuy7QpxInwCmqFbukpKjChzBD4xx93422DvCdgixWqnSPhw/Hi8PvFMvvBqoFZsgc2nfVv/eDhRa0swa5XqsDojsd15CaEM/at6ZSe6ZfRvJct6lxPElyy/vmR/xpoin3W+mOFAJF0edNNBm61F1IWwGcKYmQmB7PbXvuJak4GzeAxHNkVkOT4B8fHucYa7Y/2iz6j1NSgUxEwnR19DuVw/tecR8wGfFKuHdmtx1iWbTHolHKDDsSj4RAbekDHVmewS/0mKi/H2CbcWi82ugSX3ugfIq+bOj0Q45KQyVyCDgkcTkk8Gos8LMzBTdzFlGEZH3xAf65dCLCiSTp8ogJI/9T71mZPRGO5X3Sa5Sf83nUgsaqzGXMen5yFllqc3YR5ixor/K0rRM6stTbtSg9/R2BeiEvDNLgms3y4AKS0dCUbUvk7maJfT+noyhPP5C2SgN9i83wN/S5Pbel+nun3kYOM1f0WKDsNUzFgTIjMn7WGYOvk+eSb7c76U9uWXS3XKsiSEUN4Ijq1fWwh0woLeHcUFleZTAS3xR15QPKK6FXoM38z3xP2oYtXZxaC3j4cZ3kpmCpOBxA3G/gZAf8PTPxTm7nXJ3CM4k5RZfSiFKXXmTmayGjD8ZHxFcmCe3lUum9UOCLIBhlULOk5/0O06gYl4hK+5SzMn1uWBHsodZWQBUT9QGZ9WuwcaAilGGnsjuMveHWNwGc0zz79nc9BVemmHJnMuo/If1pC16nCpssWsqwYuMasOPB5dgZfdKCmwBfZapb7ka1Vyd2JJw9j5X2Ay2t86l9h0aUXNvVvltGbGO21vtk9A9ZBCjPXEFj71y8LpEhXCeCVk6+ILf6YohPPeFhrnSF7j9K6+9AVeyXPJ/H0ki80TRQbNGrNflBy6yTYYONCQScKyl7MseI7X1AcDUdIWDtaUU+bs8OWlUzK/fzLSWbMfrWEoZNzI9BOR4Fprvp3iQIDV0ZRalWhc4LxUlTVwQ5Oi6RcgunoboZaTZFtlZ1upfv2K7FgeckudlQfumGB3LXQZUu1kn5kehbRiqmGFSCSt5f8+Liif7zk1KUSAD0IDVXNCjMzl1+lFeI/N9q6oWdtoHo/7ZVAXA88eyhpq0mr9LMwFnHbZ9IcbtNOe3KbWZqy8IxrPTiN7LC32xbXUgcchLsPqT8a70fux4dotlSDJF+Og0w2n8srcGYimBznIYIp/F4elZ1i2H6rClE3VEy/Vs4KiXtqw/XX2bExdUiIrZvpL6czCtqpnYQGcg8x/D3/7k1eg7gKzskSXSc8+A/lypzGZjE3dGwPn7uvo/3/ZRaZeEk+XFu+nqd9i9cI8dFEH7UkLGgyaUtQIVAcvR4yDxLH+jHMo+n+mmRC3OFLEL1ZvfsA5RJOhkM+6LxgDv+N8SZ1uRNJw84sMqrs36/rGD+QLEPJMII1vWe6Tt4/oS42yjDrOLAzA8Rri4SruuCZe9VB4skfQwUHqwd2SAMLUh8ib2sqXIdeV8ofy2c/FoUs6JAngioXGaZ6sYckqSNus38wfEUAW1wP9GZJ/UcvzdDsfF5983RHqDG1uo0J9cg3d4Ze+YsesVf4WC5KrCVhmC2yUIsw5m8rbr2bn89XRzcJ1at5UmjeQH9kKQMuLNh1FdBkB4wNeoGb5Jynudq/5HR6mlmD1CVSMNdHM5KgxNs52AxpAI2cAy1s5EqtO0R+XfUmuzqXeo4WUuAFw8jpuHgc1VKal5++QLfarm3ORvpIlXzDeMAX7QByrf0g+w2qywPl3PjQuG9vc/ypLcgcYqTmSWmeTu4b8dEAEwVV5BmwJbnya1mXP3k9irqLJIuHExfTKeip757U0sdy4U2XNbeqLzs0z88CfONVMD1O+JGR2khw8VASmEyzwvFSy77D8d3XTayxB1xPJkGTQB26JmwFzKD7e5/PLqgRlxwToo16hKWS8EADa3I8PuJN0+vNwrEci/XcjPdNeSEkAaF84txtkvwJ6RuoajPxQyx+YDqB2BBabiFFBV8ZPpus9Lch25rwFeM+RPpRwNVCif5YRpZ5w1gIhHe/fsxEjV7Cc/yiZnre+QAdnvm0lkKbThymv3etqIo6NwVmbcYXfJaBZ903cy9wo1ru6iriYgAKv1A7/AS2gfh3KXKPmZPki+qetfXlixYFLKMTBsLZW9/oG6+spNavqB/bEcSfNPw5obJaOkMtE2cQcKT7ecWg9rVVHVWC1HHIdLn1qiVz0oR1YwuhxEvvCzhShDOmx+xaAf0EnOX5OR4X2aPN/4nHCd9WM7tVakdkdJYvQxMbem0czZTpWnT11kRIN08s672//7/IrhyezzHlDAwCeYVauN9MdvDZBzkE40iAWLODjmKb4sGd5ILg7qLGxvz2W6HLiz6uv1T7iFk+Yr3YMiE1204YHDzSgCnT2BMsb9W5KSfNoDQGZZRbG8rcipvGJR/i9udRKQBvXYUrJq9kZapT4YkFtCYzChtb9Bpc8kYDFBVMlEM/N8hF6XUEzepmUU8u8zx+daZ0oN/IfORRbeX63qTCk2hwadtd+BLjOpRzNBqeT6p0ATb4k9aZY8a8ybIUyFBw8KnshAXt9ndwT0+C+DncrgXqmF0uACxbDnyQtI4OeDrx81ROAoRUwDz9iEKEl9dGvFfSTVYZb6YYyPnLu9LZqbXpWtxqZDEvU2SxrZNPommKr77kyvJ7FbkGm4XKJxVl0nraorkUDU4QxZgNyPzmumhziYnGqdFdYnJDXTOAj1LPibNCrZi3t37I7qKpNiVRl0NwiNbDyt89Kq4SP+6j/DeJr9CZXtnfLGrLZ/npZfDREdQ6DZUsktre7+oiKD0vEJSGDFqULKwwjcJfNGw4oXBamxoTErrkp3iBCgvOl+2vpOzYyJWppTtr679GUjIY+upi3Q0zeB6j8DpLTUEoyKOPdZyShk5zVuE2hqdqz2tts4YHCCjUhoVyP9zoWyinlcIQIe7Z7f4TtF/8B/tfkIh9nzzEKp0YvtvfRqplKxoVMI6WCsXmwiq2KwV+utLocL/Lu68gieRTcJWplCeW1ZZkgbvTXlX8Qk9Av7E4w68ujSJi/JTty9oDY2COXvwY/y+sqCPl3mUnj7CoEh39bzs38Jskt5YXdtElkGCJbBGagLJWyZBLGZ3YeFNTkNT60DRcEOqJhVNm0rApuytnhnTpAJKKsCoZl8Myk81v6dMyHTgrevLz5+5K9YPjvB42KCl1l3d1HBmIIgaHu89BGRQ/L+nkzGc81DQDk4U1nXpWYk9Xl1t3iGDlTDjcHE1XH769AjvTephNBSH7Be0+ht6nCB5ozG2JAB8SR+aW41susX0uV4oc+Bn7XnUluDW5GCjGC95Mq7TX6WtTFfEF9P6+nm1OtargBjV42sY9lxHpX7WHSEBV02kMC3iMflNsjMXJWoL/o9GQQpXy8PCBn9VVgLo6r8ZRMBINLmIHl/L18+bUxS0q1M5IGgmq1mpzgrbui2H1eaTlfcPi91QNmsVfzK5t55IcjXNnB6b5IVPuqoXw6CdA3XczMAdQ/GQLNXy82+Y20RIY3VnOb3hNDnzvC6WiSpliY+1mdtTUekjyd0x/Ev4+DJC3uhJODlB49GRxmSicLV77ouWRL/LSz0G718AcklDm8XjkYCZYxB4tQbOh54iCU58Ptvjdrzye93XcZQGpN6dRQW4V3kY1MpV+xUrk19/Z4xKlu7nxX1FKwiAVZyMAeR3PORy18/S+8KiHNxsnIsFcWGGuyQWNwzMgwO8kXJUVg1eUq5/pFKcVTT3uaYarD9txP1PCcU6W5k3o6WKEODUHJRnTOij05jOF269X1jRQ6nXmLr3brZYbeft/3bG6tSV9Ff+AHu5ScaCL9Ywt03KIsV316yUJ2dAj5WmEBzNMyBwu3xcl199aLMBhOF0T8o7KjTQogPRanAg/EGZZ2vnLb3t5vHVvWR5Ehd1x8RcM/EpqjyDLqMzHF9RKfiDhvri2Y6bJhz0lffRCK+NVuuexVT+hLLD9P95mQWwe/5SfYiEGWB3/+XQc39b1+76bqBIIzv5Ww2AbiIhky94wXIbBpwenBjPRAVaV8D5eHo4Vyr/URT/AhqPuUCrlzDva1OxoCprbEZswJLQJWCnDOYZ+0aoNREcl5KdpfSGH4XRnmETpkmly9Y3heUzIOPYDgiviRSN+ZZDOKiiFGI4uUSKLSlZ5o7pVRPeexMlkS3zMupdd2WIiSxaTBejnby8DqY7b6+1yYifgvPpBFtcX7gs3qya2SF4R4C3xwgd5ORl/Vwr4De81aVzKOqZJhkubxb+YN63TS/3GO69G+1DACyCNb0GIKrWaW0a+DEnPGNlXbgKvyxND5iZN6WufE9vhIr/wjykWhFy5XtnDKPLeoBJSQy3KSjogj5Ahvv9GSQi8kWAZzWdm9NY+K/AtvmAcS6k1G0CFK4WG7O2nkBmQBXyvI2DdAhtiOMnzWrs5J7zlEZRlqbb0duLMS8O3EzKHBJ9uauw/CIa+XZsS84u3Z2le0hX6dVqTNkO5XMENVHWvluGA7KnggmknPkVBUG5qKBiw9ZBWUCsDG6x7pTPgfxvhPr9c43UnOL5UvGTeDdGc6SykWk+gh0z1QbjksVyaDQkG1ETo5mOwtPhpYvwcGbVhAS0V8/t+9aRh2yeBWdXYAvbaX85mbfcJV/I8RkT5HJstCqZZDYX0omLHqNBob/7ZAlUYhUMkBPW4GMUEgAwfDnK6kPye9D2OOR0JSDyOdM4/EZndMB16o7+no81zu+2sqleLp6Kmg0HMeC/BqS1+KYfMpuagku8B8zt1xJcxlU4sNSfl4agM2aA2owI/mCtP49r060UJuV2xgdzIHBJEPwGD5kzh3w2hVUBIrUrA7CoovWUpJwJuqOzwlfvbvPuI9Jp9Rjui717wN9/nw2GHIX6ZOZBMkVgckqA/OG1fDzRDv3ch8qtWmNBeU5mOCQ6MoGJE6M2DLZFIXUI8bSO+uL5FRW0gRnNBTvdgDw1d51NlibI2U+HSYaLpaG6cpJaByHCNELxG0W6wGgjB3zuQ7D0Wt57gKPmcvu2jXwMqRUcvSMFHTrHkpyWdblRi8LCtCWD0ktsd5HrsN0w2knAEy+/K0qCJvtmJ8lI8LOvyHOL+ThjB2L7plYC/ZW34NCznXzoXCCTEBt+r+eNs1kNEhqkqn+NBMY7dvp/WmBwcJzFg10H47zaSm0aKtdk6SZUT8g0lCqIUegsT5Ooexspsb7jn1eMiCCPpDR1IwYwHFe9ICGBUobCMcTGzTOxArVWR+VdnAy3D0qqg1i5Nk/5A9o84upMfNNUzU59PJSt02T+JQ5ttHXOVQVpF88lL7YYmfQZA6wdWXmPcBZ+ILfYEmf+spKRKeMh5zKdR94HGwWVDLOK/5Mhw9y3Na6HNL21o+iLDfNpDDJ/y34d+ruYF+rp0K8euw9GkcsxX2GIKxlVn3qVwH1lu0wqThLHNDWtGi3cBqC1ypW+XvkNNvBnbbu0K3jnD7Z5by7QW4PIT71pIEn8b1rqYeMpJjMlRySlcNyb7Fd76nl66hJ0K8DSE8G0ZW6BaVRFlWAaQcAVYtIsTCRBGAIy/ClNklBB4KKa8MrutKbKE2aCLJuSHLUYwQ6zhzt6pwqFNdrgelSdvAdFR9kNSf+SKfwI6DxzWhhakdk0Mgpvs1s4N54XWGp44GbzDB3mFqDawFMho8z6F7QgdYcPMoZc80f0Vm+bqJEAQC7sYBmk7+Sm9eT7qXSf2zjidiSiwV224Zk7Vx+IqlHty7Z3RZMS8BvQZvhln5QzmsaznUt9TuHBGSmw3EVMwiBoyKIy7NPXAW78Qwjl/j2fXIkGOX9ZDGly1Md9PAvdvULzrn6vCw+tuShvkyxTSBRmE0Mqak818W3irNxoga7jKjSGRNF7mNHsJc3KsnaINGP5v+wZuxYXoQhO7d6e66mShy503gmg7tqX72A2iARMEWGTV2S+pGMpBwZlfysYUMvy7TRZTOh1B04r4j+gzrP/YS8PrXroyWvXSrTHlkyDGmgpjffKdncP0PB5ZrSAUUPpPsvwGbOwT2op5M0NQiGKXMu1fEvyA/Pam6UkIk9Pc2VB17aKseVRP/NFPoKfSeYKzNNUNbpEuQDg4HVnI7zw5lJjTCzp5jujGFK56acCdPWanh4NcxJUX4KTTabutfKGLk1WQ1rWCL6/ly0JNptp57YyHWyDpHkZa8XUHLbEK2ET1A8A9sh0rx0bPiGUyB6j4q2w0O8CxHZfvoFhawTj1yHaOPT1GqHf3bV8bP+uIWNAZ9wDVJ10sdXs0FXtb+g27TLoH+hz/NOa1KDXhrMjTc2+suY0zhRu7vDqC2Jvi7JDkOSIkUw0SHUgIpiHFUmz++pgY87MHY/011+UOUkxbskcbjNi2Bzg0cwwuOCAqdw7y+xwl1G5ClTmjHzAIolB2qpIbyZaQpf81aIUhxzAhMxbGTTaK4S9CSO7CidWwDuvwGNKpRsuf6KvbWvRWDbxmi/QOC18hyU4Nuv0+pyCwss8wdM6uPTbD+pBL+FJqMf8gUZxJ3nr/czARRQPrDHNTq6st8M6pLPV8mGh3ihY2Kr5uP+MwcwL2N4KrwMfeTIgY68uqpz0h08ThpoeX2hR0fcS+ZgI57zAwNaNygiq+fxObcyIp4THZyRu2mUVH7ovuxVBg9/qZyMdmjiEB1fYwLp6caPscGTt8IstnqXmTj0T3IOeReTYxirDhR2IMjLtP6JK3XGNj9VriD1YP5Rq4HKXc0Rq9TFr8r6a97JZf95BBq7NjR4t+0gGw7sC4YWZelu4suReWI/0ajdSH1TbR5TfQz5k/fYzztvmFPinmrCNCZWYQShRnGS6WMTygWo/umETSY65kPObdaMynmE8vaZsYjdFuinDSRgnkgAxj4Lj3i3p/FkWYM6ThKOApjWYlRvNnXG0ggIdzzBint5cRug7KOY8zDU88mwCmKAAnnmbESeeYFtD/mEmLuBwtV8dqLoeAMT5niBUccvs0B7BNlcrE61q6KqWxq7IBn+WCUx7HzklZd5USdeJM/M2GW95HIVZjkgTatWqnf/qQvqrAdft2BQ/OwkuUasOGxMD19rLC3SF4Qkt0159N9dr6e0Li6Fhj7/aKxqZeGuBR1kg+eybO7GgnqQVFmOpo1kdQTsuebKysDhEP8w9pFI+G595H5aF1gEW3zfw2dJ0WQwrtUqvfxQbIg59/UldbMc+2Ti1aqE7iNjgul9cCHw5STXet4xKPKcWi1IjLeeDnbqcevy01AbqkYDGFqd79V1sh3yEPldVW5vQhScTau0GeDlScvqKvFJQvOVVAdkxqsbvu4SqQ6UEHBAfq38Inyw/HdDZw/wBwsu7Vo7jmyI2xwi71d13ja+p5i1iL0QmhOBNoyZatrdZ21M3yx96pe9ahfjG8sVJqLeFS40pYp6RkTq6SO83KDDivgnnrZmEyisgRVa57yDW2ZRNWLMXVjaWGlzcsNuqFi92uTNePEP1Of3kjDXvF+WCgB+eUYvfKYiq5FG8Lg7UepyOgq1N6Gw7WLH5l/TBFC4s80Dbg0WZ4Bm3FtVTeowWEWoWY9ORqYpNkl6Um7jD0FWf/9yzOsy9BFMX59Nkaiqy3LVULskvBal7QkDy/tb57HD2LH3LpY7KR0Sfy5VA/Nnd2Eh7S">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A53D34E5">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="mNZh5n9/v0o2j42G0DrU3XOvM/tyu2Jp7QwWGzmY/VF9TFwwEeP5Z0vJxHa2U2EEs2kqh3R1pgyyCUOtpZN3b/7WVtogcwUt9/25IeWxF8WVomcmEpXgtxi3zIH+RJJvp132Gw==">
+</div>
+  
+    <header>
+        
+    
+
+
+<div class="menu-wrapper">
+    <div class="content-wrap">
+        
+            <a class="topmenu-logo" href="https://www.scirra.com/"><img src="./Login básico usando MySQL database BR_files/scirra-logo-small-01.png" width="101" height="28" alt="Scirra Logo Small"></a>
+        
+        <ul>
+            <li><a href="https://www.scirra.com/construct2">Construct 2</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/manual">Manual</a></li>
+            <li class="selected"><a href="https://www.scirra.com/tutorials">Tutorials</a></li>
+            <li><a href="https://www.scirra.com/store">Store</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/arcade">Arcade</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/blog">Blog</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/forum">Forums</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/education">Education</a></li><li class="split"></li>
+        </ul>
+        
+            <div class="guest-panel">
+                <a href="https://www.scirra.com/register" title="Create a Scirra account">Register</a> or <a href="https://www.scirra.com/login" title="Login to your Scirra account">Login</a>
+            </div>
+        
+        
+        <div class="clear"></div>
+        
+        
+        
+        <div id="AlertsDropDown" class="alerts-dropdown">
+	
+            <div class="dropdown-tip"></div>
+            <div class="dropdown-links c sm">
+                <a href="https://www.scirra.com/alerts">View All Alerts</a>
+            </div>
+            <div class="hr"></div>
+
+            <div id="alerthtmlwrap"></div>
+
+        
+</div>
+
+    </div>
+</div>
+
+        <div class="content-wrap">
+
+        </div>
+    </header>
+
+    
+    <div class="clear"></div>
+    
+
+    
+
+    <div class="content-wrap">
+    
+        
+
+<div class="sub-menu">
+    <ul>
+        <li><a href="https://www.scirra.com/tutorials/all">All Tutorials</a></li><li><a href="https://www.scirra.com/tutorials/37/beginners-guide-to-construct-2">Beginner's Guide</a></li><li><a href="https://www.scirra.com/tutorials/top">Top Rated</a></li><li><a href="https://www.scirra.com/tutorials/newest">Newest</a></li><li><a href="https://www.scirra.com/tutorials/submit">Write a Tutorial!</a></li><li><a href="https://www.scirra.com/tutorials/search">Search</a></li>
+    </ul>
+</div>
+        
+        
+        <div class="right-bar">
+            
+            <input name="ctl00$BodyContent$TutSearch" type="text" id="TutSearch" class="TutSearchBox"><input type="submit" name="ctl00$BodyContent$BtnFix" value="" id="BtnFix" style="width:1px;margin:0;padding:0;position:relative;left:-30px;z-index:1;">
+          
+            
+            
+            
+                <div class="edit-wrap">
+                    <h2>Edit Translation</h2>
+                    <p>
+                        Want to improve this translation?<br><a id="EditTransLink" href="https://www.scirra.com/tutorials/submit?action=edittrans&lang=13&ID=525">Edit this translation</a>
+                    </p>
+                </div>
+            
+            
+            
+
+            
+                <div class="edit-wrap" style="margin-bottom:-15px;">
+                    <h2>Translations</h2>
+                    
+                        <ul class="lang-list">
+                            <li><a href="https://www.scirra.com/tutorials/525/simple-login-using-a-mysql-database">English (<em>en</em>)</a></li><li><a href="https://www.scirra.com/tutorials/525/login-simple-avec-utilisation-dune-base-de-donnee-mysql/fr">French (<em>fr</em>)</a></li><li><a href="https://www.scirra.com/tutorials/525/login-sederhana-menggunakan-mysql-database/id">Indonesian (<em>id</em>)</a></li><li><a href="./Login básico usando MySQL database BR_files/Login básico usando MySQL database BR.html"><em style="display:inline-block;padding-left:5px;">— Portugese (Brazillian)</em> (<em>pt-br</em>)</a></li>
+                        </ul>
+                    
+                    <p>
+                        Know another language?  <a id="TransLink" href="https://www.scirra.com/tutorials/translate?ID=525">Translate this tutorial!</a>
+                    </p>
+                </div>
+            
+
+            <h2>Stats</h2>
+            <p style="display:block;margin-bottom:5px;">
+                406 visitors<br>741 page views
+                
+                
+                
+            </p>
+            
+            
+
+            <div id="tutNav" style="display: none;">
+	
+                <h2>Index</h2>
+                <div class="tutorial-nav">
+                    <ul>
+                        <li><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/page-1#tuttop" onclick="return menuLinkClick(1,1000);" class="selected" id="lm_h_1000">Overview</a></li>
+                    </ul>
+                    
+                    
+                    <ul class="social">
+                        <li><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./Login básico usando MySQL database BR_files/tweet_button.d9c893c960e2d3574122a44beba13539.en.html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-vertical" title="Twitter Tweet Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 56px; height: 61px;"></iframe></li>
+                        <li class="fb"><iframe src="./Login básico usando MySQL database BR_files/like.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:90px;" allowtransparency="true"></iframe></li>
+                        <li><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I0_1433030085260" name="I0_1433030085260" src="./Login básico usando MySQL database BR_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div></li>
+                    </ul>
+                    
+                </div>
+            
+</div>
+            
+
+
+             
+
+        </div>
+        <div class="main-content-area">
+            <a name="tuttop"></a>
+            <div class="c" style="text-align:left;"><h1 id="TutTitle">Login básico usando MySQL database</h1></div>
+            
+            <div id="CookieNav" class="cookie-nav">
+	
+                <a href="https://www.scirra.com/tutorials" title="Gamedev tutorials">Tutorials</a> &gt; <a id="DifficultyLink" href="https://www.scirra.com/tutorials/beginner">Beginner</a> &gt; <a id="CategoryLink" href="https://www.scirra.com/tutorials/general">General</a> &gt; <em>Login básico usando MySQL database</em>
+            
+</div>
+
+            <a id="FavLinkDo" class="fav-wrap" href="https://www.scirra.com/tutorials/525/simple-login-using-a-mysql-database/pt-br?action=fav"><div id="FavStar" class="fav-star">
+
+</div>
+                <div id="FavStarData">
+                    Favourite
+                    <span>31 favourites</span>
+                </div>
+            </a>
+
+            <div class="auth-wrap">
+                <a id="AuthLink2" title="View emperorkk&#39;s profile" href="https://www.scirra.com/users/emperorkk"><img id="AuthorAvatar" class="avatar" src="./Login básico usando MySQL database BR_files/1d8932a61367fb3b9677c9bf5ea4a220.png" style="height:42px;width:42px;"></a>
+                Tutorial written by <a id="AuthLink1" href="https://www.scirra.com/users/emperorkk">emperorkk</a><span>Originally published on 5th, April 2013 - <a id="RevisionLink" title="View revision history" href="https://www.scirra.com/tutorials/525/simple-login-using-a-mysql-database/revisions">3 revisions</a></span>
+            </div>
+            
+            <div id="TranslationTeam" class="translation-team-wrap">
+	
+                <h4>Translation Team:</h4>
+                <ul>
+                    <a title="Hydroper" href="https://www.scirra.com/users/hydroper"><img width="32" height="32" src="./Login básico usando MySQL database BR_files/0754088affc4ab91c77a9b05dcceb6f5.png"></a>
+                </ul>
+                <a id="TransRevisionsLink" class="trans-rev-link" href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br/revisions">3 total revisions</a>
+                
+            
+</div>
+            
+            
+
+            <div class="tut-content-wrap" id="tut-content-wrap">
+                <p>Olá à todos! Neste tutorial eu estou ensinando como fazer um login (básico) no Construct 2. Antes de começar o tutorial, é recomendado que você conheça um pouco de mysql (sabendo que mysql é um banco de dados, e não é muito complicado, depois acostumamos, e é preciso ter acesso à ele, o phpmyadmin é um bom utilitário, crie uma conta no hostinger.com e tenha um gratuitamente), e é preciso que você ter um servidor web instalado localmente em algum local (dica: você também pode usar o Hostinger para ter um, hostinger.com).</p><p></p><p>Vamos criar uma tabela de banco de dados que irá conter a informação do membro.<br>Vamos usar o script do lado do servidor para falar com o banco de dados, neste caso, php, uma vez que é mais comumente disponível em sistemas Linux.<br>Vamos usar AJAX plugin para acessar o script do lado do servidor, na forma de uma solicitação GET.<br>Primeiro, para criar uma tabela, você terá que executar isso em um estúdio de gestão mysql como phpmyadmin.</p><p>Criar tabela `mydatabase`.`members` (</p><div id="highlighter_784169" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">`id` int( 11 ) NOT NULL AUTO_INCREMENT ,</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="plain">`username` varchar( 30 ) NOT NULL ,</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="plain">`email` varchar( 50 ) NOT NULL ,</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="plain">`password` varchar( 128 ) NOT NULL ,</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="plain">PRIMARY KEY ( `id` ) ,</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>6</code></td><td class="content"><code class="plain">UNIQUE KEY `username` ( `username` )</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>7</code></td><td class="content"><code class="plain">) ENGINE = MYISAM DEFAULT CHARSET = utf8;</code></td></tr></tbody></table></div></div></div><p>Agora, temos a tabela que armazena a nossa informação do membro. Por favor, note que eu não estou usando criptografia para manter as coisas simples ou saneantes sql além de remover o extra "Eu adicionei intencionalmente". É muito recomendado para criptografar a senha, se você estiver indo para usar isso em ambiente de produção.</p><p>Agora vamos adicionar algumas informações de login.</p><p>INSERT INTO `members`(`username`, `email`, `password`) VALUES ('myuser','myemail@domain.com','mypassword')</p><p>Para acessar o banco de dados que está usando um script php intermediário que nós ligamos com o plugin AJAX de forma a proteger o nosso banco de dados.</p><p>Carregue o script a seguir e salve-o como "login.php" (sem aspas) no seu servidor WEB.</p><p>&lt;?php</p><div id="highlighter_737195" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="plain">$username = $_GET[</code><code class="string">'fname'</code><code class="plain">];</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="plain">$password = $_GET[</code><code class="string">'fpass'</code><code class="plain">];</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="plain">$con=mysql_connect(</code><code class="string">"mysql"</code><code class="plain">,</code><code class="string">"database_user"</code><code class="plain">,</code><code class="string">"database_password"</code><code class="plain">,</code><code class="string">"mydatabase"</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="comments">// Check connection</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="keyword">if</code> <code class="plain">(mysqli_connect_errno())</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">echo </code><code class="string">"Failed to connect to MySQL: "</code> <code class="plain">. mysqli_connect_error();</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content"><code class="plain">$qz = </code><code class="string">"SELECT id FROM members WHERE username='"</code><code class="plain">.$username.</code><code class="string">"' and password='"</code><code class="plain">.$password.</code><code class="string">"'"</code> <code class="plain">; </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="plain">$qz = str_replace(</code><code class="string">"\'"</code><code class="plain">,</code><code class="string">""</code><code class="plain">,$qz); </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content"><code class="plain">$result = mysqli_query($con,$qz);</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content"><code class="keyword">while</code><code class="plain">($row = mysqli_fetch_array($result))</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">echo $row[</code><code class="string">'id'</code><code class="plain">];</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content"><code class="plain">mysqli_close($con);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div></div></div><p>Na terceira linha, você verá as informações de conexão.<br><em>$con=mysqli_connect("mysql","database_user","database_password","mydatabase");</em></p><p>Mysql normalmente é localhost na maioria dos servidores web.<br>Mudam comforme necessário para tentar se conectar ao seu banco de dados.</p><p>Se você tiver problemas ao acessar o seu servidor web de outros sites, acrescente a primeira linha:<br>header('Access-Control-Allow-Origin: *');<br>Então, a primeira linha mudaria para:</p><div id="highlighter_618320" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">&lt;?php header(</code><code class="string">'Access-Control-Allow-Origin: *'</code><code class="plain">);</code></td></tr></tbody></table></div></div></div><p>Agora vamos para o Construct 2. Precisamos adicionar ao nosso projeto umas trêws variáveis globais.</p><p>Username (text)<br>Password (text)<br>UserID (number)</p><p>Agora teremos que adicionar à nossa layout dois "Text Box" (caixa de texto) plugins vamos chamá-los de usuário e senha para facilitar a consulta.</p><p>Também vamos adicionar um "botão/button" para usar o evento de autenticação.<br>Vamos nomear este botão de "Login".</p><p>Agora, para acessar o nosso script php, vamos utilizar o plugin "AJAX" para adicioná-lo ao seu projeto.</p><p>Para fazer com que o usuário tenha que preencher algo antes de clicar em "Entrar", vamos definir o botão Login para começar como deficientes (Faça isso usando a seção atributos após clicar em "Login", à sua esquerda).</p><p>Primeira coisa a fazer é usar as caixas de texto para preencher nossas variáveis globais.<br>Adicione um evento para cada uma das caixas de texto em texto alterado.</p><p>ie<br> event Username On text Changed<br> action System Set Username to Username.Text</p><p>Para realizar uma verificação simples para o usuário preencher as duas variáveis, podemos adicionar uma verificação se algum deles são iguais a nenhum evento.<br>Então, adicione um evento, na forma de:</p><p>System Username = ""<br>or<br>System Password = ""<br>action<br>Set Login Disabled</p><p>Agora, o usuário é capaz de dar um clique no botão Login, a menos que as duas variáveis tênha alguma coisa lá dentro.</p><p>Agora, adicione mais um evento para habilitar o botão Login (Use o botão direito para fazer isso).</p><p>event else<br>action Set Login Enabled</p><p>Agora precisamos adicionar um pedido AJAX para obter o acesso autenticado. Nós vamos usar o botão Login para fazer isso. Então adicione agora um evento para o botão Login.</p><p>event Login On clicked <br>action AJAX Request Tag "Login" URL "http://mydomain.com/login.php?fname='"&amp;Username&amp;"'&amp;fpass='"&amp;Password&amp;"'"</p><p>Altere o caminho de acordo com onde você enviou o script php.</p><p>Agora precisamos obter as informações de Login de volta.<br>Então, adicionar um evento, na forma de:<br>event<br>AJAX on "Login" Completed <br>action<br>System Set UserID to AJAX.Lastdata</p><p>Agora precisamos ter um gatilho em execução uma vez para cada canal verificar se temos uma resposta válida e ter limpeza em nosso layout.</p><p>event <br>System UserID&gt;0<br>System Trigger Once<br>action<br>Login Destroy<br>Password Destroy<br>Username Destroy</p><p>E agora temos o UserID de volta e fez com que o usuário tenha sido autenticado em nosso banco de dados.</p><p>Sua folha de evento deve ser algo como isto.<br>Obs: O tutorial não pertence a mim, eu apenas di uma pequena traduzida. Tutorial por: emperorkk - Link original do tutorial: https://www.scirra.com/tutorials/525/simple-login-using-a-mysql-database<a href="./Login básico usando MySQL database BR_files/Screenshot_1.png" target="_blank"><img width="578" height="337" class="article-image thumb-img" src="./Login básico usando MySQL database BR_files/Screenshot_1.png"></a></p><div class="full-size-img"><a href="./Login básico usando MySQL database BR_files/Screenshot_1.png" target="_blank">Open full size image</a></div><!--imgend--><br><p></p>
+            </div>
+            
+            <div id="TutFinishShare">
+	
+                <h3>Congratulations on finishing this tutorial!</h3>
+                <p>Did you learn a lot from it?  Share it now with your friends!</p>
+                <ul>
+                    <li><iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="./Login básico usando MySQL database BR_files/tweet_button.d9c893c960e2d3574122a44beba13539.en(1).html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-vertical" title="Twitter Tweet Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 56px; height: 61px;"></iframe></li>
+                    <li class="fb"><iframe src="./Login básico usando MySQL database BR_files/like.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:90px;" allowtransparency="true"></iframe></li>
+                    <li><div id="___plusone_1" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I1_1433030085347" name="I1_1433030085347" src="./Login básico usando MySQL database BR_files/fastbutton(1).html" data-gapiattached="true" title="+1"></iframe></div></li>
+                </ul>
+            
+</div>
+            
+            
+
+            <a id="CCNotice" title="This tutorial is licensed under CC-Wiki (attribution required)" href="https://www.scirra.com/tutorials/creative-commons"><div id="Panel1">
+	
+                    <img src="./Login básico usando MySQL database BR_files/cc-logo.jpg" width="214" height="59">
+                    <h3>Share and Copy this Tutorial</h3>
+                    <p>
+                        You are free to copy, distribute, transmit and adapt this work with correct attribution.  Click for more info.
+                    </p>
+                    <div class="clear"></div>
+                
+</div></a>
+            
+            <div class="clear"></div>
+
+            
+
+
+
+            
+
+
+    <h2>Comments</h2>
+    <a name="comments"></a>
+    
+    <div id="all-comments-wrap" class="all-comments-wrap">
+        
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-166560">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/525/pt-br/login-bsico-usando-mysql-database?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/525/pt-br/login-bsico-usando-mysql-database?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/hydroper"><img id="AuthorAvatar" class="avatar" src="./Login básico usando MySQL database BR_files/0754088affc4ab91c77a9b05dcceb6f5(1).png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/hydroper">Hydroper</a> <span class="repamount">221</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>~~~~~~~~RES</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;Hydroper&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/525/pt-br/login-bsico-usando-mysql-database?action=reportcomment&page=1&commentID=166560#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Wednesday, October 01, 2014 at 3:50:49 PM">8 months ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-272021">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/525/pt-br/login-bsico-usando-mysql-database?page=1"></a><div class="votecount">1</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/525/pt-br/login-bsico-usando-mysql-database?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/ricardoalvarenga"><img id="AuthorAvatar" class="avatar" src="./Login básico usando MySQL database BR_files/8593da3af61a5d989f0f607f5af8d1c5.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/ricardoalvarenga">ricardoalvarenga</a> <span class="repamount">209</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>funciona em android?</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;ricardoalvarenga&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/525/pt-br/login-bsico-usando-mysql-database?action=reportcomment&page=1&commentID=272021#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Wednesday, March 04, 2015 at 11:50:03 AM">2 months ago</abbr></div>
+                    </div>
+                </div>
+            
+                <a name="lastcomment"></a>
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-386801">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/525/pt-br/login-bsico-usando-mysql-database?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/525/pt-br/login-bsico-usando-mysql-database?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/hydroper"><img id="AuthorAvatar" class="avatar" src="./Login básico usando MySQL database BR_files/0754088affc4ab91c77a9b05dcceb6f5(1).png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/hydroper">Hydroper</a> <span class="repamount">221</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <div class="quoted-text">funciona em android?<div class="author">quoted from <strong>ricardoalvarenga</strong></div></div><p>Acho que sim. Faz muito tempo que traduzi este tutorial, eu não sabia inglês muito bem, daí eu usava o Google Translate, mas em breve vou arrumar.</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;Hydroper&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/525/pt-br/login-bsico-usando-mysql-database?action=reportcomment&page=1&commentID=386801#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Sunday, May 03, 2015 at 4:00:29 PM">27 days ago</abbr></div>
+                    </div>
+                </div>
+            
+    
+        <div class="comment-wrap">
+            <div class="comment-page-wrap">
+                <ul id="comment-page-list">
+                    <li style="display:none" id="prev"><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br?page=0#comments" onclick="changeCommentPage(currentPage - 1); return false;">Prev</a></li><li><a id="comment-pagelink-1" href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br?page=1#comments" class="selected" onclick="changeCommentPage(1);return false;">1</a></li><li style="display:none" id="next"><a href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br?page=2#comments" onclick="changeCommentPage(currentPage + 1);return false;">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+<div id="comment-template" style="display:none;">
+        
+    <div class="comment-wrap actual-comment" id="comment#IDOfComment">
+        #badgelink
+        <div class="hr"></div>
+            <div class="comment-inner-wrap">
+            <div class="comment-vote-wrap" id="vote-wrap-#IDOfComment">
+                <a id="DownvoteLink" title="Downvote this comment" class="#downvoteclass" onclick="commentVote(false, #IDOfComment);return false;" href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#baseURL?action=commentvote&upvote=0&page=#currentcommentpage&commentID=#IDOfComment"></a><div class="votecount">#currentvotecount</div><a id="UpvoteLink" title="Upvote this comment!" class="#upvoteclass" onclick="commentVote(true, #IDOfComment);return false;" href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#baseURL?action=commentvote&upvote=1&page=#currentcommentpage&commentID=#IDOfComment"></a>
+            </div>
+            #avatar
+                #authorlink <span class="repamount">#rep</span> <span class="rep-txt">rep</span>
+            <div class="comment-edit-wrap"></div>
+            <div class="body">
+                #comment
+            </div>
+            <div class="comment-cp">
+                <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;#authorUsername&#39;);"></a><a id="EditCommentLink" title="Edit this comment" class="edit" onclick="editComment(#IDOfComment);return false;" href="javascript:void(0);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/525/login-bsico-usando-mysql-database/pt-br#baseURL?action=reportcomment&page=#currentcommentpage&commentID=#IDOfComment#report"></a><a id="DeleteLink" title="Delete this comment" class="delete" onclick="deleteComment(#IDOfComment);return false;" href="javascript:void(0)"></a>
+            </div>
+            <div class="time-ago">#timeago</div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="comment-form-wrap">
+        <h2>Leave a comment</h2>
+        <p>
+            Everyone is welcome to leave their thoughts!  <a id="RegisterLink" href="https://www.scirra.com/register?return=/TutorialViewFresh.aspx?ID=525&lang=pt-br&bodypage=1">Register a new account</a> or <a id="LoginLink" href="https://www.scirra.com/login?return=/TutorialViewFresh.aspx?ID=525&lang=pt-br&bodypage=1">login</a>.
+        </p>
+    </div>
+
+
+
+            
+            <div id="comment-end"></div>
+
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+    
+    
+    
+
+    <script>
+        var articleID = 525;
+        var totFavs = 31;
+        var langID = 13;
+        
+
+
+
+        function ReportTut() {
+            var formDiv = $('#ReportTutForm')   ;
+            if(formDiv.is(":visible"))
+                formDiv.slideUp('fast');
+            else
+                formDiv.slideDown('fast');
+        }
+        function SubmitReport() {
+            var reason = $.trim($('#ReportReason').val());
+            $('#ReportReason').val(reason);
+            if(reason.length < 4) {
+                $('#ReportError').slideDown('fast');
+            }
+            else {
+                $('#ReportError').hide();
+                $('#ReportReason').attr("disabled", "disabled");
+                $('#ReportButton').attr("disabled", "disabled");
+                
+                $.ajax({
+                    type: 'GET',
+                    url: '../../../handlers/fresh/articles/reportarticle.ashx?articleID=' + articleID + '&languageID=' + langID + '&reason=' + encodeURI(reason)
+                })
+                    .success(function (response) {
+                        $('#ReportTutForm').slideUp('fast');
+                        $('#repwrap').html('Thank you for your report!  We really appreciate your efforts in helping make this site a better place to visit!');
+                        $('#repwrap').attr("style", "color:green;");
+                    });
+
+            }
+            
+        }
+
+        function UnFav() {
+            $.ajax({
+                type: 'GET',
+                url: '../../../handlers/fresh/articles/fav.ashx?articleID=' + articleID + '&action=unfav'
+            })
+                .success(function (response) {
+                    totFavs--;
+                    $('#FavStar').attr("class", "fav-star");
+                    var s = "Favourite<span>" + totFavs + " favourite";
+                    if(totFavs != 1)
+                        s += "s";
+                    s+="</span>";
+                    $('#FavStarData').html(s);
+                    $('#FavLinkDo').attr("onclick", "Fav();return false;");
+                });
+        }
+        function Fav() {
+            $.ajax({
+                type: 'GET',
+                url: '../../../handlers/fresh/articles/fav.ashx?articleID=' + articleID + '&action=fav'
+            })
+                .success(function (response) {
+                    totFavs++;
+                    $('#FavStar').attr("class", "fav-star fav-star-gold");
+                    var s = "Favourited!<span>" + totFavs + " favourite";
+                    if(totFavs != 1)
+                        s += "s";
+                    s+="</span>";
+                    $('#FavStarData').html(s);
+                    $('#FavLinkDo').attr("onclick", "UnFav();return false;");
+                });
+        }
+        
+
+
+
+
+        // Preloads all article pages
+        var totalTutorialPages = 1;
+        var pages = new Array();
+        var pagesLoaded = false;
+        var currentTutPage = 1;
+        var tutTitle = "Simple Login using a MySQL database";
+        var baseHref = "/tutorials/525/login-bsico-usando-mysql-database/pt-br";
+        
+        // Holds Y coordinates of h2's
+        var menuItems = 0;
+        var h2YLocations = new Array(menuItems);
+        for(var i = 0; i < menuItems; i++) {
+            h2YLocations[i] = 0;
+        }
+        var pageFirstY = 0;
+        var pageLastY = 0;
+        var changeMenuPadding = 50;
+
+        // Finds instances of h2 in body and saves Y coords
+        function getH2YIndexes() {
+            var found = false;
+            for(var i = 0; i < menuItems; i++) {
+                
+                // It exists on this page
+                if($('#h2ix' + i).length > 0) {
+
+                    if(!found) {
+                        found = true;
+                        pageFirstY = i;
+                    }
+                    pageLastY = i;
+                    
+                    // Not yet discovered
+                    if(h2YLocations[i] === 0) {
+                        h2YLocations[i] = $('#h2ix' + i).offset().top;
+                    }
+                }
+            }
+            // No h2's found
+            if(!found) {
+                pageLastY = 0;
+                pageFirstY = 0;
+                
+                var re = new RegExp("<h2 id=\"h2ix(.+?)\">.+?</h2>","gi");
+
+                var found = false;
+                var index = 0;
+                var i = currentTutPage - 2;
+                while(!found && i >= 0) {
+                    while ((rslt = re.exec(pages[i])) != null) {
+                        found = true;
+                        index = rslt[1];
+                    }
+                    i--;
+                }
+                if(found) {
+                    var selMenu = parseInt(index) + 1;
+                    selectLeftMenuItem(selMenu);
+                }
+                else
+                    selectLeftMenuItem(1000);
+            }
+            else if(currentTutPage != 1) {
+                selectLeftMenuItem(pageFirstY + 1);
+            }
+            else if(currentTutPage == 1) {
+                selectLeftMenuItem(1000);
+            }
+        }
+
+        var pageGetAdditionalParams = "&translationID=804";
+        
+        function loadPages() {
+            
+            for(var i = 0; i < totalTutorialPages; i++) {
+                pages[i] = "";
+            }
+
+            $.ajax({
+                type: 'GET',
+                url: '../../../handlers/fresh/articles/getTutorialPages.ashx?articleID=' + articleID + pageGetAdditionalParams
+            })
+                .success(function (response) {
+
+
+                    var pagesHTML = response.split("*********&&&^^^&&&*********");
+                    for(var i = 0; i < pagesHTML.length; i++) {
+                        pages[i] = pagesHTML[i];
+                    }
+                    pagesLoaded = true;
+
+                });
+        }
+        
+        function goToTop() {
+            $('html, body').animate({scrollTop:0}, 'slow');
+        }
+        
+        function menuLinkClick(toPage, anchRef) {
+            
+            if(toPage == 1 && anchRef == 1000) {
+                if(currentTutPage == 1)
+                    goToTop();
+                else
+                    goToPage(1, "tuttop");
+            }
+            if(toPage == currentTutPage) {
+                scrollToAName("h2a" + anchRef);
+            } else {
+
+                goToPage(toPage, "h2a" + anchRef);
+                return false;
+
+            }
+
+        }
+        
+        function scrollToAName(name) {
+            var windowScroll = $(window).scrollTop();
+            $('html,body').animate({
+                scrollTop: '+=' + ($('a[name=' + name + ']').offset().top - windowScroll) + 'px'
+            }, 'fast');
+        }
+        
+        function goToPage(pageNumber, scrollTo) {
+
+
+
+            // AJAX load OK
+            if(pagesLoaded) {
+
+                // Navigations
+                $('.PN' + currentTutPage).removeClass("paging-nav-selected");
+                $('.PN' + pageNumber).addClass("paging-nav-selected");
+                currentTutPage = pageNumber;
+                
+                if ( history.pushState ) {
+                    window.history.pushState({ "page": pageNumber}, "", baseHref + "/page-" + pageNumber);
+                    if(_gaq)
+                        _gaq.push(['_trackPageview', baseHref + '/page-' + pageNumber]);
+                }
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://www.scirra.com/handlers/fresh/articles/dpv.ashx?ID=' + articleID + '&lang=' + langID
+                });
+
+                // Load content
+                $('#tut-content-wrap').fadeOut(50, function() {
+                    
+                    if(pageNumber === totalTutorialPages)
+                        $('#TutFinishShare').show();
+                    else
+                        $('#TutFinishShare').hide();
+
+                    $('#tut-content-wrap').html(pages[pageNumber - 1]);
+                    $('#tut-content-wrap').fadeIn(120, function () {
+                        
+                        SyntaxHighlighter.highlight();
+                       
+                        // Load indexes
+                        getH2YIndexes();
+                        
+                        // Scroll to
+                        if(scrollTo != null) {
+                            scrollToAName(scrollTo);
+                        }
+
+                    });
+                });
+                
+                // Fix next/prev links
+                $('.paging-nav-text a').each(function(index){
+
+                    var additionalAction = "";
+                    if(index > 1)
+                        additionalAction = "goToTop();";
+
+                    var type = $(this).attr("rel");
+                    if(type === "prev") {
+
+                        var prevPage = currentTutPage - 1;
+                        if(prevPage < 1)
+                            $(this).hide();
+                        else {
+                            if(!$(this).is(":visible"))
+                                $(this).show();
+                            $(this).attr("onclick", additionalAction + "return goToPage(" + prevPage + ");");
+                            $(this).attr("href", "page-" + prevPage);
+                        }
+                    }
+                    else if(type === "next") {
+                    
+                        var nextPage = currentTutPage + 1;
+                        if(nextPage > totalTutorialPages)
+                            $(this).hide();
+                        else {
+                            if(!$(this).is(":visible"))
+                                $(this).show();
+                            $(this).attr("onclick", additionalAction + "return goToPage(" + nextPage + ");");
+                            $(this).attr("href", "page-" + nextPage);
+                        }
+                    }
+                    
+                    
+                });
+                
+                return false;
+            }
+            else
+                return true;
+        }
+
+        // Back/fwds buttons
+        window.onpopstate = function(e){
+            if(e.state){
+                goToPage(e.state.page);
+            }
+        };
+        
+        
+        function doSubPrep() {
+            $("#SubChk").bind('change', function () {
+                var isSubscribed = this.checked;
+                $.ajax({
+                    type: 'GET',
+                    url: '../../../handlers/fresh/articles/emailsubscribe.ashx?mode=toauth&authorID=38947&section=1&subscribe=' + isSubscribed
+                })
+                    .success(function (response) {
+                        $('#SubUpdated').show().fadeOut(800);
+                    });
+            });
+            
+            $("#TagChk").bind('change', function () {
+                var isSubscribed = this.checked;
+                var tagID = '';
+                $.ajax({
+                    type: 'GET',
+                    url: '../../../handlers/fresh/articles/emailsubscribe.ashx?mode=totag&tagID=' + tagID + '&section=1&subscribe=' + isSubscribed
+                })
+                    .success(function (response) {
+                        $('#TagUpdated').show().fadeOut(800);
+                    });
+            });
+            
+            $("#LangChk").bind('change', function () {
+                var isSubscribed = this.checked;
+                var langID = '';
+                $.ajax({
+                    type: 'GET',
+                    url: '../../../handlers/fresh/articles/emailsubscribe.ashx?mode=tolang&langID=' + langID + '&section=1&subscribe=' + isSubscribed
+                })
+                    .success(function (response) {
+                        $('#LangUpdated').show().fadeOut(800);
+                    });
+            });
+            
+        }
+
+    </script>
+
+
+    
+    <footer>
+        <div class="footer-tear"></div>
+        <div class="footer-wrap">
+            <div class="content-wrap">
+                <ul>
+                    <li>
+                        <h2>Make Games</h2>
+                        <ul>
+                            <li><a href="https://www.scirra.com/construct2">Construct 2</a></li>
+                            <li><a href="https://www.scirra.com/construct2/releases">Download Construct 2</a></li>
+                            <li><a href="https://www.scirra.com/store/construct-2">Pricing</a></li>
+                            <li><a href="https://www.scirra.com/store/construct-2">Compare Features</a></li>
+                            <li><a href="https://www.scirra.com/manual">Online Manual</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Play Games</h2>
+                        <ul>
+                            <li><a href="https://www.scirra.com/arcade">Arcade</a></li>
+                            <li><a href="https://www.scirra.com/arcade/submit">Upload a Game</a></li>
+                            <li><a href="https://www.scirra.com/forum/arcade_forum48.html">Discuss</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Download</h2>
+                        <ul>
+                            <li><a id="LatestStableLink" href="https://www.scirra.com/construct2/releases/r206">Stable Release (r206)</a></li>
+                            <li></li>
+                        </ul>
+                        <div class="total-dl-wrap" title="Construct 2 has been downloaded 2,232,688 times to date"><div class="ch">2</div><div class="chs"></div><div class="ch">2</div><div class="ch">3</div><div class="ch">2</div><div class="chs"></div><div class="ch">6</div><div class="ch">8</div><div class="ch">8</div><p title="Aggregate total from Scirra.com website and large distributors">Total downloads</p></div>
+                        <h2 style="margin-top:5px;margin-bottom:0px;">Game Assets</h2>
+                        <ul>
+                            <li><a href="http://www.scirra.com/freebundle.zip" target="_blank">Free Bundle (34mb)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Community</h2>
+                        <ul>
+                            <li><a href="https://www.scirra.com/blog">Blog</a></li>
+                            <li><a href="https://www.scirra.com/forum">Forums</a></li>
+                            <li><a href="https://www.scirra.com/tutorials">Tutorials</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>About Scirra</h2>
+                        <ul>
+                            <li><a href="https://www.scirra.com/about">About Scirra</a></li>
+                            <li><a href="https://www.scirra.com/careers">Careers</a></li>
+                            <li><a href="https://www.scirra.com/contact">Contact Us</a></li>
+                            <li><a href="https://www.scirra.com/press-kit">Press Kit</a></li>
+                            <li><a href="https://www.scirra.com/people">The Team</a></li>
+                            <li><a href="https://www.scirra.com/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="https://www.scirra.com/terms-and-conditions">Terms and Conditions</a></li>
+                            <li><a href="https://www.scirra.com/sitemap">Site Map</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                
+                <div class="footer-item-wrap">
+                    <div>
+                         <a href="https://www.scirra.com/"><img src="./Login básico usando MySQL database BR_files/footer-scirra-logo-01.png" width="177" height="44" alt="Scirra Logo"></a>
+                    </div>
+                    <div class="address">
+                        Scirra Ltd, Electroline House<br>
+                        15 Lion Road, London, TW1 4JH
+                    </div>
+                    <div class="postcard">
+                        <a href="https://www.scirra.com/badges/45/postcard">Send us a postcard!</a>
+                    </div>
+                    <div>
+                       <ul>
+                            <li><a href="https://www.facebook.com/ScirraOfficial" target="_blank"><img src="./Login básico usando MySQL database BR_files/footer-facebook-icon-01.png" width="34" height="35"></a></li>
+                            <li><a href="https://twitter.com/scirra" target="_blank"><img src="./Login básico usando MySQL database BR_files/footer-twitter-icon-01.png" width="34" height="35"></a></li>
+                            <li><a href="https://plus.google.com/105404553461194404336/posts" target="_blank"><img src="./Login básico usando MySQL database BR_files/footer-google-plus-icons-01.png" width="34" height="35"></a></li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="copyright">Copyright © 2015 Scirra Ltd, All rights reserved.</div>
+
+            </div>
+        </div>
+    </footer>
+    
+     <script>
+         var RelPath = "../../../";
+         var Domainroot = "http://www.scirra.com";
+     </script>
+    <script type="text/javascript" src="./Login básico usando MySQL database BR_files/jquery.min.js"></script>
+    <script src="./Login básico usando MySQL database BR_files/common.js"></script> 
+    <script type="text/javascript">
+
+        var alertsMarked = false;
+        var loadedUserDropdown = false;
+        var loadedAlertsDropdown = false;
+
+        $(document).ready(function () {
+            
+
+
+            $('#fblikeframe').html('<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.scirra.com&send=false&layout=button_count&width=150&show_faces=true&action=like&colorscheme=light&font&height=21&appId=197624256970598" height="21" scrolling="no" frameborder="0" allowTransparency="true"></iframe>');
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");
+
+            $('#AlertBoxLink').click(function () {
+
+                if ($('#AlertsDropDown').is(':visible')) {
+                    hideAlertsDropDown();
+                } else {
+                    showAlertsDropDown();
+                    hideUserDropDown();
+                }
+                return false;
+            });
+
+            $('#UserDropdownLink').click(function () {
+
+                if ($('#UserDropDown').is(':visible')) {
+                    hideUserDropDown();
+                } else {
+                    showUserDropDown();
+                    hideAlertsDropDown();
+                }
+                return false;
+            });
+            function hideUserDropDown() {
+                $('#UserDropDown').slideUp('fast');
+            }
+
+            function showAlertsDropDown() {
+
+                if (!loadedAlertsDropdown) {
+
+                    $.ajax({
+                        dataType: "json",
+                        url: "https://www.scirra.com/handlers/fresh/getuseralertsdropdown.ashx",
+                        data: "",
+                        success: function (json) {
+
+                            var alertHTML = "";
+
+                            $.each(json.recentalerts, function (i, item) {
+                                var cssClass = "alert";
+                                if (json.recentalerts[i].read === "1") cssClass += " red-alert";
+                                alertHTML += "<div class=\"alert\">" +
+                                             "<img src=\"" + json.recentalerts[i].typeicon + "\" width=\"" + json.recentalerts[i].typeiconwidth + "\" height=\"" + json.recentalerts[i].typeiconheight + "\">" +
+                                             "<a class=\"" + cssClass + "\" style=\"padding-left:0;\" href=\"https://www.scirra.com" + json.recentalerts[i].url + "\">" +
+                                             json.recentalerts[i].title + "</a>" +
+                                             "<p><em>" + json.recentalerts[i].message + "</em></p>" +
+                                            "<div class=\"alert-timeago\">" + json.recentalerts[i].date + "</div>" +
+                                            "<div class=\"clear\"></div></div><div class=\"hr\"></div>";
+
+                            });
+
+                            $('#alerthtmlwrap').html(alertHTML);
+                        }
+                    });
+
+                    loadedAlertsDropdown = true;
+                }
+
+                $('#AlertsDropDown').slideDown('fast');
+
+
+            }
+
+
+            function showUserDropDown() {
+
+                if (!loadedUserDropdown) {
+                    $.ajax({
+                        dataType: "json",
+                        url: "https://www.scirra.com/handlers/fresh/getuserdropdowndetails.ashx?userID=0",
+                        data: "",
+                        success: function(json) {
+
+                            $('#MyProfileLink').attr("href", "https://www.scirra.com/users/" + json.seousername);
+                            $('#DropDownAvatar').attr("src", json.avatar);
+
+                            var newPMs = parseInt(json.unreadpms);
+                            if (newPMs === 0) {
+                                $('#DropDownInbox').html("Inbox (0)");
+                            } else {
+                                $('#DropDownInbox').html("Inbox <strong>(" + newPMs + ")</strong>");
+                            }
+
+                            var sellerID = parseInt(json.sellerid);
+                            
+                            if (sellerID != 0) {
+                                $('#DropDownSellerLink').attr("style", "");
+                            }
+
+                            $('#DropDownBadges').html("<div class=\"medal gold\"></div> " + json.goldbadges + " <div class=\"medal silver\"></div> " + json.silverbadges + " <div class=\"medal bronze\"></div> " + json.bronzebadges);
+                            $('#DropDownRep').html(json.reputation);
+                        }
+                    });
+                    loadedUserDropdown = true;
+                }
+
+                $('#UserDropDown').slideDown('fast');
+            }
+
+
+            $('#UserDropDown').click(function (event) {
+                event.stopPropagation();
+            });
+            $('#AlertsDropDown').click(function (event) {
+                event.stopPropagation();
+            });
+            
+            $('body').click(function (e) {
+                hideUserDropDown();
+                hideAlertsDropDown();
+            });
+
+        });
+        
+        function hideAlertsDropDown() {
+            $('#AlertsDropDown').slideUp('fast');
+        }
+
+
+
+
+        function plusone_callback(response) {
+            $.ajax({
+                url: RelPath + "handlers/gp1.ashx?o=" + response.state + "&u=" + response.href,
+                context: document.body,
+                success: function () {
+                    $(this).addClass("done");
+                }
+            });
+
+        }
+
+    </script>
+    <script src="./Login básico usando MySQL database BR_files/plusone.js" gapi_processed="true"></script>
+
+    
+    <script>
+
+        var defaultSearchTxt = "Search tutorials...";
+        $(document).ready(function () {
+
+
+            
+
+            if ($('#TutSearch').val() == "")
+                $('#TutSearch').val(defaultSearchTxt);
+            $('#TutSearch').focus(function () {
+                if ($('#TutSearch').val() == defaultSearchTxt)
+                    $('#TutSearch').val("");
+                $('#TutSearch').css("color", "#666");
+            });
+            $('#TutSearch').blur(function () {
+                if ($.trim($('#TutSearch').val()) == "")
+                    $('#TutSearch').val(defaultSearchTxt);
+                $('#TutSearch').css("color", "#E5E4E2");
+            });
+
+            getH2YIndexes();
+            loadPages();
+            doSubPrep();
+
+
+        });
+
+
+        var currentSelected = 1000;
+
+        function selectLeftMenuItem(menuID) {
+            if (currentSelected != menuID) {
+                $('#lm_h_' + currentSelected).removeClass("selected");
+                $('#lm_h_' + menuID).addClass("selected");
+                currentSelected = menuID;
+            }
+        }
+
+
+        $(function () {
+
+            var $tutContent = $('#tut-content-wrap');
+            var $sidebar = $("#tutNav");
+            var $window = $(window);
+            var menuStartTop = $sidebar.offset().top;
+            var tutHeight = $tutContent.height();
+            var tutOffsetTop = $tutContent.offset().top;
+            var sidebarHeight = $sidebar.height();
+
+            $window.scroll(function () {
+
+                var commentEnd = $('#comment-end').offset().top;
+                var windowScroll = $window.scrollTop();
+                var sideMenuOffset = $sidebar.offset();
+                var scrollInArticle = Math.max(windowScroll - tutOffsetTop, 0);
+                var commentEndScreen = commentEnd - windowScroll - 200;
+                var sideMenuBottomY = sideMenuOffset.top + sidebarHeight - windowScroll;
+
+                if (scrollInArticle > tutHeight) {
+                    scrollInArticle = tutHeight;
+                }
+                var percentageThrough = scrollInArticle / tutHeight;
+                var newTop = (-percentageThrough * 100);
+
+                if (windowScroll <= menuStartTop) {
+                    newTop = menuStartTop - windowScroll;
+                }
+                else if (sideMenuBottomY >= commentEndScreen) {
+                    newTop = commentEndScreen - sidebarHeight;
+                }
+
+
+                // Overview
+                if (percentageThrough == 0 && currentTutPage == 1)
+                    selectLeftMenuItem(1000);
+                else {
+
+                    var loopTo = pageFirstY - 1;
+                    if (loopTo < 0)
+                        loopTo = 0;
+
+                    if ((loopTo != 0 && pageLastY != 0) || currentTutPage == 1) {
+                        for (var i = pageLastY; i >= loopTo; i--) {
+                            if ((windowScroll >= (h2YLocations[i] - changeMenuPadding)) && h2YLocations[i] != 0) {
+                                selectLeftMenuItem(i + 1);
+                                break;
+                            }
+                        }
+                    }
+                }
+                $sidebar.css("top", newTop + "px");
+                //$sidebar.offset({ top: newTop, left: sideMenuOffset.left });
+
+            });
+
+        });
+
+    </script>
+        
+    
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+
+    <script src="./Login básico usando MySQL database BR_files/qtip.js"></script> 
+    <script>
+        var currentPage = 1;
+        var totalPages = 1;
+        var anchor = 'fc63d05d-89bf-4a59-9e67-7428d6e78c49';
+        var commentsPerPage = 15;
+        var avatarSize = 80;
+        var baseHREF = '../../../';
+        var textAreaDefaultTxt = "Write your comment...";
+        var maxLength =2500;
+        var minLength = 10;
+        var currentUserID = 0;
+        var currentUsername = '';
+    
+        // Finds all instances of @username and highlights them
+        function highlightSelfReferences() {
+            $('.actual-comment .body').each(function () {
+
+                var content = $(this).html();
+                var re = new RegExp("@" + currentUsername,"gi");
+                content = content.replace(re, '<span class="self-reference">' + currentUsername + '</span>');
+
+                $(this).html(content);
+            });
+        }
+
+        $(document).ready(function() {
+            if($('#CommentEntry').val() == '')
+                $('#CommentEntry').val(textAreaDefaultTxt);
+
+            $('#char-count').html(maxLength);
+            $('#chat-remain-wrap').show();
+            highlightSelfReferences();
+            initCP();
+        });
+        $('#CommentEntry').focus(function() {
+            if($('#CommentEntry').val() == textAreaDefaultTxt) {
+                $('#CommentEntry').val('');
+            }
+        });
+        $('#CommentEntry').blur(function () {
+            var val = $.trim($('#CommentEntry').val());
+            if(val == '')
+                $('#CommentEntry').val(textAreaDefaultTxt);
+        });
+
+        $("#CommentEntry").keyup(function() {
+
+            updateCommentCount();
+
+        });
+        
+        function getCurrentVoteCount(commentID) {
+            return parseInt($('#vote-wrap-' + commentID + ' .votecount').html());
+        }
+        function setVoteCount(commentID, value) {
+            $('#vote-wrap-' + commentID + ' .votecount').html(value);
+        }
+
+        function clearVisualVote(commentID) {
+
+            var voteCount = getCurrentVoteCount(commentID);
+            
+            if($('#vote-wrap-' + commentID + ' .downvote').hasClass("downchosen")) {
+                voteCount++;
+                $('#vote-wrap-' + commentID + ' .downvote').removeClass("downchosen");
+            }
+            if($('#vote-wrap-' + commentID + ' .upvote').hasClass("upchosen")) {
+                voteCount--;
+                $('#vote-wrap-' + commentID + ' .upvote').removeClass("upchosen");
+            }
+            setVoteCount(commentID, voteCount);
+        }
+        function showUpVoted(commentID) {
+            clearVisualVote(commentID);
+            $('#vote-wrap-' + commentID + ' .upvote').addClass("upchosen");
+
+            setVoteCount(commentID, getCurrentVoteCount(commentID) + 1);
+        }
+        function showDownVoted(commentID) {
+            clearVisualVote(commentID);
+            $('#vote-wrap-' + commentID + ' .downvote').addClass("downchosen");
+            
+            setVoteCount(commentID, getCurrentVoteCount(commentID) - 1);
+        }
+
+        function commentVote(upVote, commentID) {
+
+            $.ajax({
+                url: 'https://www.scirra.com/handlers/fresh/comments/VoteComment.ashx?commentID=' + commentID + '&upvote=' + upVote,
+                success: function(data) {
+
+                    var alertClass = "cream";
+                    var errorMessage = data;
+                    var blockTooltip     = false;
+
+                    if(data == 'NotLoggedIn') {
+                        alertClass = "red";
+                        errorMessage = "You are not currently logged in!";
+                    }
+                    else if(data == 'CantVoteOnOwnComment') {
+                        alertClass = "red";
+                        errorMessage = "You can't vote on your own comment!";
+                    }
+                    else if(data == 'VoteLocked') {
+                        alertClass = "red";
+                        errorMessage = "Your vote is now locked from changes.";
+                    }
+                    else if(data == 'VoteCancelled') {
+                        blockTooltip = true;
+                        clearVisualVote(commentID);
+                    }
+                    else if(data == 'NewUpvoteRecorded') {
+                        blockTooltip = true;
+                        showUpVoted(commentID);
+                    }
+                    else if(data == 'NewDownvoteRecorded') {
+                        blockTooltip = true;
+                        showDownVoted(commentID);
+                    }
+                    else if(data == 'VoteChangedToUpvote') {
+                        blockTooltip = true;
+                        showUpVoted(commentID);
+                    }
+                    else if(data == 'VoteChangedToDownvote') {
+                        blockTooltip = true;
+                        showDownVoted(commentID);
+                    }
+                    
+                    if(!blockTooltip) {
+                        $('#vote-wrap-' + commentID).qtip(
+                        {
+                            content: errorMessage, // Give it some content
+                            position: {
+                                corner: {
+                                    target: 'topMiddle',
+                                    tooltip: 'bottomLeft'
+                                }
+                            },
+                            hide: {
+                                fixed: true // Make it fixed so it can be hovered over
+                            },
+                            show: {
+                                ready: true,
+                                solo: true
+                            },
+                            style: {
+                                padding: '5px 15px',
+                                name: alertClass,
+                                width: {
+                                    max: 280
+                                },
+                                style: { border: { radius: 3 } }
+                            }
+                        });
+                    }
+                }
+            });
+
+        }
+        
+        function cancelCommentEdit(commentID) {
+            $('#comment' + commentID + " .body").show();
+            $('#comment' + commentID + ' .comment-edit-wrap').hide();
+        }
+        
+        function editComment(commentID) {
+
+            var commentText = htmlCommentToCommentCode($('#comment' + commentID + " .body").html());
+
+            $('#comment' + commentID + ' .comment-edit-wrap').html('<div class="edit-comment-wrap" id="edit-comment-wrap-' + commentID + '"><textarea id="comment-edited-text-' + commentID + '">' + commentText + '</textarea><div class="edit-comment-buttons"><button class="l" onclick="cancelCommentEdit(' + commentID + ');return false;">Cancel</button><button class="r" onclick="saveCommentEdits(' + commentID +');return false;">Save Changes</button></div><div class="clear"></div></div>');
+            $('#comment' + commentID + " .body").hide();
+            $('#comment' + commentID + ' .comment-edit-wrap').show();
+            
+            // Hide control panel, not needed
+            $('#comment' + commentID + ' .comment-cp').slideUp('fast');
+
+            $('#comment-edited-text-' + commentID).focus();
+        }
+        
+        function updateCommentCount() {
+            var len = $('#CommentEntry').val().length;
+            var remaining = maxLength - len;
+            
+            if(remaining < 0 && !$('#char-count').hasClass("red")) {
+                $('#char-count').addClass("red");
+            }
+            else if(remaining >= 0 && $('#char-count').hasClass("red")) {
+                $('#char-count').removeClass("red");
+            }
+
+            $('#char-count').html(remaining);
+        }
+
+        function initCP() {
+            
+            $('.actual-comment').bind('mouseenter', function() {
+                if (currentUserID != 0) {
+
+                    if (!$(this).find('.comment-edit-wrap').is(':visible')) {
+                        $(this).find('.comment-cp').slideDown('fast');
+                    }
+                }
+            });
+            $('.actual-comment').bind('mouseleave', function() {
+                $(this).find('.comment-cp').slideUp('fast');
+            });
+            
+        }
+
+        function undoCommentDelete(commentID) {
+
+            $.ajax({
+                url: 'https://www.scirra.com/handlers/fresh/comments/DeleteComment.ashx?commentID=' + commentID + '&undelete=1',
+                success: function(data) {
+                    $('#deleted-comment-notice-' + commentID).remove();
+                    $('#comment' + commentID).show();
+                }
+            });
+
+        }
+
+        function deleteComment(commentID) {
+            
+            
+            $.ajax({
+                url: 'https://www.scirra.com/handlers/fresh/comments/DeleteComment.ashx?commentID=' + commentID,
+                success: function(data) {
+                    if(data == "error") {
+
+                        $('#comment' + commentID).html('<div class="comment-error-wrap">This following comment could not be deleted!  Either you do not have permission, or 10 minutes have expired since you posted this comment and it is now locked from deletes.</div>' + $('#comment' + commentID).html());
+                        $('#comment' + commentID).show();
+
+                    } else {
+                        $('#comment' + commentID).fadeOut('fast');
+                        $('#comment' + commentID).parent().prepend('<div id="deleted-comment-notice-' + commentID + '" class="comment-wrap comment-error-wrap">Comment has been deleted! <a href="javascript:void(0);" onclick="undoCommentDelete(' + commentID + ');return false;">Undo delete</a></div>');
+                    }
+                }
+            });
+
+            
+        }
+
+        function showError(message) {
+            $('#ErrorBox-JS').html(message);
+            $('#ErrorBox-JS').show();
+            $("#CommentEntry").removeAttr('disabled');
+            $('#PublishCommentButton').removeAttr('disabled');
+            $("#CommentEntry").focus();
+        }
+
+        // Turn comment HTML into code for editing/quoting etc
+        function htmlCommentToCommentCode(comment) {
+            comment = $.trim(comment);
+
+            // Self references
+            comment = comment.replace(/\<span class="self-reference"\>(.*?)\<\/span\>/gi,"@$1");
+
+            // Anchors
+            comment = comment.replace(/\<a(.*?)href="(.*?)"(.*?)>(.*?)<\/a>/gi,"$2");
+
+            comment = comment.replace(/\<p\>\<\/p\>/g,"");
+            comment = comment.replace(/\<\/p\>\<p\>/g,"\n\n");
+            comment = comment.replace(/\<\/p\>/g,"");
+            comment = comment.replace(/\<p\>/g,"");
+            comment = comment.replace(/\<br\>/g,"\n");
+            comment = comment.replace(/\<br\/\>/g,"\n");
+            comment = comment.replace(/\<br \/\>/g,"\n");
+            comment = comment.replace(/&lt;/g,"<");
+            comment = comment.replace(/&gt;/g,">");
+            comment = comment.replace(/&amp;/g,"&");
+            
+            while(comment.indexOf("\n\n\n") != -1) {
+                comment = comment.replace("\n\n\n", "\n\n");
+            }
+            
+            return comment;
+
+        }
+
+        function addQuote(comment, quotedUsername) {
+            var commentToQuote = $.trim($(comment).parent().parent().find('.body').html());
+            
+            // Comment only works for 1 next, remove instances of other quotes
+            commentToQuote = commentToQuote.replace(/<div class="quoted-text">.*?<\/div>/g,"<br /><br />");
+            commentToQuote = commentToQuote.replace(/<\/div>/g,"");
+            
+            commentToQuote = htmlCommentToCommentCode(commentToQuote);
+
+            // Max of two line breaks
+            commentToQuote = $.trim(commentToQuote);
+
+            if($('#CommentEntry').val()  == textAreaDefaultTxt)
+                $('#CommentEntry').val('');
+            $('#CommentEntry').val('[quote=' + quotedUsername + ']\n' + commentToQuote + '\n[/quote]\n\n' + $('#CommentEntry').val());
+            $('#CommentEntry').focus();
+            updateCommentCount();
+            
+            // Set cursor
+            setCaretToPos(document.getElementById("CommentEntry"), $('#CommentEntry').val().length);
+            
+            // Scroll to bottom
+            var tarea = $('#CommentEntry');
+            tarea.scrollTop(
+                tarea[0].scrollHeight - tarea.height()
+            );
+        }
+
+        function setSelectionRange(input, selectionStart, selectionEnd) {
+          if (input.setSelectionRange) {
+            input.focus();
+            input.setSelectionRange(selectionStart, selectionEnd);
+          }
+          else if (input.createTextRange) {
+            var range = input.createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', selectionEnd);
+            range.moveStart('character', selectionStart);
+            range.select();
+          }
+        }
+        function setCaretToPos (input, pos) {
+          setSelectionRange(input, pos, pos);
+        }
+
+        function showEditError(commentID, message) {
+            $('#edit-comment-wrap-' + commentID + ' .comment-error-wrap').remove();
+            $('#edit-comment-wrap-' + commentID).prepend('<div class="comment-error-wrap">' + message + '</div>');
+            $('#edit-comment-wrap-' + commentID + ' .comment-error-wrap').show();
+
+            $('#comment-edited-text-' + commentID).removeAttr("disabled");
+            $('#edit-comment-wrap-' + commentID + " button").removeAttr("disabled");
+            $('#comment-edited-text-' + commentID).focus();
+        }
+
+        function saveCommentEdits(commentID) {
+
+            var comment = $.trim($('#comment-edited-text-' + commentID).val());
+
+            // Prevent resubmits
+            $('#comment-edited-text-' + commentID).attr("disabled", "disabled");
+            $('#edit-comment-wrap-' + commentID + " button").attr("disabled", "disabled");
+            
+            if(comment.length < minLength)
+                showEditError(commentID, "Comment must be at least " + minLength + " characters long!");
+            else if(comment.length > maxLength)
+                showEditError(commentID, "Comment can't be over " + maxLength + " characters long!");
+            else {
+                
+                var data = "comment=" + encodeURIComponent(comment) + "&commentID=" + commentID;
+                // Attempt ajax post
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://www.scirra.com/handlers/fresh/comments/UpdateComment.ashx',
+                    data: data
+                })
+                .success(function(response) {
+
+                    // 0 returns if failed
+                    if (response != "0") {
+                            
+                        $('#comment' + commentID + ' .body').html('<p>' + response + '</p>');
+                        $('#comment' + commentID + ' .comment-edit-wrap').hide();
+                        highlightSelfReferences();
+                        $('#comment' + commentID + " .body").slideDown('fast');
+
+                    } else
+                        showEditError(commentID, "Oops!  Something went wrong.  :(  Please contact support if it persists!");
+
+                })
+                .error(function() {
+                    showEditError(commentID, "Oops!  Something went wrong on the server!  Please try again or email support.");
+                });
+            }
+        }
+
+        // Attempt to post the comment
+        function postComment() {
+
+            var comment = $.trim($('#CommentEntry').val());
+            var blockRedirect = false;
+            if(comment == textAreaDefaultTxt) {
+               comment = "";
+               $('#CommentEntry').val('');
+            }
+            
+            // Prevent multiple post requests
+            $("#CommentEntry").attr("disabled", "disabled");
+            $('#PublishCommentButton').attr("disabled", "disabled");
+            
+            if(comment.length < minLength)
+                showError("Your comment must be at least " + minLength + " characters long!");
+            else if(comment.length > maxLength)
+                showError("Your comment can't be over " + maxLength + " characters long!");
+            else {
+
+                var data = "comment=" + encodeURIComponent(comment) + "&anchor=" + anchor;
+
+                // Attempt ajax post
+                $.ajax({
+                  type: 'POST',
+                  url: 'https://www.scirra.com/handlers/fresh/comments/PostComment.ashx',
+                  data: data
+                })
+                .success(function(response) {
+
+                    if(response == "Posted") {
+                        window.location.href = "?action=lastpage&t=" + Date.now() + "#lastcomment";
+                        blockRedirect = true;
+                    }
+                    else if(response == "CommentNoLongEnough") {
+                        showError("Your comment is not long enough!");
+                    }
+                    else if(response == "FloodControlExceeded") {
+                        showError("You're attempting to post comments too quickly!  Please wait a little while and try again.");
+                    }
+                    else if(response == "BannedAccount") {
+                        showError("Your account is banned, please contact support if this is a mistake!");
+                    }
+                    else if(response == "SpamDetected") {
+                        showError("Our spam robots have told us they think this comment is possible spam!  Please do not attempt to resubmit this comment or you may be banned!  If you are not a spammer, please email support@scirra.com and request to be whitelisted.");
+                    }
+                    else if(response == "SpamDetectedAndBanned") {
+                        showError("Uh oh :(  Your comment looks like spam and we've temporarially suspended your account.  If this is an error, please contact support@scirra.com and we'll apologise profusely and unban you straight away!");
+                    }
+                    else if(response == "SpamDetected") {
+                        showError("Our spam robots have told us they think this comment is possible spam!  Please do not attempt to resubmit this comment or you may be banned!  If you are not a spammer, please contact us and request to be whitelisted.");
+                    }
+                    else
+                        showError("Oops!  Something went wrong.  :(  Please contact support if it persists!");
+
+                })
+                .error(function() {
+                    showError("Oops!  Something went wrong!  Please try again or email support.");
+                })
+                .complete(function () {
+                    if(!blockRedirect) {
+                        $("#CommentEntry").removeAttr('disabled');
+                        $('#PublishCommentButton').removeAttr('disabled');
+                    }
+                });
+            }
+
+        }
+        
+        function htmlEncode(value){
+          return $('<div/>').text(value).html();
+        }
+
+        function htmlDecode(value){
+          return $('<div/>').html(value).text();
+        }
+
+        function changeCommentPage(newPage) {
+        
+            if(newPage != currentPage && newPage > 0 && newPage <= totalPages) {
+
+                $('#ReportedComment').hide();
+                $('.comment-error-wrap').hide();
+
+                var commentsFetched = false;
+
+                //var delayAmount = 0;
+                $.each($('#all-comments-wrap .actual-comment'), function(index, value) {
+                    //delayAmount += 30;
+                    //$(this).delay(delayAmount).slideUp('fast');
+                    $(this).hide();
+                });
+                
+                var jqxhr = $.getJSON("https://www.scirra.com/handlers/fresh/comments/GetComments.ashx?anchor=" + anchor + "&page=" + newPage + "&avatarSize=" + avatarSize + "&commentsPerPage=" + commentsPerPage, function(json) {
+
+                    commentsFetched = true;
+                    var template = $('#comment-template').html();
+                    var allNewComments = "";
+                    
+                    $.each(json.comments, function(i,item){
+
+                    var newComment = template;
+
+
+                        // Get correct class for placed votes
+                        var downvoteCSSClass = "downvote";
+                        var upvoteCSSClass = "upvote";
+                        var usersCommentVote = parseInt(item.currentUserVote);
+                        if(usersCommentVote == -1)
+                            downvoteCSSClass += " downchosen";
+                        else if(usersCommentVote == 1)
+                            upvoteCSSClass += " upchosen";
+
+                        var canDelete = item.canDelete;
+                        var canEdit = item.canEdit;
+                        
+                        if(!canEdit || !canDelete) {
+                            var temp = $(newComment);
+                            if(!canEdit)
+                                temp.find(".edit").remove();
+                            if(!canDelete)
+                                temp.find(".delete").remove();
+                            newComment = $('<div>').append(temp.clone()).remove().html();
+                        }
+                        
+                        
+
+                        newComment = newComment.replace(/#upvoteclass/gi, upvoteCSSClass);
+                        newComment = newComment.replace(/#downvoteclass/gi, downvoteCSSClass);
+
+                        newComment = newComment.replace(/#baseURL/gi, baseHREF + "tutorials/525/pt-br/login-bsico-usando-mysql-database");
+                        newComment = newComment.replace(/#rep/gi, item.formattedRep);
+                        newComment = newComment.replace(/#currentcommentpage/gi, newPage);
+                        newComment = newComment.replace(/#currentvotecount/gi, item.currentVoteCount);
+                        newComment = newComment.replace(/#authorUsername/gi, item.username);
+                        newComment = newComment.replace(/#IDOfComment/gi, item.commentID);
+                        newComment = newComment.replace(/#avatar/gi, "<a href=\"" + baseHREF + "users/" + item.SEOFriendlyUsername + "\"><img class=\"avatar\" src=\"" + item.avatar + "\" width=\"" + avatarSize + "\" height=\"" + avatarSize + "\" /></a>");
+                        newComment = newComment.replace(/#authorlink/gi, "<a href=\"" + baseHREF + "users/" + item.SEOFriendlyUsername + "\" class=\"author-link\">" + item.username + "</a>");
+
+                        var isEarlyAdopter = item.EarlyAdopter == "True";
+                        var isStandardLicenseHolder = item.StandardHolder == "True";
+                        if(isStandardLicenseHolder) {
+                            newComment = newComment.replace(/#badgelink/gi, "<a id=\"STDBadge\" class=\"s stand-badge\" href=\"" + baseHREF + "store\"></a>");
+                        }
+                        else if(isEarlyAdopter) {
+                            newComment = newComment.replace(/#badgelink/gi, "<a id=\"EABadge\" class=\"s earlyadop-badge\" href=\"" + baseHREF + "store\"></a>");
+                        } else {
+                            newComment = newComment.replace(/#badgelink/gi, "");
+                        }
+                        
+                        
+                        var decodedComment = htmlDecode(item.comment);
+                        decodedComment = decodedComment.replace(/%5c/gi, "\\");
+                        
+                        newComment = newComment.replace(/#comment/gi, ("<p>" + decodedComment + "</p>").replace("<p></p>",""));
+                        newComment = newComment.replace(/#timeago/gi, "<abbr class=\"timeago\" title=\"" + item.postDate + "\">" + item.alternativePostDate + "</abbr>");
+                        
+                        allNewComments += newComment;
+                    });
+                    
+                    
+                    
+                    $('#all-comments-wrap').html(allNewComments + $('#all-comments-wrap').html());
+                    jQuery("abbr.timeago").timeago();
+                    highlightSelfReferences();
+                    initCP();
+                });
+                
+                if(newPage == totalPages) {
+                    $('#next').hide();
+                }else {
+                    $('#next').show();
+                }
+                
+                if(newPage == 1) {
+                    $('#prev').hide();
+                }else {
+                    $('#prev').show();
+                }
+
+                // Select correct page
+                $('#comment-pagelink-' + currentPage).removeClass("selected");
+                currentPage = newPage;
+                $('#comment-pagelink-' + currentPage).addClass("selected");
+
+                
+                
+                
+                history.pushState(null, document.title, "?page=" + currentPage);
+                
+                
+
+            }
+        }
+    </script>
+
+    
+    
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21804850-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        function plusone_callback(response) {
+            $.ajax({
+                url: RelPath + "handlers/gp1.ashx?o=" + response.state + "&u=" + response.href,
+                context: document.body,
+                success: function () {
+
+                }
+            });
+        }
+
+
+
+
+    </script>
+
+    </form>
+
+
+
+<iframe name="oauth2relay399737726" id="oauth2relay399737726" src="./Login básico usando MySQL database BR_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>

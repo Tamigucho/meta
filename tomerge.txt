@@ -1,0 +1,790 @@
+- first post of tamigucho instagram (Petalrock official design and descriptions)
+
+Tamigucho Pink & Blue comes first.
+Santapolos: get a BrasPass and make a street store; Pq Vllbs gray
+-
+The first generation could come in two parts with two versions each.
+Brava should divide in half.
+In the first year, Bow & Arrow (& Afrah's version). In the next, Pink & Blue (& Purple/Violet).
+Tamigucho Purple/Violet will contain both parts of Brava and an new plot.
+Tamigucho ? beyond containing the full Brava will also introduce the Afrah region)
+All of these 4 adventure sets will fulfill the first generation which will be based in two regions.
+Tamigucho ? probably will be launched 3 years after Bow & Arrow, the same year the launch of Tamigucho A & B.
+-
+Tamigucho Bow & Arrow will be limited in comparison to Tamigucho Purple/Violet which will complete it.
+Tamigucho ? will support AC dualscreen
+-
+Femantis/Femee, from Hipsterville
+Machape/Maletta, from Kuritribe
+Transect is from the Amaze forest
+Tamigucho Bow & Arrow legendaries are Plant/Dragon and Fire/Steel (their top legendary is at Afrah region)
+Tamigucho Pink & Blue will contain all regions from South and also Santapolos/Rioja/Bravilia, and 6 Degrees (while Bow & Arrow will also introduce 6 Degrees)
+Kuritribe's Degree host will like to hop in walls; Hipterville or Balnesea's Degree host will like to sleep on trees and swing/jump between them; Both bluewhite.
+Rename Kuritribe
+Rioja Degree host will be a brwn wmn
+
+Tamigucho games' timelines and mons' generations are very confusing.
+I have to do something that make sense.
+Tamigucho
+- anti-cheat server
+- COPA-compliant
+- ptl drawing with parts and animations
+- rub your mons (they react depending on the part)
+- Tamigucho statuses: Happiness, Feed, Fear, HP, PP, Morale?, Histamin?
+- ptl is rare to get algaes (unless it gets enough garden time every sunny day), but implement the function to register it before implementing the algaes
+- colors of Petalrock: 50% white with possible algaes; others are gray (20% - have 50% less algaes), brown (20% - 75% less algaes), pink (5% - 50% if player is girl), blue (5% - 50% if player is boy) (pink and blue Petalrock are Brava region exclusives)
+- cozy
+- bedroom
+- shop
+- playroom
+- garden
+- plantable berries and other vegetables
+- Cozy time
+- battles (Probability of same-time attacks, combinations)
+-
+Tamigucho Fire 🔥 (Syamagma, Bulbomb, Firember), Water 💧(Waterabbit, Waterain, Dewhale), Leaf 🍃 (Bulball)
+Can choose only one mon per game, and NFT'ing them will depend on KYC
+- Adventure mode (can be choosen in only one game per account)
+(plot: the bond between humans and mons; Region: Hizashi)
+- All of the 2010-2013 mons
+-
+Tamigucho Pink & Blue (plot: gender differences+difficulties, gray morality, love vs. doing what is seen as need with ends worthing means, trust, lack of pragmatism but lack of altruism; Region: Parano; Starter mons: require Tamigucho (normal), Fire, Water or Leaf)
+- All of the 2010-2015 mons
+- Co-op mode
+Tamigucho Mercury & Ethanol (plot: the value of everyone including those who look "valueless"; Region: Valorium)
+- All of the 2010-2017 mons
+- The first game not compatible with K anymore
+- Open World
+- 3D (cel shading) https://twitter.com/pokeyugami/status/1527576053014618112
+- Generative lands (players can grab a space and build a base)
+Tamigucho C & O (plot: plants vs. animals, environmental dillemas, ecofsc, collective sucdl, drgs and dealing with the human side of, Team Petami; Regions: based in RUUS)
+- All of the 2010-2022 mons
+Tamigucho Cyan & Magenta (3D remakes of Pink & Blue)
+The next games will require game engine to migrate to React Native (Unreal). Then, they'll work on phones but'll only show their true power on PCs/PS/XB. They'll have photorealistic graphics and VR
+-
+- Descriptions and types at phonemon.eth (also collapsibles)
+- TamiStorage: Stickerffects
+
+I feel me ashamed for what I believe; for what I'm doing.
+I don't want to use y'all; not fame, nor money.
+My wish, from my whole heart and the deep of my soul, is to cross barriers and frontiers that separates us.
+I want to give'em our tech, and explain things about them 
+
+Similarities Pokémon Tamigucho
+- Catch-able portable monsters
+- Mons say their own name or make some noise
+- Portable storage devices for mons
+- These mons battle
+-
+Differences Pokémon Tamigucho
+- Mons can be stored in flat cards [not significant change]
+- Carry up to 8 mons, can learn more than 4 moves [not significant change]
+
+Tamigucho Pink & Blue
+Initial development:
+- language selection screen (English, Spanish, Portuguese, Chinese, Korean, Japanese, etc) [SYNC TAPP]
+- Ground, small grass
+- Trees
+- Player, walk, collisions
+- Rain, wind
+- Day, night and other times [SYNC TAPP]
+- Aware of date/time and season [SYNC TAPP]
+- Color pallette?
+- 8bit mode (graphics and color pallette, sounds/music)
+- Menu
+- TamiPedia [SYNC TAPP]
+- Bag [SYNC TAPP]
+- Player Bike (describe it as foldable bike)
+- Player Run
+- Water, Player's reflecting
+- Muddy areas
+- Berry planting and storing [SYNC TAPP]
+- Cooking (can use Ember) [SYNC TAPP]
+- NPCs
+- Bike Store
+- Medicine Store [SYNC TAPP]
+- General Store [SYNC TAPP]
+- Replace Routes by BRs
+- The first music theme; for a BR
+- Player's own HP, PP, Feed and other attributes/statuses (!)
+- Restaurant
+- Read TamiStorage [SYNC TAPP]
+- Mons party system (up to 8) [SYNC TAPP]
+- Tamis HP, Feed, etc [SYNC TAPP]
+- Tamis following player (up to 3, and max. 1 big+2 small)
+- Take pictures with Tamiguchos (can post social) [SYNC TAPP]
+- Two camera modes (up, platform)
+- Teleport move works like Fly (can choose city)
+- Fly move is more manual: way faster than bike. It can also be more calm and access high places in the platform camera mode
+- Moves like Teleport, Dig, Cut, Rock Smash, Headbutt, Water Squirt, Ember, Surf, Dive and Fly don't need to be one of the four moves; Waterfall and Whirpool may need [SYNC TAPP]
+- Subterrain (like DPP)? [PROBLEMATIC]
+- Subway
+- Submarine (like RSE)
+-
+- grass, rndm Tamiguchos generated by Golem/CL
+- Tamiguchos can also appear in urban areas (such as Inflarat and Bagust)
+
+Tamiguchos required for Pink & Blue:
+- pre-morph of Birdumont
+- Complete Femantis (mantis? bee? ant? ape?)
+- Machant/Machape
+- Transect
+- Dewhale's alternate 2nd evolution
+- Dewhale's alternate 3rd evolution
+
+- Street Cat
+- Street Dog
+- Street Mices
+- Guide Dog
+- Cockroach
+- Tardigrade (make it spacial suitcase)
+- Electric bird (every region will have so. They produce electricity from hair)
+- Pinhao
+- cvl snk
+- chair (type: Plant/Wood / Ghost)
+- picole
+- brazilian birds
+- brazilian fishes
+- jegue
+- capi
+Required and already available:
+- Firember
+- Inflarat
+- Bagust
+- Gruboll
+- Dewhale
+50% of Tamiguchos by me, 50%
+New forms in A & B:
+- Dolphnia (type: Water / Flying)
+- Firember (type: Fire / Ghost)
+- Bagust (type: Plant)
+
+Accessories GBA will need for Tamigucho:
+- GBA Plus (a case with secondary screen?, cam, microphone, wifi, BLE, NFC, etc)
+Secondary screen and other real-time devices may need a cartridge adapter so the game can exchange data directly with the GBA Plus without passing to the GBA first
+GBA Plus will have the ability to download software updates for the cartridge!
+Instead of GBA Plus, the cartridge could be modified to work like so
+This may spark the launch of the New GBA
+Port to SNES?
+
+- re-draw Qrosstum
+- re-draw legendary mons of 2010
+
+First game is based on real brazilian locations, with Team Petami?
+Team Petami uses the eco concerns as weapon to eliminate humans (while doing so to the Tamiguchos, instead - until it is told humans are the true victims in the Tamigucho world). Qrosstum will tell about the human/animals universe where an equivalent of Team Petami wants creatures using humans to battle and hurting them as revenge while the team itself is decimating animals
+Games: Tamigucho Pink & Blue (+Purple)
+Region: Brava
+Locations:
+- Santapolos (SP - Waterain sp form, Bomball/Bulbomb sp form, Birdumont sp form, Petalrock sp form, Treearth sp form rock fire & cmnt grafitti, Algalone sp form, Bulball sp form) STADIUM
+- Embuart (SP - Firember, Petalrock embu form, Bulball)
+- Bluerio (RJ - Waterain, Bomball/Bulbomb, Wormit, Dewhale, Birdumont, Dolphnia, Petalrock, Petalrock sea form) STADIUM
+- Bravilia
+- Cascaville (PR - Bagust, Flaguppy?, Waterain, Froquirrel, Algalone, Petalrock)
+- Kuritribe (PR - Bagust, Lulala, Vamporo, Algalone, Petalrock ctb grafitti form, Treearth pine form) STADIUM
+- Matisea (PR - Wormit, Craboll, Waterain, Lulala, Bagust, Potaseal)
+- Amaze Jungle (Sprouterra, Poterra, Treearth)
+- Itasea (SC - Dragonymph, Petalrock, Petalrock sea form)
+- Navisea (SC)
+- Balnesea (SC) STADIUM
+- Hipsterville (SC - Petalrock hipster form, Lulala hipster form) STADIUM
+- Brucity (SC)
+- Blucity (SC)
+- Portalopolis (RS) STADIUM
+- Salvatopolis (BA) STADIUM
+- Behorizon (MG) STADIUM
+- Bellblém (PA) STADIUM
+- Reefceef (PE) STADIUM
+Tamer collects NFTs (PoW - Proof of Win certificates)/fragments/puzzle pieces from 5 Stadiums (with public giggling) before challenging in The National Championship (for later, The World Clash)
+5 Stadiums or 12 Degrees?
+Cities with Stadiums/Degrees: Santapolos, Bluerio, Kuritribe, Portalopolis, Salvatopolis, Hipsterville, Behorizon, Bellblém, Reefceef
+National Championship will be hosted in Bravilia
+Supporting: berry planting and cooking (just like Tamigucho classical app), carnival contests, Tami clothing both for tamer and tamis, collect all Tamiguchos in connection with a sticker album, absent tamis: Wormorph/Funry
+Natures, IVs, EVs? Atk, Def, Speed, Spcl Atk and Spcl Def? Shinies/albs? Gender ratios by species? Gender physical differences by species?
+White/blue stadium host who likes to sleep at trees and swing through. He does also have a cow pre-morph who licks its hair (Portalopolis)
+Online trades/battles just like in classical Tamigucho apps
+Two forms for Petalrock
+phrases by NPCs:
+- Technology got so advanced, that you can store Tamiguchos in a flat card rather than these big blocks. In this state, they minimize by a lot!
+- TamiCards are the tiniest computers, inspired by nanotech. These tiny computers have a processing unit in the main board, a storage unit similar to a RAM memory where tamiguchos are stored as energy, and a battery that is constantly getting energy from the environment in order to charge. Not enough, the surface of TamiCards are e-ink always-on screens!! Welcome to the future!
+- People do still use TamiBlocks nowaday. Why? Because it's cool!
+- I love TamiCards but I think TamiBlocks will never turn old. My sense does also tells me that Tamiguchos feel more comfortable at TamiBlocks!
+- When a single Algalone defeats 9 Algalones in a streak, they merge and morph into Algalthea!
+- Listening to the sounds of Birdumonts flying, I feel me so calm!
+- Humans have too much words for Tamigucho's minds. They appear to be understanding our words but that's more profound than we thought: they are reading our feelings
+- Tamiguchos don't go with words, but feelings. Even when they appear to be talking, all they are doing is, expressing their feelings. This means Tamiguchos from very distinct species are able to talk to one another by just understading feelings!
+- When a Tamigucho is running away, even if you throw a beam to call'em back, the TamiStorages won't work. TamiCards, TamiBlocks were made to respect the freedom of the creatures.
+- If a creature is running away from their tamer, they may have a reason for this. If the tamer forces, their TamiStorage may even get deactivated, and the Tamigucho will be de-marked and return to its status of wild, free to join another tamer... ...or not
+- Weakening a Tamigucho to catch it is moraly biased. They should join you by their free will. TamiStorages were updated to be more comfortable and better display the aura of a tamer so the to-be-caught creature can know and trust before even knowing! So, the catch rate has been generously increased in recent updates, while still being moral.
+- You can minimize some TamiStorage so it costs less physical space when you're carrying. You can't do that to TamiCards, but you can with TamiBlocks! But, who would need to minify TamiCards? They're already too light!
+- My favorite TamiStorage are TamiBlocks! For Taminecraft players, blocks are everything! I can stack a pile and piles of TamiBlocks and they'll look like edifices!
+- TamiCards, TamiBlocks... ...what are the standard TamiStorage? No one know, and that's the nice thing about it! The default TamiStorage depends on opinion and personal choice! Variety of options!
+- Team Petami want Tamiguchos to capture humans and use us in battles. But I do ask myself: would Team Petami also desire to be captured and used in battles?
+- A very powerful Tamigucho from the mugenkizuna region, told me humans are weak, live shortly and are used to combat one another, so one day the world will be inhabited by Tamigucho-like humans and Tamiguchos only
+- mugenkizuna region? I've heard humans and animals once lived together peacefully, until some humans started to use chickens and fishes to battle. In that time, Team Petami was called Team Ecofas. Team Bluehead's plan was working and saving these animals from pain, but Team Ecofas wanted more, and beat-up Team Bluehead. Team Ecofas used spatial powers to turn all the animals into Tamiguchos, and used them to hurt humans, even the innocent ones... ...except themselves, so Team Ecofas were safe dominating Tamiguchos to dominate humans. While Team Bluehead wanted both animals and humans safe, Team Ecofas put them both in pain while babbling this as "justice" for the animals. But cross-universe appeared, won agains't Team Ecofas and rebuilt the world. Nowadays, humans are still weaker than Tamiguchos while Tamiguchos' work is to get stronger.
+- I would call the Brava region as the side B. There's a region which is side A, the first side. A region which is the origin of the Tamigucho universe. Are you leaving side A to enter side B? Oh, are Brava the side A? Whatever! Just jump and go on, to the next!
+- I'm also from the mugenkizuna region. I've heard cross-universe was captured two times. The first time, it was captured by a good person, and decided to partner it in a journey, until this person agreed with cross-universe to release it. The second time? An evil person did so, but here's the twist: cross-universe exited its TamiBlock, broke it and never more we heard of a capture. It happened several times with other Tamiguchos, too. We can't even try to re-capture if that happens.
+- "Please define "evil""?
+- Anything that seeks for the death of the things is evil. Living is good. Simply existing is good.
+- When a strong bond between a Tamigucho and its tamer is formed, they can liberate power of all types. This includes transforming and, morphing, too.
+- When two tamers and a Tamigucho loves one another, these tamers can share this Tamigucho by using a cross-tamer TamiStorage!
+- So, do you know how a cross-tamer TamiCard work? If a Tamigucho shows affection for both you and your friend, you two will put a cross-tamer cover on a TamiCard, sync it with a second cover and launch it. For TamiBlocks? You put a cross-trainer capsule instead of a cover!
+- When two people have the same Tamigucho, both will have a cross-tamer cover or capsule. They can't carry the same Tamigucho at the same time, but they can pass to one another according to needs. When calling a cross-tamer Tamigucho from the other tamer, its TamiStorage is teleported to your cover or capsule!
+- Are you going to Carnival Contests? People call'em Carnivests.
+- Thankfully the Tamigucho universe isn't about battles. Isn't about a single thing exclusively. You can choose any way.
+- In Carnival Contests, your Tamiguchos and yourself, your hearts, are warmed and synced to display the fullest of your artistic talent! ❣️
+- Carnivests are hosted in most cities, but the best and most competitive happens in the Rioja city only! ??
+- You can buy clothes for yourself and your Tamiguchos! Although, biped Tamiguchos using clothes is a bit disturbing.
+- If you put Stickerffects on your TamiStorage, diverse effects can appear when you launch a Tamigucho. These are more than useful in Carnival Contests! These are beautifly!
+- Yes, he've nicknamed our Borboll as "Beautifly". I love how people can be soooo creative! BTW, if you love your Tamiguchos, you should have lovely and special names for them! ☺️
+- I come from a very cold place of the mugenkizuna region. I traveled to Brava just for the Carnival! Me and my Butterfreeze are in sync with cold nerves but warm hearts! Ah yes, my Butterfreeze is a Borboll, too!
+- We are all close together here because we share the same love for Borbolls! Mine I call Bravuleta, because we love the Brava region!
+- Fuse the Butterfreeze and Beautifly names? You'll have the original name: Butterfly!
+- Fusing? What about Beautifreez?!
+- [Borboll's phrase] {nickname}: booooor!
+- I think there are about 100 Tamiguchos, no?
+- There are 150 Tamiguchos! Too much!
+- No, there are 950 or 1000 Tamiguchos if you counter other regions
+- Counting regions? Then there are 5000 for sure.
+- Y'all are playing too low
+-
+Second game is based in a space/time distortion region, with Team Quantic and Qrosstum as legendary
+TamiStorages' Stickerffects
+Games: Tamigucho A & B (+Z)
+Region: mugenkizuna 無限絆 Infinite bond (Mugezuna? Mugezuh? Mukizun? I can't see a western version for this)
+Locations:
+- New Palleaf
+- Vererna Forest (Gruboll, Boboll)
+- Mt. Coronoon (Funry)
+phrases by NPCs:
+- Technology got so advanced, that a machine to read not only emotions and dreams, but also fully translate what a Tamigucho is meaning, is already available!
+- A region that had a war? We call it Warto. The new champion was son of that team's leader. These are some of the data we found in the Temporary city
+- mugenkizuna was the first region of the Tamigucho universe, fruit of a space/time distortion. Its origin? Some say it is Mt. Coronoon
+- Qrosstum is the only creature known to travel through the multiverse, being cross-universe.
+- Qrosstum have a special love for the Tamigucho universe; may it be the cause of space/time distortions and our origin? Some say Qrosstum regularly visits or even lives in Mt. Coronoon, but no expedition ever was able to confirm it
+- Qrosstum have so many universes to visit in the infinite multiverse, that I doubt it only have a preferred one
+- Team Quantic affirm Qrosstum exist, and some say to have seen it; but no video footage available so... ...legends are just legends.
+- Until someone proves it exist, nobody can affirm it don't exist!
+- Mt. Coronoon reaches all of the 4 edges of the region. Paradoxically, it is the most accessible and most inaccessible place at the same time.
+- You can enter Mt. Coronoon from any place, easily; but on the other hand, advancing on it is hard
+- Qrosstum is the most powerful Tamigucho...  ...except that, there's only one creature that can beat Qrosstum, and it isn't here in the Tamigucho universe
+- The creature that made Qrosstum? Its name is a mix between Archaic, hmmmm, Ark, and Zeus, according to the fragmented data we got from the Temporary city
+- In other universes, probably Tamiguchos aren't known as Tamiguchos. As we seek to explore planets, the next frontier is exploring universes and the time
+- Based in data from the Temporary City, in pre-ancient times humans and other creatures were one. If these creatures can be called Tamiguchos, then... ...are humans some sort of Tamiguchos?
+- Any TamiStorage, such as TamiCards and TamiBlocks, are charged everyday, everyhour nonstopping! Both by darkness and light, be it natural or artificial, there's no condition preventing the containing tamiguchos from receiving life/energy!
+- When you store a Tamigucho inside a card or block, they are converted from matter to energy. TamiBlocks is a primitive storage but still used nowadays that we have tinner, flat cards!
+- What happens inside TamiStorages such as TamiCards or TamiBlocks? You wonder; everybody wonders! When Tamiguchos are converted into energy, an environment made of energy is also artificially created, stored in the RAM. It can be a garden, a lake, a forest, a jungle, a sea! If you ask you are right: Tamiguchos are consciously awake inside TamiStorages, so they need a nice environment they love to live in! They don't need to eat as energy, but probably they'll always want to play and rest!
+- Tamiguchos can enter or leave TamiStorages at their own pace and will, as they are conscientious inside it, just as they were when inside an egg.
+- He's right! Ah, yes, just as they were in the egg: they are aware of everything happening outside, and can even feel the energy and heat of their tamer and colleagues of neighbor TamiStorages!
+- Most of the data collected in the Temporary city are in the hands of Team Quantic. Probably they were aware a space/time distortion could make a place or a whole city and eagerly expecting for it. I'm sure they have maps and data of many universes
+- A villainous team of the hypothetical Warto region... ...Team Red? wanted to conquer the world. A villainous team of the hypothetical region of... ...Sinnabar? They wanted to conquer the universe. But Team Quantic? They are insane! They want to catch the hypothetical Qrosstum to travel and conquer many hypothetical universes...
+- Did I just heard about the Warto and that Cinnamon, err, Sinnabar region? The scientists who studied in the Temporary city, said parts of these regions were merged and became part of our region! Data also pointed that the Tamigucho universe is made of, well, contains parts of a lot of different universes. This may explain why Qrosstum is said to have a so special affection for this region... ...I mean, if it ever existed, in the first place!
+- If all of that news are just legends... ...why that Temporary city suddenly appeared next to Mt. Coronoon's Quantum Temple? This was even filmed and covered extensively. But, unfortunately, no one ever was able to record Qrosstum... ...yet!
+- Who was able to see the Temporary city? Everyone! But who was able to enter it? Scientists and officers, before they were forcibly removed by Team Quantic.
+- Scientists who visited the Temporary city were robbed and had to leave. But they bought their memory with them and we were able to know some things that Team Quantic knows better than us. But we aren't ignorant at all!
+- My favorite leaked data about the Temporary city? Is about the Wormorph's relatives in other universes. There are a slimmy thing that is result of an unsuccessful clone, but despite failed both this slime and Wormorph had a library-like DNA preserved. I don't see them as a failure. Some great discoveries were made off failures!
+- Both male and female Funry are fungus... ...and fairies, and from the same species. But why are them so different?
+- Scientists don't lose their attention when the topic is about other scientists. They heard and told us about a weird scientist from an other universe. Jimmy, was once part of a criminal group but debanded and turned into a great scientist. Despite being part of a villainous team, they never were truly evil. We look forward to hear more but data is so fragmented and mixed with rumors, that we got ourselves lost on them. Probably Team Quantic knows what is sound and what is noise!
+- I don't appreciate incomplete information. That scientist? One of his experiments was teaching creatures to talk! They were also teaching slimmy creatures to be more confident, social and improve their mimicking.
+- In our region, even the non-scientists loves to talk about quantum things! Its in our DNA! The dead cat is alive ahoooo!
+- That scientist Jimmy? He found back his... ...Firember? His loyal friend returned and they never more separated. His friend from the former villainous team was also officially captured by him. He merged all his friends from past and present!
+- I don't know a thing about that scientist. The information we got at Temporary city is very scarse.
+- Traveling through universes, and traveling in time are the same thing! We heard of a creature called "Celebrant of Times" who was able to timetravel, but never heard of traveling through universes. Probably this creature was able to travel through a single track, in this case a single timeline! But every quantum second that passes, we and our actions are creating new universes that we simply call "time passing". Creating universes is easy, but undoing actions or traveling through them? I've heard only Qrosstum is able to.
+- A folkloric, legendary, mythical Tamigucho: they may appear unique but there may be more than one individuals from the same specie. Can they reproduce? They are genderless and most say they and can't. But yes, they can and they do. But not in captivity. Their reproduction is rare even in their native environment.
+- If NestHouses, daycares were able to reproduce mythical Tamiguchos, that would pose a risk to the very species and, to all other including humans
+- Past, future and present may be mixed in a space/time distortion. At the Temporary city, we got confusing facts about the same stuff but in different timelines.
+- Why people are surprised with that Temporary city? Space/time distortions are common in our region, even the multiversal ones!
+- There are no "default" and "alternative" universes. Earth isn't the only planet nor the center of our universe. Same about universes: our universe is also "alternative" to other universes, so there's no default. That's relative.
+- People say "alternative universes" as if our universe were normal and all others weird. We shall drop that multiversal phobias, bias. Out of our comfort zone, we should accept the fact that our very universe is also weird to the others!
+- Probably other universes don't know about the Tamigucho universe. But we are somewhat aware about theirs! That's a nice privilege Qrosstum gave us.
+- I was once able to talk Qrosstum! I asked for a multiversal travel but she said only special people can travel with. Qrosstum also said other things, but asked me to be confident so I'll respect.
+- I was with him in this day when we met her. She's soooo sweet! We became friends! She transformed into human and we used to walk together! But now she's busy 🤕
+- This is the Qrosstum Fanclub! Most of us have met it someday. I took a picture but my phone behaved at its own, deleting the photo
+- Qrosstum is very careful about its identity. When it walks between us, it ensures no one who knows it is around, so it won't be revealed.
+- A Tamigucho who have other Tamiguchos to tame? Qrosstum have its own ID as a human and can capture and train creatures so as humans can. But no one knows how it got a legit human ID despite being a Tamigucho.
+- About Qrosstum, I don't think she's simply a Tamigucho. She may be a powerful human rather than a Tamigucho. As we read from the Temporary city, humans and Tamiguchos used to be one in the distant past. That's why we should treat Tamiguchos with the same rights we guarantee to humans.
+- What came first, the egg or the Tamigucho? What Qrosstum are: a Tamigucho who can turn human or a human who can turn Tamigucho?
+- No Tamigucho have a license to behave as a tamer and have a human ID, except Qrosstum.
+- Ark... ...what is its name? We heard it made a universe... ...or more, and that Qrosstum is "its right-arm".
+- Qrosstum's right arm is a pearl, and the left one is a diamond. It is said she uses both hands when opening a wormhole to another universe.
+- Music is time. An image is space. You quickly look at an image and you already know it. But for music, you'll have to wait for its entirety to pass.
+- I agree. Adding: Join images and you have a GIF. GIFs are time. Join a GIF with a music and you have a video. Videos are space and time! Images are space, music is time.
+- Team Quantic is a criminal group; but Team Petami is something more. They looked like a sect
+- [DISCS STORE] I love how these media have A and B sides. You can put the same music but in different versions on each side!
+- [DISCS STORE] Our universe may be a side A or B of other universes. Yes, I'm a retro nostalgy fan, but as all of mugenkizuna citizens, I'm also fan of quantum science!
+- All Tamiguchos are able to indirectly feel the aura of humans. But none is able to see it, as fair as I know. Unless the data from the Leaked city, oops, the Temporary city, could be right.
+- I have news about the Temporary city, too! We've heard of two Tamiguchos in a distant universe. One of them is Paerla. It can travel through alternate universes, but only the related ones. It remembers me about Celebrant of Timelines, who can travel only in the same timeline.
+
+Tamiguchos favours for Pokémon:
+- Expand it
+- Show the B side of it, a broader universe to be explored
+- Explain some things about Pokémon that aren't detailed in Pokémon itself
+- Defend the monverse from the controverses it was involved
+-
+Merging with or accepting that Tamigucho exist isnt their choice.
+We cannot choose if another parallel universe exist or not; simply everything exist; there's a place for everything.
+
+Tamigucho attacks:
+- Water squirt
+- Scratch
+- Dodge (the 5th slot)
+- Root whip (known by Treearth)
+- Sleepy Sing
+- Calming Sing (decreases atk/def)
+- Rain dance
+- Sunny dance
+- Acid rain (known by Waterain sp form)
+- Tackle
+- Bitype STAB
+- Tritype STAB
+- Tail whip (known by Whipuppy)
+
+Poke -> Tamigucho to replace:
+- TMs/HMs
+
+Challenges of musics for Tamigucho Pink & Blue:
+- BR 1 [ready to humming]
+- BR 2 [ready to humming]
+- Mt. Coronoon [progress]
+- Stadium degree battle
+- Tamer battle
+- Team Mass grunt battle
+- Wild battle
+- Tamigucho march
+- Stadium
+- TamiStop
+- Metamorph
+- Transformation
+-
+Challenges of SFX:
+- Item found
+- Stadium fragment/puzzle piece earned
+- Wild Tamigucho encounter entrance (should be part of the music itself?)
+- Tamer spot
+
+Challenges of musics for Tamigucho A & B:
+- New Palleaf [ready to humming]
+
+Challenges for Tamigucho TCG:
+- various modes: cards loaded with Tamiguchos, random cards (like Poké TCG), family-friendly (like Super Trunfo/UNO - insp in BágDex)
+
+Challenges of prog. complexity - Tamigucho Pink & Blue:
+- Tamiguchos can understand what to use as shield (such as Froquirrel cheeks)
+- "Wild battle", egg laying and petshop adopting: generate Tamiguchos using Golem on Polygon
+- avoid cheating in NPC battles (Golem)
+- conditional/dynamic EXP generating (based on battle difficulty, lessons, feats, etc)
+
+To have in Pink & Blue:
+- Intro: Amaze Jungle's blu arara, capi, Rioja's statue, Kuritribe's Botami garden, Portalopolis' kerokero, starters, Rioja's Carnivest
+- Main characters are 16yo
+- Open world, principally in the Amaze Jungle. Player can make its own way
+- Tamigucho(s) following tamer
+- In-scene wild Tamiguchos (cities will have wild cats 🐈, dogs 🐕, butterflies 🦋, ants 🐜, mices 🐀, etc)
+- "Birdumont, materialize!" - say tamers when calling a tami
+- Tamigucho faint animation should be lighter as in the Poke anime (😵‍💫), unlike on its games
+- Other tamers can stop you and invite to battle/exchange beauty presentation, but that is voluntary. When stopping player, tamers will display a "HEY", "YO", "YE", "HI" or "💡" speech instead of a "!"
+- Game starts at the Amaze Jungle, where a friend uses its tamiguchos to guide and show wild tamiguchos. After that, they travel back to Cascaville with a Birdumont
+- Starter Tamiguchos available at the petshop: cat, dog and hamster
+- For the first time ever in a similar franchise, battles and contests will be treated equally. For example, tamers may stop you to invite to exchange beauty presentations. Diverse pathways to choose, not limited to battles.
+- Two kinds of EXP: battles and contests?
+- NPC speechs will contain emojis
+- Bike, ⛸️, scooter, skate
+- Player and Tami outfits
+- Put honey (or other mixes) in trees and boulders to attract wild tamiguchos
+- Fish, collect fruits, manage house, etc (like in A)
+- Co-Op possible (up to 5)
+
+Tamigucho's franch meta:
+- Localized names. In Brazil/LATAM, Tamigucho; in others, Tamigu
+
+Challenges of criticism:
+- Types (workaround: possible and planned, but challenging - Severity: MEDIUM)
+- Atks (workaround: naming+rebalance in stats - Severity: LOW)
+- Storage (workaround: stop at TamiBlocks and privilege TamiCards - Severity: HIGH)
+- Names (junctions - workaround: ?? - Severity: LOW/MEDIUM)
+
+Normal, Flying, Bug etc won't be elemental types on Tamigucho, but physical/bodily types.
+-
+Tamigucho types:
+Neutral (weakness: salt, fire, electric)
+Salt (weakness: water / effectiveness: neutral)
+Rubber (weakness: fire)
+Paper (weakness: fire, water, flying/wind, psychic / effectiveness: rock, neutral) - attack: Paper Sword
+Plastic (weakness: fire / resistance: water / effectiveness: neutral) - attack: Feetlego
+Steel (weakness: fire / effectiveness: paper, neutral)
+Silicon (resistance: electric) ?
+-
+Normal -> Common(/Neutral?)
+Psychic -> Mind
+Grass -> Vegetable (plant, grass, wood, fruit)
+Water -> Liquid? (can be water or others)
+Ghost -> Spirit
+Electric
+Fire
+Flying (Bird is a bodily type and is effective against bug)
+Fish?
+Crustacean? Insect?
+Mammal?
+Reptile? (can be dragon; reptile is resistant to water)
+Metal (can be iron, steel, gold)
+Mineral? (rock, diamond)
+Soil (ground, sand, marsh/mud)
+-
+Add:
+Paper
+Plastic (solid, flexible, glass-like)
+Rubber (solid, elastic)
+Light?
+Glass
+Candy
+-
+Special and bodily types.
+-
+Tamigucho Competitive Simulator (Tamiguchos and their stats; types - special and bodily - and their effectiveness/resistance/weakness; atks, their types, PP/morale/histamine? and stats; evasive/dodging, attack elementary combinations and their timing/chance)
+Best Tamiguchos for starting the Tami CS:
+- Froquirrel (water/electric, rubber - uses its rubber cheeks)
+- Treearth (vegetable, plant/grass/wood - fire atks are stronger in the leaves than in the wood)
+- Sprouterra (vegetable/soil/water - fire atks are less effective in the soil while electric atks are effectless)
+- Petalrock (mineral/rock, vegetable - uses its algaes to protect agaisnt water. the more water is algaes get, the more they cover its body)
+
+Kind of a gimmick, but its a new battle mode:
+Bond link between tamigucho and tamer
+This enables them to fight in real time without RPG
+This resource can only be used if the other tamer have it too; also, it only works if the tamer and the tamigucho share a strong bond. From both tamers, it will require a special device.
+
+Tamigucho anime, based in: https://twitter.com/pokeyugami/status/1527576053014618112
+Episodes:
+- Pilot (learning skate: - you are good for someone who's still learning - ah, its just about using all of the same interior force and meditation from when you are learning bike!)
+- introduce disabled characters in next episodes
+- (visit to the Botami Garden, where the character buys a dogs nest to protect hr skirt)
+- Tell the story of Isaac Newmon and his favorite apple tree (which later he discovers is a Treearth, and the rock he was sitting is Petalrock).
+Newmon presents the real perspective about what is a mon "evolving" (wasn't it Darwin?)
+- Isaac Asimon and the three laws of robotics
+- Nature's language (a seaside tamer tries to train its Lll to talk, such as speaking "sea", training for 5 years without much result)
+-
+2nd generation will have episode about how TamiBalls were invented
+
+Tamigucho site:
+- Fix the mistakes done from Pokémon (no NFTs for pets like Mew, bias)
+- Bring diversity to the already flourishing niche/genre of mon-catching
+- Stablish a linked multiverse for interoperability
+
+Tami Journey app (like Pokemon Go, but safer and incentive to travel with the uber of buses!) - this was inspiration from a real life dream I had in the time being, probably early 2022
+Tamigucho 3D with chubbyKen graphics
+
+ | Redrawn version by <a href="https://www.instagram.com/dultrart/" target="_blank">Adriano Dultra</a>: <img width="500px" src="creatures/2022/Potaseal (copy).png"/>
+https://www.instagram.com/p/CfDKnOwOAl-/
+https://www.instagram.com/p/CfCvoamO9_q/
+https://www.instagram.com/p/CfDKJz2uPOG/
+other archived
+/media/daniella/B/git/Tamigucho/Tamigucho/site/tamipedia/img/Ghostoillet.png
+
+Tamigucho DNA stats:
+- Memory
+- Learn-willingness
+These will be enforced by species but can slighly (or in rare variations highly) vary according to individuals
+- personality/nature
+
+Initially, Tamigucho app will come with limited breeding (eggs won't hatch until an update) and without metamorphing.
+Tamiguchos that should undergo two morphs after the update, will receive a bonus Level Candy 🍭 so instantly going 3rd stage
+- add at least 11 Tamiguchos to each egg group. a fusion can generate two different Tamiguchos and follows Mendel Law
+-
+TamiRanch will support up to  Tamiguchos (because of fusion essence breeding + albino (custom) + radio (custom) + glowing (inverted colors filter))
+TamiRanch will support up to 500,000 Tamis!
+
+tami DAO ideas:
+- Tamigucho DAO General Governance: suggest to tami anime/game, it is secretly accepted and marked as accepted one week after official public launch
+
+tami Pink & Blue ideas:
+Tamigucho P&B alpha will be based in the same glitch city as of the Munnah region's one.
+Buglitch and Missinglitch will appear but not catchable.
+NPCs will talk (also about 440 volts is standard using a biosafe kind of electricity) and there will be doors to travel to cities or enter buildings
+- Tamigucho game explain about how TamiStorage is sent from a place to another and how they are kept safe
+Another NPC phrase: about the chip applied to a caught Tamigucho and how the same method is done for held items
+Another NPC will tell magnectic levitation was prohibitted (that may explain Neurus Phone)
+- Held item assigning animation
+- morph animation and music
+- Mt Olymnet will have a stone drawing for Funry
+- card catch animation, with a round progress bar w/ hrglss
+- a tamigucho can throw tamistorage to any direction, including to hit/take HP from player
+- transformation animation and music; first to receive one: Bulblast and Treearth
+- Tami FusedBreeding study: https://pastebin.com/yuVdqRFC
+
+https://opengameart.org/content/thing-game-assets
+https://itch.io/game-assets/free/tag-pokemon
+https://itch.io/game-assets/tag-pokemon
+https://www.fiverr.com/pikatchoum/draw-a-pixel-pokemon-battle-background
+
+Super Gem (Super Morph), X Gem (X Moves)
+
+tamigucho DS gba sound composer discord chat link, add to Pink&Blue Team file
+
+Tamigucho Pink & Blue topview source available before recreating the classic
+-?merge notes about generations/games into meta.
+tell about the gd inscriptions and the unknown one (reference to Paul) and at this temple show tamiguchos of next generations
+
+Tamigucho will have a different count than Pokemon:
+Species, morphs, forms.
+
+tami care app ideas:
+- Tamigucho will have OT (Original Tamer), a history of ownership transfers, and Current Tamer (CT).
+
+Insp Tamigucho pet nfts: https://app.zerion.io/nfts/polygon/0x9928a8ea82d86290dfd1920e126b3872890525b3:218497
+
+draw tamiguchos' US and France GYM Leaders
+
+Tamigucho when Dultrart redraw Petayaya/Petayoyo, insp: https://pt.dreamstime.com/ilustra%C3%A7%C3%A3o-stock-%C3%ADcone-do-fruto-do-drag%C3%A3o-estilo-dos-desenhos-animados-image84313291, https://br.freepik.com/vetores-premium/conjunto-de-fresco-inteiro-e-metade-de-pitaya-isolado-fruta-do-dragao-com-sombra-em-um-estilo-moderno-de-desenho-animado_9816005.htm
+
+Tamigucho Pink & Blue, Purple and the next gen 2 games will have only f character available
+Protagonist will be called Rose. She's the daughter of the villainous Team Reset boss Jess. or: team Luna, protagonist will be Lapis https://en.wikipedia.org/wiki/Category:Shades_of_blue
+
+a dog tamigucho contain the DNA of all tamis
+in the divines temple, a shrine will tell about the ancestor of all tamiguchos: it has wings, cat/dog features, can swim, etc.
+
+Tami Pink & Blue (family) and Tami XPB (teens/adults) animes, lnchng at same day
+Tami XPB anime protgn team: Dewhale
+Tami Pink & Blue anime protgn team: Chockatiel (backstory: it was bullied by other bird tamiguchos, aimed at its cheeks), Dewhale, Treearth
+Tami anm will introduce Neurus Phone
+
+Tami PB episodes will have ~20 min, while XPB will have ~40 min
+
+new gimmick: Kyusion (call a 9th tamigucho outside the party, to be fused with a tamigucho in the party)
+
+league rules for balance: a tamer with a gimmick can't use it against a tamer that don't have one. a tamer is limited to only use a gimmick amount the opponent have as well.
+
+in fusedbreeding, attacks (depending on their type) should be fuseable as well (same for the Kyusion phenomona)
+it will always be based in the female, except when using Wormorph.
+New Wormorphs can be created when breeding solely with Wormorphs
+
+Tamigucho's Pink & Blue 6 starters:
+1st row: Sprouterra (ground), Dewhale (water), Birdumont-pre? (air), Firember (fire)
+2nd row: Petalrock (plant), Chockatiel (electric)
+
+screen after first wild battle: "Wild battle music style: 🔴 Army 🟣 Dancing"
+
+option to physically meet your tamiguchos in a lab/farm
+
+Sync fighter:
+https://www.google.com/search?client=firefox-b-d&q=Construct+2+Street+Fighter
+https://www.youtube.com/watch?v=36LeOmpyS9s
+https://www.youtube.com/watch?v=F9GnVEcHrdY
+https://www.youtube.com/watch?v=0pH4ZzBcYbA
+https://www.youtube.com/watch?v=qNbk27ZlGiU&list=PLqBIwT56s6V7Sj64tYYYTNHQf5wjkstXO
+https://www.youtube.com/watch?v=N1y0EeXNqnY&list=PLqBIwT56s6V7_xDGG1E8tgT06af8HO3FG
+https://www.youtube.com/@nemezesgames/about
+https://www.youtube.com/watch?v=AzG-nwKks9s
+https://www.construct.net/en/forum/construct-2/works-in-progressfeedback-24/rec-jp-fight-119449
+https://www.construct.net/en/free-online-games/street-fighterfan-game-5790/play
+https://www.construct.net/en/free-online-games/profile/spdf-games-362091
+https://www.construct.net/en/free-online-games/neo-chavo-fight-2776/play
+https://www.construct.net/en/free-online-games/fighting-6
+https://www.construct.net/en/tutorials/configurando-player-luta-2452
+https://www.youtube.com/watch?v=Zh9qXwABVa8
+https://www.construct.net/en/forum/construct-2/how-do-i-18/jump-street-fighter-131118
+https://www.construct.net/en/forum/construct-2/how-do-i-18/streetfighter-style-camera-144762
+https://www.construct.net/en/free-online-games/rec-jp-fight-3779/play
+https://www.construct.net/en/free-online-games/profile/nemezes-246155
+
+Tamigucho Pink legendary: Machape
+Tamigucho Blue legendary: Femantis
+-
+Tamigucho Pink protagonist: Lapis (same for XPB anime)
+Tamigucho Blue protagonist: Rose (same for PB anime)
+
+Femantis will have ant tail with a sting and bee wings
+Machape will have fur and bat wings
+
+Estimated threshold to develop Pink & Blue in less than 3y: 1mBRL
+
+At the top of the Mt. Olymnet: Treeverest, where Femantis and Machape live
+
+Tamigucho need a git-able Trello Board & chat guilds
+
+Tamigucho Bow & Arrow should introduce the Infratitans and Vallysil
+Vallysil (first appearing in Brava) is said to come from the Munnah region
+
+Tamigucho Pink & Blue should reconsider about deploying the platform view, and let it be the last part of development.
+
+Pink & Blue will receive a 3D upgrade: MagentaPink & CyanBlue?
+
+Super gems, X gems AND Ultra gems:
+Ultratype is a gimmick where up to 2 alternate types can be assigned to a Tamigucho. They can transform to these types and get a STAB/boost on atks.
+-
+Form will change according to the new typing.
+Ultratypes can be passed through breeding.
+
+New gimmick: Timeform
+-
+A Tamigucho, in-battle, can acquire its past or future form, with two options: even timeline or parallel timeline
+-
+Timeform will require a Time gem and, as for other gimmicks, a Sync gem attached to a Tamigucho
+-
+in-game display: [Past], [Future], [ParaPast], [ParaFuture]
+
+Tamigucho bttl menu: Pet (Whistle, Pet, Food), Bag (shortcut for TamiStorage), Atk, Run
+
+Can Tamigucho Pink & Blue right on its first launch come with 5 (five) gimmicks?
+Or Super morph, X attack, Ultratype, Kyusion and Timeform will require 2 DLCs/Tamigucho Purple?
+
+Kyusion is known to come from a research made in the Munnah region, but deployed in the region of Carbon/Oxygen
+
+Tamiguchos can use gimmicks outside the battles!
+
+tamigucho's first region: depict "Lucario" and Funry at a place inside Mt. Olymnet (same in the 2nd gen based in LIBYA/AFRICA for "Lucario")
+
+Beyond radio, glowing and albino, there will have pink Tamiguchos
+-
+radio, glowy (random, use revert filter nokia xpress music cam), albino, pinky
+
+All generations of Tamigucho will use the same save "file" (Account)
+
+Before a 3D upgrade/remake, Tamigucho Pink & Blue have to receive a non-pixel 2D upgrade before (somewhat like TamiGPT/TamiCare)
+
+Tamigucho Pink & Blue's title screen should be a 3D animation converted to GBA's color pallette
+-
+this animation should have nice dizzy câmera manobras
+
+Tamigucho Pink & Blue should give Habbo feelings, just as phi.xyz does
+
+Should Tamigucho's first engine be Construct 2?
+-
+Okay, can later upgrade to Construct 3 or even share the same source across these versions MAYBE
+-
+But how that can later be cheaply ported to Godot/Unity/Unreal?
+
+Can a single Tamigucho game handle all of these modes on every new game?
+-
+GB+GBC, GBA, DS, cartoon, 3D
+Applies both to graphics and music
+(except for cartoon and 3D when it comes to music)
+
+Merge TamiAnime (PB, PBX) repos, pblsh
+
+Tamigucho Trello/Discord board:
+- Logotype
+- Name
+- Typing
+- Games naming (Tamigucho Pink&Blue or Tamigucho 2023?)
+-
+https://www.google.com/search?channel=fs&client=ubuntu-sn&q=Trello+voting
+https://www.google.com/search?channel=fs&client=ubuntu-sn&q=trello+discussion+board
+
+Qatum/qbit will come at 1st gen, while Qrosstum in 4th
+
+Tamigucho 1st gen music inspired by brazilian mms (lale, larie)
+
+Tamigucho work like a spin-off of that franchise
+Lembrar Vallysil e Qrosstum. Tamigucho deve deixar varias pontas soltas, pois: nao posso me esforçar demais; quando minha criatividade falhar, vamos deixar que a Comunidade pense em teorias que podem criar algo completamente novo
+
+at the glitch city, player will able to see a red ball then upon approaching it it changes place and disappear
+same for a book about Ditto with a purple bird
+
+- after wild battles with other Sprouterras, the party's and the wild one will fuse and become an new form before finally morphing to Poterra; their statuses will merge as well. similar will be applied to Algalone/Algalthea
+
+zombie "kev" will have a special form where you can convert back and forth your pixelmon kev
+
+-------------------------------------------------------------------------
+
+Cross-trainer pokéballs
+
+This idea came today, from another idea I had yesterday: cross-trainer friendships (Pokémon Journeys 072 is one of my fav episodes of all seasons and got me inspired for this)
+
+These brand new pokéballs should comply with brand new rules added to the PC Storage System: more than 1 trainer marked in the same pokéball.
+
+This should happen only when a Pokémon have developed a strong bond with more than 1 trainer before being caught.
+
+Cross-trainer pokéballs are capsules covering standard pokéballs. They transport the containing pokéball to the capsule/trainer that requested it (just like party>PC Storage/Lab transportation)
+
+https://www.instagram.com/p/CfAkjo9O6aS/?igshid=YmMyMTA2M2Y=
+
+---------------------------------------------------------------
+
+Selected phrases from NPCs:
+Pink & Blue:
+- Technology got so advanced, that you can store Tamiguchos in a flat card rather than these big blocks. In this state, they minimize by a lot!
+- TamiCards are the tiniest computers, inspired by nanotech. These tiny computers have a processing unit in the main board, a storage unit similar to a RAM memory where tamiguchos are stored as energy, and a battery that is constantly getting energy from the environment in order to charge. Not enough, the surface of TamiCards are e-ink always-on screens!! Welcome to the future!
+- People do still use TamiBlocks nowaday. Why? Because it's cool!
+- I love TamiCards but I think TamiBlocks will never turn old. My sense does also tells me that Tamiguchos feel more comfortable at TamiBlocks!
+- When a single Algalone defeats 9 Algalones in a streak, they merge and morph into Algalthea!
+- Humans have too much words for Tamigucho's minds. They appear to be understanding our words but that's more profound than we thought: they are reading our feelings
+- Tamiguchos don't go with words, but feelings. Even when they appear to be talking, all they are doing is, expressing their feelings. This means Tamiguchos from very distinct species are able to talk to one another by just understading feelings!
+- When a Tamigucho is running away, even if you throw a beam to call'em back, the TamiStorages won't work. TamiCards, TamiBlocks were made to respect the freedom of the creatures.
+- If a creature is running away from their tamer, they may have a reason for this. If the tamer forces, their TamiStorage may even get deactivated, and the Tamigucho will be de-marked and return to its status of wild, free to join another tamer... ...or not
+- Weakening a Tamigucho to catch it is moraly biased. They should join you by their free will. TamiStorages were updated to be more comfortable and better display the aura of a tamer so the to-be-caught creature can know and trust before even knowing! So, the catch rate has been generously increased in recent updates, while still being moral.
+- You can minimize some TamiStorage so it costs less physical space when you're carrying. You can't do that to TamiCards, but you can with TamiBlocks! But, who would need to minify TamiCards? They're already too light!
+- My favorite TamiStorage are TamiBlocks! For Taminecraft players, blocks are everything! I can stack a pile and piles of TamiBlocks and they'll look like edifices!
+- TamiCards, TamiBlocks... ...what are the standard TamiStorage? No one know, and that's the nice thing about it! The default TamiStorage depends on opinion and personal choice! Variety of options!
+- Team Petami want Tamiguchos to capture humans and use us in battles. But I do ask myself: would Team Petami also desire to be captured and used in battles?
+- A very powerful Tamigucho from the mugenkizuna region, told me humans are weak, live shortly and are used to combat one another, so one day the world will be inhabited by Tamigucho-like humans and Tamiguchos only
+- I would call the Brava region as the side B. There's a region which is side A, the first side. A region which is the origin of the Tamigucho universe. Are you leaving side A to enter side B? Oh, are Brava the side A? Whatever! Just jump and go on, to the next!
+- I'm also from the mugenkizuna region.
+- When a strong bond between a Tamigucho and its tamer is formed, they can liberate power of all types. This includes transforming and, morphing, too.
+- When two tamers and a Tamigucho loves one another, these tamers can share this Tamigucho by using a cross-tamer TamiStorage!
+- So, do you know how a cross-tamer TamiCard work? If a Tamigucho shows affection for both you and your friend, you two will put a cross-tamer cover on a TamiCard, sync it with a second cover and launch it. For TamiBlocks? You put a cross-trainer capsule instead of  cover!
+- When two people have the same Tamigucho, both will have a cross-tamer cover or capsule. They can't carry the same Tamigucho at the same time, but they can pass to one another according to needs. When calling a cross-tamer Tamigucho from the other tamer, its TamiStorage is teleported to your cover or capsule!
+- Are you going to Carnival Contests? People call'em Carnivests.
+- Thankfully the Tamigucho universe isn't about battles. Isn't about a single thing exclusively. You can choose any way.
+- In Carnival Contests, your Tamiguchos and yourself, your hearts, are warmed and synced to display the fullest of your artistic talent! ❣️
+- Carnivests are hosted in most cities, but the best and most competitive happens in the Rioja city only! 🤩
+- You can buy clothes for yourself and your Tamiguchos! Although, biped Tamiguchos using clothes is a bit disturbing.
+- If you put Stickerffects on your TamiStorage, diverse effects can appear when you launch a Tamigucho. These are more than useful in Carnival Contests! These are beautifly!
+- Yes, he've nicknamed our Borboll as "Beautifly". I love how people can be soooo creative! BTW, if you love your Tamiguchos, you should have lovely and special names for them! ☺️
+- I come from a very cold place of the mugenkizuna region. I traveled to Brava just for the Carnival! Me and my Butterfreeze are in sync with cold nerves but warm hearts! Ah yes, my Butterfreeze is a Borboll, too!
+- We are all close together here because we share the same love for Borbolls! Mine I call Bravuleta, because we love the Brava region!
+- Fuse the Butterfreeze and Beautifly names? You'll have the original name: Butterfly!
+- Fusing? What about Beautifreez?!
+- [Borboll's phrase] {nickname}: booooor!
+A & B:
+- Technology got so advanced, that a machine to read not only emotions and dreams, but also fully translate what a Tamigucho is meaning, is already available!
+- A region that had a war? We call it Warto. The new champion was son of that team's leader. These are some of the data we found in the Temporary city
+- mugenkizuna was the first region of the Tamigucho universe, fruit of a space/time distortion. Its origin? Some say it is Mt. Coronoon
+- Qrosstum is the only creature known to travel through the multiverse, being cross-universe.
+- Qrosstum have a special love for the Tamigucho universe; may it be the cause of space/time distortions and our origin? Some say Qrosstum regularly visits or even lives in Mt. Coronoon, but no expedition ever was able to confirm it
+- Qrosstum have so many universes to visit in the infinite multiverse, that I doubt it only have a preferred one
+- Team Quantic affirm Qrosstum exist, and some say to have seen it; but no video footage available so... ...legends are just legends.
+- Until someone proves it exist, nobody can affirm it don't exist!
+- Mt. Coronoon reaches all of the 4 edges of the region. Paradoxically, it is the most accessible and most inaccessible place at the same time.
+- You can enter Mt. Coronoon from any place, easily; but on the other hand, advancing on it is hard
+- Qrosstum is the most powerful Tamigucho...  ...except that, there's only one creature that can beat Qrosstum, and it isn't here in the Tamigucho universe
+- The creature that made Qrosstum? Its name is a mix between Archaic, hmmmm, Ark, and Zeus, according to the fragmented data we got from the Temporary city
+- In other universes, probably Tamiguchos aren't known as Tamiguchos. As we seek to explore planets, the next frontier is exploring universes and the time
+- Based in data from the Temporary City, in pre-ancient times humans and other creatures were one. If these creatures can be called Tamiguchos, then... ...are humans some sort of Tamiguchos?
+- Any TamiStorage, such as TamiCards and TamiBlocks, are charged everyday, everyhour nonstopping! Both by darkness and light, be it natural or artificial, there's no condition preventing the containing tamiguchos from receiving life/energy!
+- When you store a Tamigucho inside a card or block, they are converted from matter to energy. TamiBlocks is a primitive storage but still used nowadays that we have tinner, flat cards!
+- What happens inside TamiStorages such as TamiCards or TamiBlocks? You wonder; everybody wonders! When Tamiguchos are converted into energy, an environment made of energy is also artificially created, stored in the RAM. It can be a garden, a lake, a forest, a jungle, a sea! If you ask you are right: Tamiguchos are consciously awake inside TamiStorages, so they need a nice environment they love to live in! They don't need to eat as energy, but probably they'll always want to play and rest!
+- Tamiguchos can enter or leave TamiStorages at their own pace and will, as they are conscientious inside it, just as they were when inside an egg.
+- He's right! Ah, yes, just as they were in the egg: they are aware of everything happening outside, and can even feel the energy and heat of their tamer and colleagues of neighbor TamiStorages!
+- Most of the data collected in the Temporary city are in the hands of Team Quantic. Probably they were aware a space/time distortion could make a place or a whole city and eagerly expecting for it. I'm sure they have maps and data of many universes
+- A villainous team of the hypothetical Warto region... ...Team Red? wanted to conquer the world. A villainous team of the hypothetical region of... ...Sinnabar? They wanted to conquer the universe. But Team Quantic? They are insane! They want to catch the hypothetical Qrosstum to travel and conquer many hypothetical universes...
+- Did I just heard about the Warto and that Cinnamon, err, Sinnabar region? The scientists who studied in the Temporary city, said parts of these regions were merged and became part of our region! Data also pointed that the Tamigucho universe is made of, well, contains parts of a lot of different universes. This may explain why Qrosstum is said to have a so special affection for this region... ...I mean, if it ever existed, in the first place!
+- If all of that news are just legends... ...why that Temporary city suddenly appeared next to Mt. Coronoon's Quantum Temple? This was even filmed and covered extensively. But, unfortunately, no one ever was able to record Qrosstum... ...yet!
+- Who was able to see the Temporary city? Everyone! But who was able to enter it? Scientists and officers, before they were forcibly removed by Team Quantic.
+- Scientists who visited the Temporary city were robbed and had to leave. But they bought their memory with them and we were able to know some things that Team Quantic knows better than us. But we aren't ignorant at all!
+- My favorite leaked data about the Temporary city? Is about the Wormorph's relatives in other universes. There are a slimmy thing that is result of an unsuccessful clone, but despite failed both this slime and Wormorph had a library-like DNA preserved. I don't see them as a failure. Some great discoveries were made off failures!
+- Scientists don't lose their attention when the topic is about other scientists. They heard and told us about a weird scientist from an other universe. Jimmy, was once part of a criminal group but debanded and turned into a great scientist. Despite being part of a villainous team, they never were truly evil. We look forward to hear more but data is so fragmented and mixed with rumors, that we got ourselves lost on them. Probably Team Quantic knows what is sound and what is noise!
+- I don't appreciate incomplete information. That scientist? One of his experiments was teaching creatures to talk! They were also teaching slimmy creatures to be more confident, social and improve their mimicking.
+- In our region, even the non-scientists loves to talk about quantum things! Its in our DNA! The dead cat is alive ahoooo!
+- Traveling through universes, and traveling in time are the same thing! We heard of a creature called "Celebrant of Times" who was able to timetravel, but never heard of traveling through universes. Probably this creature was able to travel through a single track, in this case a single timeline! But every quantum second that passes, we and our actions are creating new universes that we simply call "time passing". Creating universes is easy, but undoing actions or traveling through them? I've heard only Qrosstum is able to.
+- A folkloric, legendary, mythical Tamigucho: they may appear unique but there may be more than one individuals from the same specie. Can they reproduce? They are genderless and most say they and can't. But yes, they can and they do. But not in captivity. Their reproduction is rare even in their native environment.
+- If NestHouses, daycares were able to reproduce mythical Tamiguchos, that would pose a risk to the very species and, to all other including humans
+- Past, future and present may be mixed in a space/time distortion. At the Temporary city, we got confusing facts about the same stuff but in different timelines.
+- Why people are surprised with that Temporary city? Space/time distortions are common in our region, even the multiversal ones!
+- There are no "default" and "alternative" universes. Earth isn't the only planet nor the center of our universe. Same about universes: our universe is also "alternative" to other universes, so there's no default. That's relative.
+- People say "alternative universes" as if our universe were normal and all others weird. We shall drop that multiversal phobias, bias. Out of our comfort zone, we should accept the fact that our very universe is also weird to the others!
+- Probably other universes don't know about the Tamigucho universe. But we are somewhat aware about theirs! That's a nice privilege Qrosstum gave us.
+- I was once able to talk Qrosstum! I asked for a multiversal travel but she said only special people can travel with. Qrosstum also said other things, but asked me to be confident so I'll respect.
+- I was with him in this day when we met her. She's soooo sweet! We became friends! She transformed into human and we used to walk together! But now she's busy 🤕
+- This is the Qrosstum Fanclub! Most of us have met it someday. I took a picture but my phone behaved at its own, deleting the photo
+- Qrosstum is very careful about its identity. When it walks between us, it ensures no one who knows it is around, so it won't be revealed.
+- A Tamigucho who have other Tamiguchos to tame? Qrosstum have its own ID as a human and can capture and train creatures so as humans can. But no one knows how it got a legit human ID despite being a Tamigucho.
+- About Qrosstum, I don't think she's simply a Tamigucho. She may be a powerful human rather than a Tamigucho. As we read from the Temporary city, humans and Tamiguchos used to be one in the distant past. That's why we should treat Tamiguchos with the same rights we guarantee to humans.
+- What came first, the egg or the Tamigucho? What Qrosstum are: a Tamigucho who can turn human or a human who can turn Tamigucho?
+- No Tamigucho have a license to behave as a tamer and have a human ID, except Qrosstum.
+- Ark... ...what is its name? We heard it made a universe... ...or more, and that Qrosstum is "its right-arm".
+- Qrosstum's right arm is a pearl, and the left one is a diamond. It is said she uses both hands when opening a wormhole to another universe.
+- Music is time. An image is space. You quickly look at an image and you already know it. But for music, you'll have to wait for its entirety to pass.
+- Team Quantic is a criminal group; but Team Petami is something more. They looked like a sect
+- [DISCS STORE] I love how these media have A and B sides. You can put the same music but in different versions on each side!
+- [DISCS STORE] Our universe may be a side A or B of other universes. Yes, I'm a retro nostalgy fan, but as all of mugenkizuna citizens, I'm also fan of quantum science!
+- All Tamiguchos are able to indirectly feel the aura of humans. But none is able to see it, as fair as I know. Unless the data from the Leaked city, oops, the Temporary city, could be right.
+
+-------------------------------------------------------------------------

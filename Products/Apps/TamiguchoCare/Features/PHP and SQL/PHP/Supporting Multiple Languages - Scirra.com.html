@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://www.scirra.com/tutorials/444/supporting-multiple-languages -->
+<html lang="en" runat="server"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><link rel="shortcut icon" href="https://static4.scirra.net/images/fresh/scirra-favicon-02.ico"><link rel="apple-touch-icon" href="https://static4.scirra.net/images/fresh/scirra-favicon-57px-01.png"><link href="./Supporting Multiple Languages - Scirra.com_files/css" rel="stylesheet" type="text/css"><link href="./Supporting Multiple Languages - Scirra.com_files/css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://static3.scirra.net/css/fresh.css?v=167">
+    
+    
+    <title>Supporting Multiple Languages - Scirra.com</title>
+    <link href="./Supporting Multiple Languages - Scirra.com_files/Supporting Multiple Languages - Scirra.com.html" rel="canonical">
+    
+    <script id="twitter-wjs" src="./Supporting Multiple Languages - Scirra.com_files/widgets.js"></script><script type="text/javascript" async="" src="./Supporting Multiple Languages - Scirra.com_files/ga.js"></script><script src="./Supporting Multiple Languages - Scirra.com_files/cb=gapi.loaded_1" async=""></script><script src="./Supporting Multiple Languages - Scirra.com_files/cb=gapi.loaded_0" async=""></script><script src="./Supporting Multiple Languages - Scirra.com_files/shcore.js" type="text/javascript"></script>
+    <script src="./Supporting Multiple Languages - Scirra.com_files/shbrushjscript.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://static1.scirra.net/css/shcore.css?v=167">
+    <link rel="stylesheet" href="https://static3.scirra.net/css/shthemedefault.css?v=167">
+    <link rel="stylesheet" href="https://static4.scirra.net/css/freshtut.css?v=167">
+    <style>
+        .lang-list {
+            list-style: none;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+        .lang-list li {
+            margin: 0;
+            padding: 0;
+            padding-left: 10px;
+        }
+        .translation-team-wrap {
+            margin-top: -35px;
+            margin-bottom: 25px;
+        }
+        .translation-team-wrap ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 3px;
+            margin-left: -5px;
+        }
+        .translation-team-wrap ul li {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+        .translation-team-wrap img {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            border: 0;
+            margin-left: 5px;
+        }
+        .translation-team-wrap h4 {
+            font-weight: normal;
+            text-shadow: none;
+            font-style: italic;
+        }
+        .trans-warn {
+            text-align: Center;
+            background: #FFFFCC;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            color: #666;
+            font-size: 12px;
+            padding: 3px 0;
+            border: 1px solid #efefef;
+        }
+        .trans-rev-link {
+            font-size: 12px;
+            display: block;
+            margin-top: -3px;
+        }
+        .report-wrap
+        {
+            font-size: 12px;
+            text-align: center;
+            color: #c0c0c0;
+            display: block;
+            margin-bottom: 5px;
+        }
+        #ReportTutForm {
+            display: block;
+            background: #efefef;
+            margin-bottom: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+        #ReportTutForm h3 {
+            margin: 0;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        #ReportTutForm table {
+            display: block;
+            margin: 0 auto;
+            width: 450px;
+
+        }
+        #ReportTutForm span {
+            font-size: 12px;
+            font-style: italic;
+            display: block;
+            margin-top: -5px;
+            margin-bottom: 10px;
+        }
+        .edit-wrap label {
+            font-size: 13px;
+            display: block;
+            margin-top: 0;
+            padding-left: 30px;
+        }
+        .edit-wrap input {
+            float: left;
+        }
+        .dl-table {
+            width: 250px;
+            border-spacing:0;
+            border-collapse:collapse;
+        }
+        .dl-table thead td {
+            background: #00CCCC;
+            text-align: center;
+            color: white;
+            font-size: 13px;
+            padding: 3px 0;
+            font-weight: bold;
+        }
+        .dl-table tbody td {
+
+            font-size: 13px;
+            padding: 3px 0;
+        }
+        pre {
+            font-size: 12px;
+        }
+        #BadgeStatWrapper {
+            margin-bottom: 15px;
+            min-height: 42px;
+        }
+        #BadgeStatWrapper img {
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+    
+    
+
+<meta name="viewport" content="width=1024"><meta name="theme-color" content="#06c3ab"><title>
+
+</title></head>
+<body data-twttr-rendered="true">
+    
+    <form method="post" action="https://www.scirra.com/tutorials/444/supporting-multiple-languages?ID=444&bodypage=1" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A53D34E5">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="6IGCxtvq5fnbh8V4sAGQp+5/o+jiboEjQ2mudnV0TqboP7T1igDRXUOEMDV3fZN4w62WQrP2MYL7zqREj5z6U2xysgtHz5K4WA92IGhH6y0VX2WrT10aA5RC2Pf01IVL46LHWw==">
+</div>
+  
+    <header>
+        
+    
+
+
+<div class="menu-wrapper">
+    <div class="content-wrap">
+        
+            <a class="topmenu-logo" href="https://www.scirra.com/"><img src="./Supporting Multiple Languages - Scirra.com_files/scirra-logo-small-01.png" width="101" height="28" alt="Scirra Logo Small"></a>
+        
+        <ul>
+            <li><a href="https://www.scirra.com/construct2">Construct 2</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/manual">Manual</a></li>
+            <li class="selected"><a href="https://www.scirra.com/tutorials">Tutorials</a></li>
+            <li><a href="https://www.scirra.com/store">Store</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/arcade">Arcade</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/blog">Blog</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/forum">Forums</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/education">Education</a></li><li class="split"></li>
+        </ul>
+        
+            <div class="guest-panel">
+                <a href="https://www.scirra.com/register" title="Create a Scirra account">Register</a> or <a href="https://www.scirra.com/login" title="Login to your Scirra account">Login</a>
+            </div>
+        
+        
+        <div class="clear"></div>
+        
+        
+        
+        <div id="AlertsDropDown" class="alerts-dropdown">
+	
+            <div class="dropdown-tip"></div>
+            <div class="dropdown-links c sm">
+                <a href="https://www.scirra.com/alerts">View All Alerts</a>
+            </div>
+            <div class="hr"></div>
+
+            <div id="alerthtmlwrap"></div>
+
+        
+</div>
+
+    </div>
+</div>
+
+        <div class="content-wrap">
+
+        </div>
+    </header>
+
+    
+    <div class="clear"></div>
+    
+
+    
+
+    <div class="content-wrap">
+    
+        
+
+<div class="sub-menu">
+    <ul>
+        <li><a href="https://www.scirra.com/tutorials/all">All Tutorials</a></li><li><a href="https://www.scirra.com/tutorials/37/beginners-guide-to-construct-2">Beginner's Guide</a></li><li><a href="https://www.scirra.com/tutorials/top">Top Rated</a></li><li><a href="https://www.scirra.com/tutorials/newest">Newest</a></li><li><a href="https://www.scirra.com/tutorials/submit">Write a Tutorial!</a></li><li><a href="https://www.scirra.com/tutorials/search">Search</a></li>
+    </ul>
+</div>
+        
+        
+        <div class="right-bar">
+            
+            <input name="ctl00$BodyContent$TutSearch" type="text" id="TutSearch" class="TutSearchBox"><input type="submit" name="ctl00$BodyContent$BtnFix" value="" id="BtnFix" style="width:1px;margin:0;padding:0;position:relative;left:-30px;z-index:1;">
+          
+            
+            
+            
+            
+            
+                <div class="edit-wrap">
+                    <h2>Tutorial Downloads</h2>
+                    <table class="dl-table">
+                        <thead>
+                        <tr>
+                            <td>File</td>
+                            <td>Size</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><a href="https://static3.scirra.net/uploads/articles/444/localisation.capx" target="_blank">localisation.capx</a></td><td style="text-align:center;">132KB</td></tr><tr><td><a href="https://static3.scirra.net/uploads/articles/444/localisation_json.capx" target="_blank">localisation_json.capx</a></td><td style="text-align:center;">301KB</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+
+            
+                <div class="edit-wrap" style="margin-bottom:-15px;">
+                    <h2>Translations</h2>
+                    
+                    <p>
+                        Know another language?  <a id="TransLink" href="https://www.scirra.com/tutorials/translate?ID=444">Translate this tutorial!</a>
+                    </p>
+                </div>
+            
+
+            <h2>Stats</h2>
+            <p style="display:block;margin-bottom:5px;">
+                
+                3.2K visitors<br>6.5K page views
+                
+                </p><div id="BadgeStatWrapper">
+	
+                    <a href="https://www.scirra.combadges/23/popular-tutorial"><img src="./Supporting Multiple Languages - Scirra.com_files/bronze-badge-01.png" title="Popular Tutorial
+One of your tutorials gets 500 visitors"></a><a href="https://www.scirra.com/badges/24/well-known-tutorial"><img src="./Supporting Multiple Languages - Scirra.com_files/silver-badge-01.png" title="Well Known Tutorial
+One of your tutorials gets 2,000 visitors">
+                
+</a></div><a href="https://www.scirra.com/badges/24/well-known-tutorial">
+            <p></p>
+            
+            
+
+            </a><div id="tutNav" style="top: 578px;"><a href="https://www.scirra.com/badges/24/well-known-tutorial">
+	
+                <h2>Index</h2>
+                </a><div class="tutorial-nav"><a href="https://www.scirra.com/badges/24/well-known-tutorial">
+                    </a><ul><a href="https://www.scirra.com/badges/24/well-known-tutorial">
+                        </a><li><a href="https://www.scirra.com/badges/24/well-known-tutorial"></a><a href="https://www.scirra.com/tutorials/444/page-1#tuttop" onclick="return menuLinkClick(1,1000);" class="selected" id="lm_h_1000">Overview</a></li><li><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#h2a0" onclick="return menuLinkClick(1,0);" id="lm_h_1" class="">XML</a></li><li><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#h2a1" onclick="return menuLinkClick(1,1);" id="lm_h_2" class="">Changing the Language</a></li><li><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#h2a2" onclick="return menuLinkClick(1,2);" id="lm_h_3" class="">Loading the XML File</a></li><li><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#h2a3" onclick="return menuLinkClick(1,3);" id="lm_h_4" class="">Updating the Text</a></li><li><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#h2a4" onclick="return menuLinkClick(1,4);" id="lm_h_5" class="">Getting the Correct String From the XML File</a></li><li><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#h2a5" onclick="return menuLinkClick(1,5);" id="lm_h_6">Adding More Languages</a></li>
+                    </ul>
+                    
+                    
+                    <ul class="social">
+                        <li><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./Supporting Multiple Languages - Scirra.com_files/tweet_button.d9c893c960e2d3574122a44beba13539.en.html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-vertical" title="Twitter Tweet Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 56px; height: 61px;"></iframe></li>
+                        <li class="fb"><iframe src="./Supporting Multiple Languages - Scirra.com_files/like.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:90px;" allowtransparency="true"></iframe></li>
+                        <li><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I0_1433029027996" name="I0_1433029027996" src="./Supporting Multiple Languages - Scirra.com_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div></li>
+                    </ul>
+                    
+                </div>
+            
+</div>
+            
+
+
+             
+
+        </div>
+        <div class="main-content-area">
+            <a name="tuttop"></a>
+            <div class="c" style="text-align:left;"><h1 id="TutTitle">Supporting Multiple Languages</h1></div>
+            
+            <div id="CookieNav" class="cookie-nav">
+	
+                <a href="https://www.scirra.com/tutorials" title="Gamedev tutorials">Tutorials</a> &gt; <a id="DifficultyLink" href="https://www.scirra.com/tutorials/intermediate">Intermediate</a> &gt; <a id="CategoryLink" href="https://www.scirra.com/tutorials/tips-and-tricks">Tips-and-Tricks</a> &gt; <em>Supporting Multiple Languages</em>
+            
+</div>
+
+            <a id="FavLinkDo" class="fav-wrap" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=fav"><div id="FavStar" class="fav-star">
+
+</div>
+                <div id="FavStarData">
+                    Favourite
+                    <span>47 favourites</span>
+                </div>
+            </a>
+
+            <div class="auth-wrap">
+                <a id="AuthLink2" title="View ramones&#39;s profile" href="https://www.scirra.com/users/ramones"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/8cf3d4def5e2b190605db2e0db276231.png" style="height:42px;width:42px;"></a>
+                Tutorial written by <a id="AuthLink1" href="https://www.scirra.com/users/ramones">ramones</a><span>Originally published on 20th, January 2013 - <a id="RevisionLink" title="View revision history" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages/revisions">5 revisions</a></span>
+            </div>
+            
+            
+            
+            
+
+            <div class="tut-content-wrap" id="tut-content-wrap">
+                <p>Here is a method for supporting multiple languages using <a href="https://www.scirra.com/manual/139/xml" rel="nofollow">XML</a> and <a href="htthttps://www.scirra.com/manual/141/files" rel="nofollow">project files</a>.<a href="./Supporting Multiple Languages - Scirra.com_files/screenshot.png" target="_blank"><img width="578" height="442" class="article-image thumb-img" src="./Supporting Multiple Languages - Scirra.com_files/screenshot.png"></a></p><div class="full-size-img"><a href="./Supporting Multiple Languages - Scirra.com_files/screenshot.png" target="_blank">Open full size image</a></div><!--imgend--><br>[Note: XML doesn't work on CocoonJS - there is a capx using JSON instead on the left]<p><a name="h2a0"></a></p><h2 id="h2ix0">XML</h2><p>Each language will have it’s own file called strings.<em>xx</em>.xml where <em>xx</em> is the two letter <a href="http://www.w3schools.com/tags/ref_language_codes.asp" rel="nofollow">ISO 639-1 code</a> for that language.<br>eg.<br>strings.en.xml<br>strings.de.xml<br>strings.fr.xml</p><p>The English xml file (<em>strings.en.xml</em>) looks like this:</p><div id="highlighter_102621" class="syntaxhighlighter  "><div class="bar                         "><div class="toolbar"><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">&lt;?xml version=</code><code class="string">"1.0"</code> <code class="plain">encoding=</code><code class="string">"UTF-8"</code><code class="plain">?&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="plain">&lt;strings&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;string id=</code><code class="string">'world'</code><code class="plain">&gt;World&lt;/string&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;string id=</code><code class="string">'level'</code><code class="plain">&gt;Level&lt;/string&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;string id=</code><code class="string">'begin'</code><code class="plain">&gt;Press </code><code class="string">'Enter'</code> <code class="plain">to begin.&lt;/string&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>6</code></td><td class="content"><code class="plain">&lt;/strings&gt;</code></td></tr></tbody></table></div></div></div><p>Each piece of text has an ID (<em>world/level/begin</em>) and a value (<em>World/Level/Press ‘Enter’ to begin.</em>)</p><p>Other languages will have the same file structure with the same IDs but different values<br>eg. German (<em>strings.de.xml</em>):</p><div id="highlighter_338825" class="syntaxhighlighter  "><div class="bar    "><div class="toolbar"><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">&lt;?xml version=</code><code class="string">"1.0"</code> <code class="plain">encoding=</code><code class="string">"UTF-8"</code><code class="plain">?&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="plain">&lt;strings&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;string id=</code><code class="string">'world'</code><code class="plain">&gt;Welt&lt;/string&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;string id=</code><code class="string">'level'</code><code class="plain">&gt;Stufe&lt;/string&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;string id=</code><code class="string">'begin'</code><code class="plain">&gt;Drücken Sie die Eingabetaste, um zu beginnen.&lt;/string&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>6</code></td><td class="content"><code class="plain">&lt;/strings&gt;</code></td></tr></tbody></table></div></div></div><p>The xml files are added as project files. (<a href="https://www.scirra.com/manual/141/files" rel="nofollow">Adding project files.</a>)</p><a name="h2a1"></a><h2 id="h2ix1">Changing the Language</h2><p>.<a href="./Supporting Multiple Languages - Scirra.com_files/localisation1.png" target="_blank"><img width="578" height="135" class="article-image thumb-img" src="./Supporting Multiple Languages - Scirra.com_files/localisation1.png"></a></p><div class="full-size-img"><a href="./Supporting Multiple Languages - Scirra.com_files/localisation1.png" target="_blank">Open full size image</a></div><!--imgend--><br>We will store the current language in a global variable called <strong>language</strong>. And we’ll add a function called “changeLanguage” which will change the language to whatever value we pass to the function.<br>eg:<br>f.Call(“changeLanguage”, “en”) will change the language to English.<p></p><p>The “changeLanguage” function will update the global variable and then <a href="https://www.scirra.com/manual/107/ajax" rel="nofollow">load the appropriate file</a>.</p><a name="h2a2"></a><h2 id="h2ix2">Loading the XML File</h2><p>.<a href="./Supporting Multiple Languages - Scirra.com_files/localisation2.png" target="_blank"><img width="578" height="85" class="article-image thumb-img" src="./Supporting Multiple Languages - Scirra.com_files/localisation2.png"></a></p><div class="full-size-img"><a href="./Supporting Multiple Languages - Scirra.com_files/localisation2.png" target="_blank">Open full size image</a></div><!--imgend--><br>When the AJAX request has completed we load the file (AJAX.LastData) into an XML object. Then we call the “updateText” function to change the text on-screen.<p></p><a name="h2a3"></a><h2 id="h2ix3">Updating the Text</h2><p>.<a href="./Supporting Multiple Languages - Scirra.com_files/localisation3.png" target="_blank"><img width="578" height="183" class="article-image thumb-img" src="./Supporting Multiple Languages - Scirra.com_files/localisation3.png"></a></p><div class="full-size-img"><a href="./Supporting Multiple Languages - Scirra.com_files/localisation3.png" target="_blank">Open full size image</a></div><!--imgend--><br>The “updateText” function simply sets the text for all text objects. We get the correct text for the current language by calling the “getText” function and passing it the string ID as a parameter.<br>You might also want to change the animations on some sprites to match the new language.<p></p><a name="h2a4"></a><h2 id="h2ix4">Getting the Correct String From the XML File</h2><p>.<a href="./Supporting Multiple Languages - Scirra.com_files/localisation4.png" target="_blank"><img width="578" height="86" class="article-image thumb-img" src="./Supporting Multiple Languages - Scirra.com_files/localisation4.png"></a></p><div class="full-size-img"><a href="./Supporting Multiple Languages - Scirra.com_files/localisation4.png" target="_blank">Open full size image</a></div><!--imgend--><br>The “getText” function takes a string id (eg. “begin”) and returns the value in the XML file that matches. To get the value from the XML we use the <strong>XML.StringValue(XPath)</strong> expression.<br>There is more info about XPath on the <a href="https://www.scirra.com/manual/139/xml" rel="nofollow">XML manual page</a>.<p></p><p>To get the value of the string node with id=’begin’ we use the XPath expression:<br><strong>“/strings/string[@id=’begin’]/text()”</strong></p><p><strong>“/strings”</strong> chooses all the “strings” nodes (there’s only one)<br><strong>“/strings/string”</strong> chooses all the “string” nodes that are children (sub-nodes) of “strings” (3 nodes in this example)<br><strong>“/strings/string[@id=’begin’]”</strong> chooses the “string” node with attribute ‘id’ equal to ‘begin’<br>and finally<br><strong>“/strings/string[@id=’begin’]/text()”</strong> gives us the value at that node</p><a name="h2a5"></a><h2 id="h2ix5">Adding More Languages</h2><p>To add a new language eg. Dutch, you just copy one of the XML files to strings.nl.xml and change all the values to their Dutch equivalent. And then use</p><div id="highlighter_978279" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">f.Call(“changeLanguage”, “nl”)</code></td></tr></tbody></table></div></div></div><p>Simple as that.</p>
+            </div>
+            
+            <div id="TutFinishShare">
+	
+                <h3>Congratulations on finishing this tutorial!</h3>
+                <p>Did you learn a lot from it?  Share it now with your friends!</p>
+                <ul>
+                    <li><iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="./Supporting Multiple Languages - Scirra.com_files/tweet_button.d9c893c960e2d3574122a44beba13539.en(1).html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-vertical" title="Twitter Tweet Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 56px; height: 61px;"></iframe></li>
+                    <li class="fb"><iframe src="./Supporting Multiple Languages - Scirra.com_files/like.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:90px;" allowtransparency="true"></iframe></li>
+                    <li><div id="___plusone_1" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I1_1433029028006" name="I1_1433029028006" src="./Supporting Multiple Languages - Scirra.com_files/fastbutton(1).html" data-gapiattached="true" title="+1"></iframe></div></li>
+                </ul>
+            
+</div>
+            
+            
+
+            
+            
+            <div class="clear"></div>
+
+            
+
+
+
+            
+
+
+    <h2>Comments</h2>
+    <a name="comments"></a>
+    
+    <div id="all-comments-wrap" class="all-comments-wrap">
+        
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                <a id="STDBadge" class="s stand-badge" href="https://www.scirra.com/store"></a>
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-13966">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">2</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/sergiorm"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/6a3fefcc677fa950b08d13371af34b87.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/sergiorm">SergioRM</a> <span class="repamount">6,422</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>Thank you! And good job</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;SergioRM&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=13966#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Sunday, January 20, 2013 at 8:12:09 PM">2 years ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                <a id="EABadge" class="s earlyadop-badge" href="https://www.scirra.com/store"></a>
+                
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-13969">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/kyatric"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/a65e480502234e6601b8983f69b64833.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/kyatric">Kyatric</a> <span class="repamount">48.2k</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>You may want to replace "Etapes" with "Niveau" in the French translation, otherwise it's all good.<br><br>Excellent job !</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;Kyatric&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=13969#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Sunday, January 20, 2013 at 9:32:03 PM">2 years ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                <a id="STDBadge" class="s stand-badge" href="https://www.scirra.com/store"></a>
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-13972">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">2</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/ramones"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/8cf3d4def5e2b190605db2e0db276231(1).png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/ramones">ramones</a> <span class="repamount">22.0k</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>Thanks <span class="self-reference"></span>Kyatric, changed that.</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;ramones&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=13972#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Sunday, January 20, 2013 at 10:36:03 PM">2 years ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                <a id="EABadge" class="s earlyadop-badge" href="https://www.scirra.com/store"></a>
+                
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-13992">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/temoana"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/bffd700c146b975b9a1571a9e40e776a.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/temoana">Temoana</a> <span class="repamount">4,678</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>nice, I was wondering how I could implement one in my game, nice work !</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;Temoana&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=13992#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Monday, January 21, 2013 at 8:32:57 PM">2 years ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                <a id="STDBadge" class="s stand-badge" href="https://www.scirra.com/store"></a>
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-14000">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/kenli"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/0e0b4ba7fc941b629985b3765ad94db2.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/kenli">kenli</a> <span class="repamount">6,877</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>thanks <span class="self-reference"></span>ramones for the tutorial, it really useful for multi language game :)</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;kenli&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=14000#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Tuesday, January 22, 2013 at 8:10:47 AM">2 years ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                <a id="STDBadge" class="s stand-badge" href="https://www.scirra.com/store"></a>
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-16145">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/avix"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/979a64e9d077215e931dba6c27090c33.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/avix">AVIX</a> <span class="repamount">5,220</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>Excellent!<br>Thanks</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;AVIX&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=16145#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Friday, March 22, 2013 at 11:26:20 PM">2 years ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-21177">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/asit"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/328cb84acd6b47c040b6a009acf0585d.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/asit">Asit</a> <span class="repamount">2,486</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>Good job !! But neither CocoonJs nor Intel XDK is supporting XML object, as far as i know. So is there any solution(except PhoneGap) while exporting to a mobile platform?</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;Asit&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=21177#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Thursday, June 27, 2013 at 11:48:56 AM">about a year ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-27039">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/simans"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/a5ad07f73abed4b4e82d92d88bcc07a2.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/simans">Simans</a> <span class="repamount">327</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>excellent tutorial.<br>but using this method, the system works only in this layout, right?<br>how could I do for when selecting a flag, the language selected continue in the next layouts<br>(sorry my english XP)</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;Simans&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=27039#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Wednesday, December 04, 2013 at 6:52:55 PM">about a year ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                <a id="STDBadge" class="s stand-badge" href="https://www.scirra.com/store"></a>
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-39628">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/iceangel"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/18cea9127d61dfacd9e284f3fe0c7b13.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/iceangel">iceangel</a> <span class="repamount">26.7k</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>Thanks for your tutorial.</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;iceangel&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=39628#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Wednesday, April 09, 2014 at 5:23:29 AM">about a year ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                <a id="STDBadge" class="s stand-badge" href="https://www.scirra.com/store"></a>
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-39800">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/avix"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/979a64e9d077215e931dba6c27090c33.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/avix">AVIX</a> <span class="repamount">5,220</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>Good thing I came back to this tutorial. The json example is pure glory.</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;AVIX&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=39800#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Thursday, April 10, 2014 at 11:18:00 PM">about a year ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                <a id="STDBadge" class="s stand-badge" href="https://www.scirra.com/store"></a>
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-97160">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/dakiu"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/4caf21ec83f552c2d623afd25b8d4fed.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/dakiu">Dakiu</a> <span class="repamount">2,532</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>Hi,<br><br>I followed this tutorial (it helped me a lot!!! thanks!!).<br>The only problem I have is with the characters "ñ,á, é, í, ó,ú" in the json file.<br><br>When I use some of them, in the game doesn't appear the character instead appears a strange symbol.<br>Is there any way to fix this?<br>I have this in the json<br>"cinema1":	"Señor"</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;Dakiu&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=97160#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Friday, July 18, 2014 at 6:47:03 PM">10 months ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                <a id="STDBadge" class="s stand-badge" href="https://www.scirra.com/store"></a>
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-176713">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/grigrizljac"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/23435cb4efebb8ab2e7456d55e0562e1.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/grigrizljac">grigrizljac</a> <span class="repamount">3,265</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>So, as I understand, you have to set every text to (language.xml) in every layout? Or can you set all texts only once for whole game that has more layouts?</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;grigrizljac&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=176713#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Monday, October 20, 2014 at 7:00:28 PM">7 months ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                <a id="STDBadge" class="s stand-badge" href="https://www.scirra.com/store"></a>
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-177670">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/alejovilla227"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/5e4be3e886fd000c66e22b60b0b80f7a.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/alejovilla227">alejovilla227</a> <span class="repamount">2,092</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>Hello...<br>I'm trying to do this but in the step "Changing the Language" I tried to put the filename as dynamic as your indicate, but the dialog box only let me to choose some option of a list... What could I do ?.</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;alejovilla227&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=177670#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Thursday, October 23, 2014 at 6:02:50 PM">7 months ago</abbr></div>
+                    </div>
+                </div>
+            
+                
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-194365">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/edelplastic"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/a1a5d77c93832a657d5036a6de0802c5.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/edelplastic">Edelplastic</a> <span class="repamount">613</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>It don´t change the language.</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;Edelplastic&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=194365#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Monday, November 24, 2014 at 4:36:53 PM">6 months ago</abbr></div>
+                    </div>
+                </div>
+            
+                <a name="lastcomment"></a>
+                <div class="comment-wrap actual-comment" id="comment">
+                
+                
+                    <div class="hr"></div>
+                        <div class="comment-inner-wrap">
+                        <div class="comment-vote-wrap" id="vote-wrap-340170">
+                            <a id="DownvoteLink" class="downvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a><div class="votecount">0</div><a id="UpvoteLink" class="upvote" href="https://www.scirra.com/register?return=tutorials/444/supporting-multiple-languages?page=1"></a>
+                        </div>
+                        <a id="AvatarHyperlink" href="https://www.scirra.com/users/edelplastic"><img id="AuthorAvatar" class="avatar" src="./Supporting Multiple Languages - Scirra.com_files/a1a5d77c93832a657d5036a6de0802c5.png" style="height:80px;width:80px;"></a>
+                            <a id="AuthorLink" class="author-link" href="https://www.scirra.com/users/edelplastic">Edelplastic</a> <span class="repamount">613</span> <span class="rep-txt">rep</span>
+                        <div class="comment-edit-wrap"></div>
+
+                        <div class="body">
+                            <p>So, now i´m back -&gt; 4 Months later -&gt; i have test this tutorial many times -&gt; the result = it do not work anymore with construct - i think you have to rewrite them. Your capx work, but when i do it like in your tutorial -&gt; C2 says that it will not work &gt; (especially the "f." (now function.) -</p>
+                        </div>
+                        
+                        <div class="comment-cp">
+                            <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;Edelplastic&#39;);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?action=reportcomment&page=1&commentID=340170#report"></a>
+                        </div>
+
+                        <div class="time-ago"><abbr class="timeago" title="Monday, April 13, 2015 at 2:00:11 AM">about a month ago</abbr></div>
+                    </div>
+                </div>
+            
+    
+        <div class="comment-wrap">
+            <div class="comment-page-wrap">
+                <ul id="comment-page-list">
+                    <li style="display:none" id="prev"><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?page=0#comments" onclick="changeCommentPage(currentPage - 1); return false;">Prev</a></li><li><a id="comment-pagelink-1" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?page=1#comments" class="selected" onclick="changeCommentPage(1);return false;">1</a></li><li><a id="comment-pagelink-2" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?page=2#comments" onclick="changeCommentPage(2);return false;">2</a></li><li id="next"><a href="https://www.scirra.com/tutorials/444/supporting-multiple-languages?page=2#comments" onclick="changeCommentPage(currentPage + 1);return false;">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+<div id="comment-template" style="display:none;">
+        
+    <div class="comment-wrap actual-comment" id="comment#IDOfComment">
+        #badgelink
+        <div class="hr"></div>
+            <div class="comment-inner-wrap">
+            <div class="comment-vote-wrap" id="vote-wrap-#IDOfComment">
+                <a id="DownvoteLink" title="Downvote this comment" class="#downvoteclass" onclick="commentVote(false, #IDOfComment);return false;" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#baseURL?action=commentvote&upvote=0&page=#currentcommentpage&commentID=#IDOfComment"></a><div class="votecount">#currentvotecount</div><a id="UpvoteLink" title="Upvote this comment!" class="#upvoteclass" onclick="commentVote(true, #IDOfComment);return false;" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#baseURL?action=commentvote&upvote=1&page=#currentcommentpage&commentID=#IDOfComment"></a>
+            </div>
+            #avatar
+                #authorlink <span class="repamount">#rep</span> <span class="rep-txt">rep</span>
+            <div class="comment-edit-wrap"></div>
+            <div class="body">
+                #comment
+            </div>
+            <div class="comment-cp">
+                <a href="javascript:void(0)" class="quote" title="Quote this comment" onclick="addQuote(this, &#39;#authorUsername&#39;);"></a><a id="EditCommentLink" title="Edit this comment" class="edit" onclick="editComment(#IDOfComment);return false;" href="javascript:void(0);"></a><a id="ReportCommentLink" title="Report this comment" class="report" href="https://www.scirra.com/tutorials/444/supporting-multiple-languages#baseURL?action=reportcomment&page=#currentcommentpage&commentID=#IDOfComment#report"></a><a id="DeleteLink" title="Delete this comment" class="delete" onclick="deleteComment(#IDOfComment);return false;" href="javascript:void(0)"></a>
+            </div>
+            <div class="time-ago">#timeago</div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="comment-form-wrap">
+        <h2>Leave a comment</h2>
+        <p>
+            Everyone is welcome to leave their thoughts!  <a id="RegisterLink" href="https://www.scirra.com/register?return=/TutorialViewFresh.aspx?ID=444&bodypage=1">Register a new account</a> or <a id="LoginLink" href="https://www.scirra.com/login?return=/TutorialViewFresh.aspx?ID=444&bodypage=1">login</a>.
+        </p>
+    </div>
+
+
+
+            
+            <div id="comment-end"></div>
+
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+    
+    
+    
+
+    <script>
+        var articleID = 444;
+        var totFavs = 47;
+        var langID = 1;
+        
+
+
+
+        function ReportTut() {
+            var formDiv = $('#ReportTutForm')   ;
+            if(formDiv.is(":visible"))
+                formDiv.slideUp('fast');
+            else
+                formDiv.slideDown('fast');
+        }
+        function SubmitReport() {
+            var reason = $.trim($('#ReportReason').val());
+            $('#ReportReason').val(reason);
+            if(reason.length < 4) {
+                $('#ReportError').slideDown('fast');
+            }
+            else {
+                $('#ReportError').hide();
+                $('#ReportReason').attr("disabled", "disabled");
+                $('#ReportButton').attr("disabled", "disabled");
+                
+                $.ajax({
+                    type: 'GET',
+                    url: '../../handlers/fresh/articles/reportarticle.ashx?articleID=' + articleID + '&languageID=' + langID + '&reason=' + encodeURI(reason)
+                })
+                    .success(function (response) {
+                        $('#ReportTutForm').slideUp('fast');
+                        $('#repwrap').html('Thank you for your report!  We really appreciate your efforts in helping make this site a better place to visit!');
+                        $('#repwrap').attr("style", "color:green;");
+                    });
+
+            }
+            
+        }
+
+        function UnFav() {
+            $.ajax({
+                type: 'GET',
+                url: '../../handlers/fresh/articles/fav.ashx?articleID=' + articleID + '&action=unfav'
+            })
+                .success(function (response) {
+                    totFavs--;
+                    $('#FavStar').attr("class", "fav-star");
+                    var s = "Favourite<span>" + totFavs + " favourite";
+                    if(totFavs != 1)
+                        s += "s";
+                    s+="</span>";
+                    $('#FavStarData').html(s);
+                    $('#FavLinkDo').attr("onclick", "Fav();return false;");
+                });
+        }
+        function Fav() {
+            $.ajax({
+                type: 'GET',
+                url: '../../handlers/fresh/articles/fav.ashx?articleID=' + articleID + '&action=fav'
+            })
+                .success(function (response) {
+                    totFavs++;
+                    $('#FavStar').attr("class", "fav-star fav-star-gold");
+                    var s = "Favourited!<span>" + totFavs + " favourite";
+                    if(totFavs != 1)
+                        s += "s";
+                    s+="</span>";
+                    $('#FavStarData').html(s);
+                    $('#FavLinkDo').attr("onclick", "UnFav();return false;");
+                });
+        }
+        
+
+
+
+
+        // Preloads all article pages
+        var totalTutorialPages = 1;
+        var pages = new Array();
+        var pagesLoaded = false;
+        var currentTutPage = 1;
+        var tutTitle = "Supporting Multiple Languages";
+        var baseHref = "/tutorials/444/supporting-multiple-languages";
+        
+        // Holds Y coordinates of h2's
+        var menuItems = 6;
+        var h2YLocations = new Array(menuItems);
+        for(var i = 0; i < menuItems; i++) {
+            h2YLocations[i] = 0;
+        }
+        var pageFirstY = 0;
+        var pageLastY = 0;
+        var changeMenuPadding = 50;
+
+        // Finds instances of h2 in body and saves Y coords
+        function getH2YIndexes() {
+            var found = false;
+            for(var i = 0; i < menuItems; i++) {
+                
+                // It exists on this page
+                if($('#h2ix' + i).length > 0) {
+
+                    if(!found) {
+                        found = true;
+                        pageFirstY = i;
+                    }
+                    pageLastY = i;
+                    
+                    // Not yet discovered
+                    if(h2YLocations[i] === 0) {
+                        h2YLocations[i] = $('#h2ix' + i).offset().top;
+                    }
+                }
+            }
+            // No h2's found
+            if(!found) {
+                pageLastY = 0;
+                pageFirstY = 0;
+                
+                var re = new RegExp("<h2 id=\"h2ix(.+?)\">.+?</h2>","gi");
+
+                var found = false;
+                var index = 0;
+                var i = currentTutPage - 2;
+                while(!found && i >= 0) {
+                    while ((rslt = re.exec(pages[i])) != null) {
+                        found = true;
+                        index = rslt[1];
+                    }
+                    i--;
+                }
+                if(found) {
+                    var selMenu = parseInt(index) + 1;
+                    selectLeftMenuItem(selMenu);
+                }
+                else
+                    selectLeftMenuItem(1000);
+            }
+            else if(currentTutPage != 1) {
+                selectLeftMenuItem(pageFirstY + 1);
+            }
+            else if(currentTutPage == 1) {
+                selectLeftMenuItem(1000);
+            }
+        }
+
+        var pageGetAdditionalParams = "";
+        
+        function loadPages() {
+            
+            for(var i = 0; i < totalTutorialPages; i++) {
+                pages[i] = "";
+            }
+
+            $.ajax({
+                type: 'GET',
+                url: '../../handlers/fresh/articles/getTutorialPages.ashx?articleID=' + articleID + pageGetAdditionalParams
+            })
+                .success(function (response) {
+
+
+                    var pagesHTML = response.split("*********&&&^^^&&&*********");
+                    for(var i = 0; i < pagesHTML.length; i++) {
+                        pages[i] = pagesHTML[i];
+                    }
+                    pagesLoaded = true;
+
+                });
+        }
+        
+        function goToTop() {
+            $('html, body').animate({scrollTop:0}, 'slow');
+        }
+        
+        function menuLinkClick(toPage, anchRef) {
+            
+            if(toPage == 1 && anchRef == 1000) {
+                if(currentTutPage == 1)
+                    goToTop();
+                else
+                    goToPage(1, "tuttop");
+            }
+            if(toPage == currentTutPage) {
+                scrollToAName("h2a" + anchRef);
+            } else {
+
+                goToPage(toPage, "h2a" + anchRef);
+                return false;
+
+            }
+
+        }
+        
+        function scrollToAName(name) {
+            var windowScroll = $(window).scrollTop();
+            $('html,body').animate({
+                scrollTop: '+=' + ($('a[name=' + name + ']').offset().top - windowScroll) + 'px'
+            }, 'fast');
+        }
+        
+        function goToPage(pageNumber, scrollTo) {
+
+
+
+            // AJAX load OK
+            if(pagesLoaded) {
+
+                // Navigations
+                $('.PN' + currentTutPage).removeClass("paging-nav-selected");
+                $('.PN' + pageNumber).addClass("paging-nav-selected");
+                currentTutPage = pageNumber;
+                
+                if ( history.pushState ) {
+                    window.history.pushState({ "page": pageNumber}, "", baseHref + "/page-" + pageNumber);
+                    if(_gaq)
+                        _gaq.push(['_trackPageview', baseHref + '/page-' + pageNumber]);
+                }
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://www.scirra.com/handlers/fresh/articles/dpv.ashx?ID=' + articleID + '&lang=' + langID
+                });
+
+                // Load content
+                $('#tut-content-wrap').fadeOut(50, function() {
+                    
+                    if(pageNumber === totalTutorialPages)
+                        $('#TutFinishShare').show();
+                    else
+                        $('#TutFinishShare').hide();
+
+                    $('#tut-content-wrap').html(pages[pageNumber - 1]);
+                    $('#tut-content-wrap').fadeIn(120, function () {
+                        
+                        SyntaxHighlighter.highlight();
+                       
+                        // Load indexes
+                        getH2YIndexes();
+                        
+                        // Scroll to
+                        if(scrollTo != null) {
+                            scrollToAName(scrollTo);
+                        }
+
+                    });
+                });
+                
+                // Fix next/prev links
+                $('.paging-nav-text a').each(function(index){
+
+                    var additionalAction = "";
+                    if(index > 1)
+                        additionalAction = "goToTop();";
+
+                    var type = $(this).attr("rel");
+                    if(type === "prev") {
+
+                        var prevPage = currentTutPage - 1;
+                        if(prevPage < 1)
+                            $(this).hide();
+                        else {
+                            if(!$(this).is(":visible"))
+                                $(this).show();
+                            $(this).attr("onclick", additionalAction + "return goToPage(" + prevPage + ");");
+                            $(this).attr("href", "page-" + prevPage);
+                        }
+                    }
+                    else if(type === "next") {
+                    
+                        var nextPage = currentTutPage + 1;
+                        if(nextPage > totalTutorialPages)
+                            $(this).hide();
+                        else {
+                            if(!$(this).is(":visible"))
+                                $(this).show();
+                            $(this).attr("onclick", additionalAction + "return goToPage(" + nextPage + ");");
+                            $(this).attr("href", "page-" + nextPage);
+                        }
+                    }
+                    
+                    
+                });
+                
+                return false;
+            }
+            else
+                return true;
+        }
+
+        // Back/fwds buttons
+        window.onpopstate = function(e){
+            if(e.state){
+                goToPage(e.state.page);
+            }
+        };
+        
+        
+        function doSubPrep() {
+            $("#SubChk").bind('change', function () {
+                var isSubscribed = this.checked;
+                $.ajax({
+                    type: 'GET',
+                    url: '../../handlers/fresh/articles/emailsubscribe.ashx?mode=toauth&authorID=24843&section=1&subscribe=' + isSubscribed
+                })
+                    .success(function (response) {
+                        $('#SubUpdated').show().fadeOut(800);
+                    });
+            });
+            
+            $("#TagChk").bind('change', function () {
+                var isSubscribed = this.checked;
+                var tagID = '';
+                $.ajax({
+                    type: 'GET',
+                    url: '../../handlers/fresh/articles/emailsubscribe.ashx?mode=totag&tagID=' + tagID + '&section=1&subscribe=' + isSubscribed
+                })
+                    .success(function (response) {
+                        $('#TagUpdated').show().fadeOut(800);
+                    });
+            });
+            
+            $("#LangChk").bind('change', function () {
+                var isSubscribed = this.checked;
+                var langID = '';
+                $.ajax({
+                    type: 'GET',
+                    url: '../../handlers/fresh/articles/emailsubscribe.ashx?mode=tolang&langID=' + langID + '&section=1&subscribe=' + isSubscribed
+                })
+                    .success(function (response) {
+                        $('#LangUpdated').show().fadeOut(800);
+                    });
+            });
+            
+        }
+
+    </script>
+
+
+    
+    <footer>
+        <div class="footer-tear"></div>
+        <div class="footer-wrap">
+            <div class="content-wrap">
+                <ul>
+                    <li>
+                        <h2>Make Games</h2>
+                        <ul>
+                            <li><a href="https://www.scirra.com/construct2">Construct 2</a></li>
+                            <li><a href="https://www.scirra.com/construct2/releases">Download Construct 2</a></li>
+                            <li><a href="https://www.scirra.com/store/construct-2">Pricing</a></li>
+                            <li><a href="https://www.scirra.com/store/construct-2">Compare Features</a></li>
+                            <li><a href="https://www.scirra.com/manual">Online Manual</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Play Games</h2>
+                        <ul>
+                            <li><a href="https://www.scirra.com/arcade">Arcade</a></li>
+                            <li><a href="https://www.scirra.com/arcade/submit">Upload a Game</a></li>
+                            <li><a href="https://www.scirra.com/forum/arcade_forum48.html">Discuss</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Download</h2>
+                        <ul>
+                            <li><a id="LatestStableLink" href="https://www.scirra.com/construct2/releases/r206">Stable Release (r206)</a></li>
+                            <li></li>
+                        </ul>
+                        <div class="total-dl-wrap" title="Construct 2 has been downloaded 2,232,657 times to date"><div class="ch">2</div><div class="chs"></div><div class="ch">2</div><div class="ch">3</div><div class="ch">2</div><div class="chs"></div><div class="ch">6</div><div class="ch">5</div><div class="ch">7</div><p title="Aggregate total from Scirra.com website and large distributors">Total downloads</p></div>
+                        <h2 style="margin-top:5px;margin-bottom:0px;">Game Assets</h2>
+                        <ul>
+                            <li><a href="http://www.scirra.com/freebundle.zip" target="_blank">Free Bundle (34mb)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Community</h2>
+                        <ul>
+                            <li><a href="https://www.scirra.com/blog">Blog</a></li>
+                            <li><a href="https://www.scirra.com/forum">Forums</a></li>
+                            <li><a href="https://www.scirra.com/tutorials">Tutorials</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>About Scirra</h2>
+                        <ul>
+                            <li><a href="https://www.scirra.com/about">About Scirra</a></li>
+                            <li><a href="https://www.scirra.com/careers">Careers</a></li>
+                            <li><a href="https://www.scirra.com/contact">Contact Us</a></li>
+                            <li><a href="https://www.scirra.com/press-kit">Press Kit</a></li>
+                            <li><a href="https://www.scirra.com/people">The Team</a></li>
+                            <li><a href="https://www.scirra.com/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="https://www.scirra.com/terms-and-conditions">Terms and Conditions</a></li>
+                            <li><a href="https://www.scirra.com/sitemap">Site Map</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                
+                <div class="footer-item-wrap">
+                    <div>
+                         <a href="https://www.scirra.com/"><img src="./Supporting Multiple Languages - Scirra.com_files/footer-scirra-logo-01.png" width="177" height="44" alt="Scirra Logo"></a>
+                    </div>
+                    <div class="address">
+                        Scirra Ltd, Electroline House<br>
+                        15 Lion Road, London, TW1 4JH
+                    </div>
+                    <div class="postcard">
+                        <a href="https://www.scirra.com/badges/45/postcard">Send us a postcard!</a>
+                    </div>
+                    <div>
+                       <ul>
+                            <li><a href="https://www.facebook.com/ScirraOfficial" target="_blank"><img src="./Supporting Multiple Languages - Scirra.com_files/footer-facebook-icon-01.png" width="34" height="35"></a></li>
+                            <li><a href="https://twitter.com/scirra" target="_blank"><img src="./Supporting Multiple Languages - Scirra.com_files/footer-twitter-icon-01.png" width="34" height="35"></a></li>
+                            <li><a href="https://plus.google.com/105404553461194404336/posts" target="_blank"><img src="./Supporting Multiple Languages - Scirra.com_files/footer-google-plus-icons-01.png" width="34" height="35"></a></li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="copyright">Copyright © 2015 Scirra Ltd, All rights reserved.</div>
+
+            </div>
+        </div>
+    </footer>
+    
+     <script>
+         var RelPath = "../../";
+         var Domainroot = "http://www.scirra.com";
+     </script>
+    <script type="text/javascript" src="./Supporting Multiple Languages - Scirra.com_files/jquery.min.js"></script>
+    <script src="./Supporting Multiple Languages - Scirra.com_files/common.js"></script> 
+    <script type="text/javascript">
+
+        var alertsMarked = false;
+        var loadedUserDropdown = false;
+        var loadedAlertsDropdown = false;
+
+        $(document).ready(function () {
+            
+
+
+            $('#fblikeframe').html('<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.scirra.com&send=false&layout=button_count&width=150&show_faces=true&action=like&colorscheme=light&font&height=21&appId=197624256970598" height="21" scrolling="no" frameborder="0" allowTransparency="true"></iframe>');
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");
+
+            $('#AlertBoxLink').click(function () {
+
+                if ($('#AlertsDropDown').is(':visible')) {
+                    hideAlertsDropDown();
+                } else {
+                    showAlertsDropDown();
+                    hideUserDropDown();
+                }
+                return false;
+            });
+
+            $('#UserDropdownLink').click(function () {
+
+                if ($('#UserDropDown').is(':visible')) {
+                    hideUserDropDown();
+                } else {
+                    showUserDropDown();
+                    hideAlertsDropDown();
+                }
+                return false;
+            });
+            function hideUserDropDown() {
+                $('#UserDropDown').slideUp('fast');
+            }
+
+            function showAlertsDropDown() {
+
+                if (!loadedAlertsDropdown) {
+
+                    $.ajax({
+                        dataType: "json",
+                        url: "https://www.scirra.com/handlers/fresh/getuseralertsdropdown.ashx",
+                        data: "",
+                        success: function (json) {
+
+                            var alertHTML = "";
+
+                            $.each(json.recentalerts, function (i, item) {
+                                var cssClass = "alert";
+                                if (json.recentalerts[i].read === "1") cssClass += " red-alert";
+                                alertHTML += "<div class=\"alert\">" +
+                                             "<img src=\"" + json.recentalerts[i].typeicon + "\" width=\"" + json.recentalerts[i].typeiconwidth + "\" height=\"" + json.recentalerts[i].typeiconheight + "\">" +
+                                             "<a class=\"" + cssClass + "\" style=\"padding-left:0;\" href=\"https://www.scirra.com" + json.recentalerts[i].url + "\">" +
+                                             json.recentalerts[i].title + "</a>" +
+                                             "<p><em>" + json.recentalerts[i].message + "</em></p>" +
+                                            "<div class=\"alert-timeago\">" + json.recentalerts[i].date + "</div>" +
+                                            "<div class=\"clear\"></div></div><div class=\"hr\"></div>";
+
+                            });
+
+                            $('#alerthtmlwrap').html(alertHTML);
+                        }
+                    });
+
+                    loadedAlertsDropdown = true;
+                }
+
+                $('#AlertsDropDown').slideDown('fast');
+
+
+            }
+
+
+            function showUserDropDown() {
+
+                if (!loadedUserDropdown) {
+                    $.ajax({
+                        dataType: "json",
+                        url: "https://www.scirra.com/handlers/fresh/getuserdropdowndetails.ashx?userID=0",
+                        data: "",
+                        success: function(json) {
+
+                            $('#MyProfileLink').attr("href", "https://www.scirra.com/users/" + json.seousername);
+                            $('#DropDownAvatar').attr("src", json.avatar);
+
+                            var newPMs = parseInt(json.unreadpms);
+                            if (newPMs === 0) {
+                                $('#DropDownInbox').html("Inbox (0)");
+                            } else {
+                                $('#DropDownInbox').html("Inbox <strong>(" + newPMs + ")</strong>");
+                            }
+
+                            var sellerID = parseInt(json.sellerid);
+                            
+                            if (sellerID != 0) {
+                                $('#DropDownSellerLink').attr("style", "");
+                            }
+
+                            $('#DropDownBadges').html("<div class=\"medal gold\"></div> " + json.goldbadges + " <div class=\"medal silver\"></div> " + json.silverbadges + " <div class=\"medal bronze\"></div> " + json.bronzebadges);
+                            $('#DropDownRep').html(json.reputation);
+                        }
+                    });
+                    loadedUserDropdown = true;
+                }
+
+                $('#UserDropDown').slideDown('fast');
+            }
+
+
+            $('#UserDropDown').click(function (event) {
+                event.stopPropagation();
+            });
+            $('#AlertsDropDown').click(function (event) {
+                event.stopPropagation();
+            });
+            
+            $('body').click(function (e) {
+                hideUserDropDown();
+                hideAlertsDropDown();
+            });
+
+        });
+        
+        function hideAlertsDropDown() {
+            $('#AlertsDropDown').slideUp('fast');
+        }
+
+
+
+
+        function plusone_callback(response) {
+            $.ajax({
+                url: RelPath + "handlers/gp1.ashx?o=" + response.state + "&u=" + response.href,
+                context: document.body,
+                success: function () {
+                    $(this).addClass("done");
+                }
+            });
+
+        }
+
+    </script>
+    <script src="./Supporting Multiple Languages - Scirra.com_files/plusone.js" gapi_processed="true"></script>
+
+    
+    <script>
+
+        var defaultSearchTxt = "Search tutorials...";
+        $(document).ready(function () {
+
+
+            
+
+            if ($('#TutSearch').val() == "")
+                $('#TutSearch').val(defaultSearchTxt);
+            $('#TutSearch').focus(function () {
+                if ($('#TutSearch').val() == defaultSearchTxt)
+                    $('#TutSearch').val("");
+                $('#TutSearch').css("color", "#666");
+            });
+            $('#TutSearch').blur(function () {
+                if ($.trim($('#TutSearch').val()) == "")
+                    $('#TutSearch').val(defaultSearchTxt);
+                $('#TutSearch').css("color", "#E5E4E2");
+            });
+
+            getH2YIndexes();
+            loadPages();
+            doSubPrep();
+
+
+        });
+
+
+        var currentSelected = 1000;
+
+        function selectLeftMenuItem(menuID) {
+            if (currentSelected != menuID) {
+                $('#lm_h_' + currentSelected).removeClass("selected");
+                $('#lm_h_' + menuID).addClass("selected");
+                currentSelected = menuID;
+            }
+        }
+
+
+        $(function () {
+
+            var $tutContent = $('#tut-content-wrap');
+            var $sidebar = $("#tutNav");
+            var $window = $(window);
+            var menuStartTop = $sidebar.offset().top;
+            var tutHeight = $tutContent.height();
+            var tutOffsetTop = $tutContent.offset().top;
+            var sidebarHeight = $sidebar.height();
+
+            $window.scroll(function () {
+
+                var commentEnd = $('#comment-end').offset().top;
+                var windowScroll = $window.scrollTop();
+                var sideMenuOffset = $sidebar.offset();
+                var scrollInArticle = Math.max(windowScroll - tutOffsetTop, 0);
+                var commentEndScreen = commentEnd - windowScroll - 200;
+                var sideMenuBottomY = sideMenuOffset.top + sidebarHeight - windowScroll;
+
+                if (scrollInArticle > tutHeight) {
+                    scrollInArticle = tutHeight;
+                }
+                var percentageThrough = scrollInArticle / tutHeight;
+                var newTop = (-percentageThrough * 100);
+
+                if (windowScroll <= menuStartTop) {
+                    newTop = menuStartTop - windowScroll;
+                }
+                else if (sideMenuBottomY >= commentEndScreen) {
+                    newTop = commentEndScreen - sidebarHeight;
+                }
+
+
+                // Overview
+                if (percentageThrough == 0 && currentTutPage == 1)
+                    selectLeftMenuItem(1000);
+                else {
+
+                    var loopTo = pageFirstY - 1;
+                    if (loopTo < 0)
+                        loopTo = 0;
+
+                    if ((loopTo != 0 && pageLastY != 0) || currentTutPage == 1) {
+                        for (var i = pageLastY; i >= loopTo; i--) {
+                            if ((windowScroll >= (h2YLocations[i] - changeMenuPadding)) && h2YLocations[i] != 0) {
+                                selectLeftMenuItem(i + 1);
+                                break;
+                            }
+                        }
+                    }
+                }
+                $sidebar.css("top", newTop + "px");
+                //$sidebar.offset({ top: newTop, left: sideMenuOffset.left });
+
+            });
+
+        });
+
+    </script>
+        
+    
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+
+    <script src="./Supporting Multiple Languages - Scirra.com_files/qtip.js"></script> 
+    <script>
+        var currentPage = 1;
+        var totalPages = 2;
+        var anchor = '67711b25-4501-4243-a435-b83a84c9512c';
+        var commentsPerPage = 15;
+        var avatarSize = 80;
+        var baseHREF = '../../';
+        var textAreaDefaultTxt = "Write your comment...";
+        var maxLength =2500;
+        var minLength = 10;
+        var currentUserID = 0;
+        var currentUsername = '';
+    
+        // Finds all instances of @username and highlights them
+        function highlightSelfReferences() {
+            $('.actual-comment .body').each(function () {
+
+                var content = $(this).html();
+                var re = new RegExp("@" + currentUsername,"gi");
+                content = content.replace(re, '<span class="self-reference">' + currentUsername + '</span>');
+
+                $(this).html(content);
+            });
+        }
+
+        $(document).ready(function() {
+            if($('#CommentEntry').val() == '')
+                $('#CommentEntry').val(textAreaDefaultTxt);
+
+            $('#char-count').html(maxLength);
+            $('#chat-remain-wrap').show();
+            highlightSelfReferences();
+            initCP();
+        });
+        $('#CommentEntry').focus(function() {
+            if($('#CommentEntry').val() == textAreaDefaultTxt) {
+                $('#CommentEntry').val('');
+            }
+        });
+        $('#CommentEntry').blur(function () {
+            var val = $.trim($('#CommentEntry').val());
+            if(val == '')
+                $('#CommentEntry').val(textAreaDefaultTxt);
+        });
+
+        $("#CommentEntry").keyup(function() {
+
+            updateCommentCount();
+
+        });
+        
+        function getCurrentVoteCount(commentID) {
+            return parseInt($('#vote-wrap-' + commentID + ' .votecount').html());
+        }
+        function setVoteCount(commentID, value) {
+            $('#vote-wrap-' + commentID + ' .votecount').html(value);
+        }
+
+        function clearVisualVote(commentID) {
+
+            var voteCount = getCurrentVoteCount(commentID);
+            
+            if($('#vote-wrap-' + commentID + ' .downvote').hasClass("downchosen")) {
+                voteCount++;
+                $('#vote-wrap-' + commentID + ' .downvote').removeClass("downchosen");
+            }
+            if($('#vote-wrap-' + commentID + ' .upvote').hasClass("upchosen")) {
+                voteCount--;
+                $('#vote-wrap-' + commentID + ' .upvote').removeClass("upchosen");
+            }
+            setVoteCount(commentID, voteCount);
+        }
+        function showUpVoted(commentID) {
+            clearVisualVote(commentID);
+            $('#vote-wrap-' + commentID + ' .upvote').addClass("upchosen");
+
+            setVoteCount(commentID, getCurrentVoteCount(commentID) + 1);
+        }
+        function showDownVoted(commentID) {
+            clearVisualVote(commentID);
+            $('#vote-wrap-' + commentID + ' .downvote').addClass("downchosen");
+            
+            setVoteCount(commentID, getCurrentVoteCount(commentID) - 1);
+        }
+
+        function commentVote(upVote, commentID) {
+
+            $.ajax({
+                url: 'https://www.scirra.com/handlers/fresh/comments/VoteComment.ashx?commentID=' + commentID + '&upvote=' + upVote,
+                success: function(data) {
+
+                    var alertClass = "cream";
+                    var errorMessage = data;
+                    var blockTooltip     = false;
+
+                    if(data == 'NotLoggedIn') {
+                        alertClass = "red";
+                        errorMessage = "You are not currently logged in!";
+                    }
+                    else if(data == 'CantVoteOnOwnComment') {
+                        alertClass = "red";
+                        errorMessage = "You can't vote on your own comment!";
+                    }
+                    else if(data == 'VoteLocked') {
+                        alertClass = "red";
+                        errorMessage = "Your vote is now locked from changes.";
+                    }
+                    else if(data == 'VoteCancelled') {
+                        blockTooltip = true;
+                        clearVisualVote(commentID);
+                    }
+                    else if(data == 'NewUpvoteRecorded') {
+                        blockTooltip = true;
+                        showUpVoted(commentID);
+                    }
+                    else if(data == 'NewDownvoteRecorded') {
+                        blockTooltip = true;
+                        showDownVoted(commentID);
+                    }
+                    else if(data == 'VoteChangedToUpvote') {
+                        blockTooltip = true;
+                        showUpVoted(commentID);
+                    }
+                    else if(data == 'VoteChangedToDownvote') {
+                        blockTooltip = true;
+                        showDownVoted(commentID);
+                    }
+                    
+                    if(!blockTooltip) {
+                        $('#vote-wrap-' + commentID).qtip(
+                        {
+                            content: errorMessage, // Give it some content
+                            position: {
+                                corner: {
+                                    target: 'topMiddle',
+                                    tooltip: 'bottomLeft'
+                                }
+                            },
+                            hide: {
+                                fixed: true // Make it fixed so it can be hovered over
+                            },
+                            show: {
+                                ready: true,
+                                solo: true
+                            },
+                            style: {
+                                padding: '5px 15px',
+                                name: alertClass,
+                                width: {
+                                    max: 280
+                                },
+                                style: { border: { radius: 3 } }
+                            }
+                        });
+                    }
+                }
+            });
+
+        }
+        
+        function cancelCommentEdit(commentID) {
+            $('#comment' + commentID + " .body").show();
+            $('#comment' + commentID + ' .comment-edit-wrap').hide();
+        }
+        
+        function editComment(commentID) {
+
+            var commentText = htmlCommentToCommentCode($('#comment' + commentID + " .body").html());
+
+            $('#comment' + commentID + ' .comment-edit-wrap').html('<div class="edit-comment-wrap" id="edit-comment-wrap-' + commentID + '"><textarea id="comment-edited-text-' + commentID + '">' + commentText + '</textarea><div class="edit-comment-buttons"><button class="l" onclick="cancelCommentEdit(' + commentID + ');return false;">Cancel</button><button class="r" onclick="saveCommentEdits(' + commentID +');return false;">Save Changes</button></div><div class="clear"></div></div>');
+            $('#comment' + commentID + " .body").hide();
+            $('#comment' + commentID + ' .comment-edit-wrap').show();
+            
+            // Hide control panel, not needed
+            $('#comment' + commentID + ' .comment-cp').slideUp('fast');
+
+            $('#comment-edited-text-' + commentID).focus();
+        }
+        
+        function updateCommentCount() {
+            var len = $('#CommentEntry').val().length;
+            var remaining = maxLength - len;
+            
+            if(remaining < 0 && !$('#char-count').hasClass("red")) {
+                $('#char-count').addClass("red");
+            }
+            else if(remaining >= 0 && $('#char-count').hasClass("red")) {
+                $('#char-count').removeClass("red");
+            }
+
+            $('#char-count').html(remaining);
+        }
+
+        function initCP() {
+            
+            $('.actual-comment').bind('mouseenter', function() {
+                if (currentUserID != 0) {
+
+                    if (!$(this).find('.comment-edit-wrap').is(':visible')) {
+                        $(this).find('.comment-cp').slideDown('fast');
+                    }
+                }
+            });
+            $('.actual-comment').bind('mouseleave', function() {
+                $(this).find('.comment-cp').slideUp('fast');
+            });
+            
+        }
+
+        function undoCommentDelete(commentID) {
+
+            $.ajax({
+                url: 'https://www.scirra.com/handlers/fresh/comments/DeleteComment.ashx?commentID=' + commentID + '&undelete=1',
+                success: function(data) {
+                    $('#deleted-comment-notice-' + commentID).remove();
+                    $('#comment' + commentID).show();
+                }
+            });
+
+        }
+
+        function deleteComment(commentID) {
+            
+            
+            $.ajax({
+                url: 'https://www.scirra.com/handlers/fresh/comments/DeleteComment.ashx?commentID=' + commentID,
+                success: function(data) {
+                    if(data == "error") {
+
+                        $('#comment' + commentID).html('<div class="comment-error-wrap">This following comment could not be deleted!  Either you do not have permission, or 10 minutes have expired since you posted this comment and it is now locked from deletes.</div>' + $('#comment' + commentID).html());
+                        $('#comment' + commentID).show();
+
+                    } else {
+                        $('#comment' + commentID).fadeOut('fast');
+                        $('#comment' + commentID).parent().prepend('<div id="deleted-comment-notice-' + commentID + '" class="comment-wrap comment-error-wrap">Comment has been deleted! <a href="javascript:void(0);" onclick="undoCommentDelete(' + commentID + ');return false;">Undo delete</a></div>');
+                    }
+                }
+            });
+
+            
+        }
+
+        function showError(message) {
+            $('#ErrorBox-JS').html(message);
+            $('#ErrorBox-JS').show();
+            $("#CommentEntry").removeAttr('disabled');
+            $('#PublishCommentButton').removeAttr('disabled');
+            $("#CommentEntry").focus();
+        }
+
+        // Turn comment HTML into code for editing/quoting etc
+        function htmlCommentToCommentCode(comment) {
+            comment = $.trim(comment);
+
+            // Self references
+            comment = comment.replace(/\<span class="self-reference"\>(.*?)\<\/span\>/gi,"@$1");
+
+            // Anchors
+            comment = comment.replace(/\<a(.*?)href="(.*?)"(.*?)>(.*?)<\/a>/gi,"$2");
+
+            comment = comment.replace(/\<p\>\<\/p\>/g,"");
+            comment = comment.replace(/\<\/p\>\<p\>/g,"\n\n");
+            comment = comment.replace(/\<\/p\>/g,"");
+            comment = comment.replace(/\<p\>/g,"");
+            comment = comment.replace(/\<br\>/g,"\n");
+            comment = comment.replace(/\<br\/\>/g,"\n");
+            comment = comment.replace(/\<br \/\>/g,"\n");
+            comment = comment.replace(/&lt;/g,"<");
+            comment = comment.replace(/&gt;/g,">");
+            comment = comment.replace(/&amp;/g,"&");
+            
+            while(comment.indexOf("\n\n\n") != -1) {
+                comment = comment.replace("\n\n\n", "\n\n");
+            }
+            
+            return comment;
+
+        }
+
+        function addQuote(comment, quotedUsername) {
+            var commentToQuote = $.trim($(comment).parent().parent().find('.body').html());
+            
+            // Comment only works for 1 next, remove instances of other quotes
+            commentToQuote = commentToQuote.replace(/<div class="quoted-text">.*?<\/div>/g,"<br /><br />");
+            commentToQuote = commentToQuote.replace(/<\/div>/g,"");
+            
+            commentToQuote = htmlCommentToCommentCode(commentToQuote);
+
+            // Max of two line breaks
+            commentToQuote = $.trim(commentToQuote);
+
+            if($('#CommentEntry').val()  == textAreaDefaultTxt)
+                $('#CommentEntry').val('');
+            $('#CommentEntry').val('[quote=' + quotedUsername + ']\n' + commentToQuote + '\n[/quote]\n\n' + $('#CommentEntry').val());
+            $('#CommentEntry').focus();
+            updateCommentCount();
+            
+            // Set cursor
+            setCaretToPos(document.getElementById("CommentEntry"), $('#CommentEntry').val().length);
+            
+            // Scroll to bottom
+            var tarea = $('#CommentEntry');
+            tarea.scrollTop(
+                tarea[0].scrollHeight - tarea.height()
+            );
+        }
+
+        function setSelectionRange(input, selectionStart, selectionEnd) {
+          if (input.setSelectionRange) {
+            input.focus();
+            input.setSelectionRange(selectionStart, selectionEnd);
+          }
+          else if (input.createTextRange) {
+            var range = input.createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', selectionEnd);
+            range.moveStart('character', selectionStart);
+            range.select();
+          }
+        }
+        function setCaretToPos (input, pos) {
+          setSelectionRange(input, pos, pos);
+        }
+
+        function showEditError(commentID, message) {
+            $('#edit-comment-wrap-' + commentID + ' .comment-error-wrap').remove();
+            $('#edit-comment-wrap-' + commentID).prepend('<div class="comment-error-wrap">' + message + '</div>');
+            $('#edit-comment-wrap-' + commentID + ' .comment-error-wrap').show();
+
+            $('#comment-edited-text-' + commentID).removeAttr("disabled");
+            $('#edit-comment-wrap-' + commentID + " button").removeAttr("disabled");
+            $('#comment-edited-text-' + commentID).focus();
+        }
+
+        function saveCommentEdits(commentID) {
+
+            var comment = $.trim($('#comment-edited-text-' + commentID).val());
+
+            // Prevent resubmits
+            $('#comment-edited-text-' + commentID).attr("disabled", "disabled");
+            $('#edit-comment-wrap-' + commentID + " button").attr("disabled", "disabled");
+            
+            if(comment.length < minLength)
+                showEditError(commentID, "Comment must be at least " + minLength + " characters long!");
+            else if(comment.length > maxLength)
+                showEditError(commentID, "Comment can't be over " + maxLength + " characters long!");
+            else {
+                
+                var data = "comment=" + encodeURIComponent(comment) + "&commentID=" + commentID;
+                // Attempt ajax post
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://www.scirra.com/handlers/fresh/comments/UpdateComment.ashx',
+                    data: data
+                })
+                .success(function(response) {
+
+                    // 0 returns if failed
+                    if (response != "0") {
+                            
+                        $('#comment' + commentID + ' .body').html('<p>' + response + '</p>');
+                        $('#comment' + commentID + ' .comment-edit-wrap').hide();
+                        highlightSelfReferences();
+                        $('#comment' + commentID + " .body").slideDown('fast');
+
+                    } else
+                        showEditError(commentID, "Oops!  Something went wrong.  :(  Please contact support if it persists!");
+
+                })
+                .error(function() {
+                    showEditError(commentID, "Oops!  Something went wrong on the server!  Please try again or email support.");
+                });
+            }
+        }
+
+        // Attempt to post the comment
+        function postComment() {
+
+            var comment = $.trim($('#CommentEntry').val());
+            var blockRedirect = false;
+            if(comment == textAreaDefaultTxt) {
+               comment = "";
+               $('#CommentEntry').val('');
+            }
+            
+            // Prevent multiple post requests
+            $("#CommentEntry").attr("disabled", "disabled");
+            $('#PublishCommentButton').attr("disabled", "disabled");
+            
+            if(comment.length < minLength)
+                showError("Your comment must be at least " + minLength + " characters long!");
+            else if(comment.length > maxLength)
+                showError("Your comment can't be over " + maxLength + " characters long!");
+            else {
+
+                var data = "comment=" + encodeURIComponent(comment) + "&anchor=" + anchor;
+
+                // Attempt ajax post
+                $.ajax({
+                  type: 'POST',
+                  url: 'https://www.scirra.com/handlers/fresh/comments/PostComment.ashx',
+                  data: data
+                })
+                .success(function(response) {
+
+                    if(response == "Posted") {
+                        window.location.href = "?action=lastpage&t=" + Date.now() + "#lastcomment";
+                        blockRedirect = true;
+                    }
+                    else if(response == "CommentNoLongEnough") {
+                        showError("Your comment is not long enough!");
+                    }
+                    else if(response == "FloodControlExceeded") {
+                        showError("You're attempting to post comments too quickly!  Please wait a little while and try again.");
+                    }
+                    else if(response == "BannedAccount") {
+                        showError("Your account is banned, please contact support if this is a mistake!");
+                    }
+                    else if(response == "SpamDetected") {
+                        showError("Our spam robots have told us they think this comment is possible spam!  Please do not attempt to resubmit this comment or you may be banned!  If you are not a spammer, please email support@scirra.com and request to be whitelisted.");
+                    }
+                    else if(response == "SpamDetectedAndBanned") {
+                        showError("Uh oh :(  Your comment looks like spam and we've temporarially suspended your account.  If this is an error, please contact support@scirra.com and we'll apologise profusely and unban you straight away!");
+                    }
+                    else if(response == "SpamDetected") {
+                        showError("Our spam robots have told us they think this comment is possible spam!  Please do not attempt to resubmit this comment or you may be banned!  If you are not a spammer, please contact us and request to be whitelisted.");
+                    }
+                    else
+                        showError("Oops!  Something went wrong.  :(  Please contact support if it persists!");
+
+                })
+                .error(function() {
+                    showError("Oops!  Something went wrong!  Please try again or email support.");
+                })
+                .complete(function () {
+                    if(!blockRedirect) {
+                        $("#CommentEntry").removeAttr('disabled');
+                        $('#PublishCommentButton').removeAttr('disabled');
+                    }
+                });
+            }
+
+        }
+        
+        function htmlEncode(value){
+          return $('<div/>').text(value).html();
+        }
+
+        function htmlDecode(value){
+          return $('<div/>').html(value).text();
+        }
+
+        function changeCommentPage(newPage) {
+        
+            if(newPage != currentPage && newPage > 0 && newPage <= totalPages) {
+
+                $('#ReportedComment').hide();
+                $('.comment-error-wrap').hide();
+
+                var commentsFetched = false;
+
+                //var delayAmount = 0;
+                $.each($('#all-comments-wrap .actual-comment'), function(index, value) {
+                    //delayAmount += 30;
+                    //$(this).delay(delayAmount).slideUp('fast');
+                    $(this).hide();
+                });
+                
+                var jqxhr = $.getJSON("https://www.scirra.com/handlers/fresh/comments/GetComments.ashx?anchor=" + anchor + "&page=" + newPage + "&avatarSize=" + avatarSize + "&commentsPerPage=" + commentsPerPage, function(json) {
+
+                    commentsFetched = true;
+                    var template = $('#comment-template').html();
+                    var allNewComments = "";
+                    
+                    $.each(json.comments, function(i,item){
+
+                    var newComment = template;
+
+
+                        // Get correct class for placed votes
+                        var downvoteCSSClass = "downvote";
+                        var upvoteCSSClass = "upvote";
+                        var usersCommentVote = parseInt(item.currentUserVote);
+                        if(usersCommentVote == -1)
+                            downvoteCSSClass += " downchosen";
+                        else if(usersCommentVote == 1)
+                            upvoteCSSClass += " upchosen";
+
+                        var canDelete = item.canDelete;
+                        var canEdit = item.canEdit;
+                        
+                        if(!canEdit || !canDelete) {
+                            var temp = $(newComment);
+                            if(!canEdit)
+                                temp.find(".edit").remove();
+                            if(!canDelete)
+                                temp.find(".delete").remove();
+                            newComment = $('<div>').append(temp.clone()).remove().html();
+                        }
+                        
+                        
+
+                        newComment = newComment.replace(/#upvoteclass/gi, upvoteCSSClass);
+                        newComment = newComment.replace(/#downvoteclass/gi, downvoteCSSClass);
+
+                        newComment = newComment.replace(/#baseURL/gi, baseHREF + "tutorials/444/supporting-multiple-languages");
+                        newComment = newComment.replace(/#rep/gi, item.formattedRep);
+                        newComment = newComment.replace(/#currentcommentpage/gi, newPage);
+                        newComment = newComment.replace(/#currentvotecount/gi, item.currentVoteCount);
+                        newComment = newComment.replace(/#authorUsername/gi, item.username);
+                        newComment = newComment.replace(/#IDOfComment/gi, item.commentID);
+                        newComment = newComment.replace(/#avatar/gi, "<a href=\"" + baseHREF + "users/" + item.SEOFriendlyUsername + "\"><img class=\"avatar\" src=\"" + item.avatar + "\" width=\"" + avatarSize + "\" height=\"" + avatarSize + "\" /></a>");
+                        newComment = newComment.replace(/#authorlink/gi, "<a href=\"" + baseHREF + "users/" + item.SEOFriendlyUsername + "\" class=\"author-link\">" + item.username + "</a>");
+
+                        var isEarlyAdopter = item.EarlyAdopter == "True";
+                        var isStandardLicenseHolder = item.StandardHolder == "True";
+                        if(isStandardLicenseHolder) {
+                            newComment = newComment.replace(/#badgelink/gi, "<a id=\"STDBadge\" class=\"s stand-badge\" href=\"" + baseHREF + "store\"></a>");
+                        }
+                        else if(isEarlyAdopter) {
+                            newComment = newComment.replace(/#badgelink/gi, "<a id=\"EABadge\" class=\"s earlyadop-badge\" href=\"" + baseHREF + "store\"></a>");
+                        } else {
+                            newComment = newComment.replace(/#badgelink/gi, "");
+                        }
+                        
+                        
+                        var decodedComment = htmlDecode(item.comment);
+                        decodedComment = decodedComment.replace(/%5c/gi, "\\");
+                        
+                        newComment = newComment.replace(/#comment/gi, ("<p>" + decodedComment + "</p>").replace("<p></p>",""));
+                        newComment = newComment.replace(/#timeago/gi, "<abbr class=\"timeago\" title=\"" + item.postDate + "\">" + item.alternativePostDate + "</abbr>");
+                        
+                        allNewComments += newComment;
+                    });
+                    
+                    
+                    
+                    $('#all-comments-wrap').html(allNewComments + $('#all-comments-wrap').html());
+                    jQuery("abbr.timeago").timeago();
+                    highlightSelfReferences();
+                    initCP();
+                });
+                
+                if(newPage == totalPages) {
+                    $('#next').hide();
+                }else {
+                    $('#next').show();
+                }
+                
+                if(newPage == 1) {
+                    $('#prev').hide();
+                }else {
+                    $('#prev').show();
+                }
+
+                // Select correct page
+                $('#comment-pagelink-' + currentPage).removeClass("selected");
+                currentPage = newPage;
+                $('#comment-pagelink-' + currentPage).addClass("selected");
+
+                
+                
+                
+                history.pushState(null, document.title, "?page=" + currentPage);
+                
+                
+
+            }
+        }
+    </script>
+
+    
+    
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21804850-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        function plusone_callback(response) {
+            $.ajax({
+                url: RelPath + "handlers/gp1.ashx?o=" + response.state + "&u=" + response.href,
+                context: document.body,
+                success: function () {
+
+                }
+            });
+        }
+
+
+
+
+    </script>
+
+    </form><iframe name="oauth2relay277255971" id="oauth2relay277255971" src="./Supporting Multiple Languages - Scirra.com_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+
+
+
+</body></html>

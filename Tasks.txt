@@ -1,1 +1,0 @@
-- Tamigucho phenotype: weight; genotype: weight-range-standard (random uncommon factors may make phenotype weight greater or lower)

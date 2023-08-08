@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://www.scirra.com/forum/custom-php-captcha-generator_t93942 -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+
+    </style>
+
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-language" content="en-gb">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+
+
+<title>Custom PHP CAPTCHA generator - Scirra Forums</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - Scirra Forums" href="https://www.scirra.com/forum/feed.php"><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://www.scirra.com/forum/feed.php?mode=topics"><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Tools and Resources" href="https://www.scirra.com/forum/feed.php?f=157"><link rel="alternate" type="application/atom+xml" title="Feed - Topic - Custom PHP CAPTCHA generator" href="https://www.scirra.com/forum/feed.php?f=157&t=93942">
+
+    <script id="twitter-wjs" src="./Custom PHP CAPTCHA generator - Scirra Forums_files/widgets.js"></script><script type="text/javascript" async="" src="./Custom PHP CAPTCHA generator - Scirra Forums_files/ga.js"></script><script type="text/javascript">
+// <![CDATA[
+        var jump_page = 'Enter the page number you wish to go to:';
+        var on_page = '1';
+        var per_page = '';
+        var base_url = '';
+        var style_cookie = 'phpBBstyle';
+        var style_cookie_settings = '; path=/; domain=.scirra.com; secure';
+        var onload_functions = new Array();
+        var onunload_functions = new Array();
+
+        
+
+        /**
+	* Find a member
+	*/
+        function find_username(url)
+        {
+            popup(url, 760, 570, '_usersearch');
+            return false;
+        }
+
+        /**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+        window.onload = function()
+        {
+            for (var i = 0; i < onload_functions.length; i++)
+            {
+                eval(onload_functions[i]);
+            }
+        };
+
+        window.onunload = function()
+        {
+            for (var i = 0; i < onunload_functions.length; i++)
+            {
+                eval(onunload_functions[i]);
+            }
+        };
+
+// ]]>
+</script>
+
+<script type="text/javascript" src="./Custom PHP CAPTCHA generator - Scirra Forums_files/styleswitcher.js"></script>
+<script type="text/javascript" src="./Custom PHP CAPTCHA generator - Scirra Forums_files/forum_fn.js"></script>
+
+<link href="./Custom PHP CAPTCHA generator - Scirra Forums_files/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" disabled="">
+<link href="./Custom PHP CAPTCHA generator - Scirra Forums_files/style.php" rel="stylesheet" type="text/css" media="screen, projection">
+
+<link href="./Custom PHP CAPTCHA generator - Scirra Forums_files/normal.css" rel="stylesheet" type="text/css" title="A" disabled="">
+<link href="./Custom PHP CAPTCHA generator - Scirra Forums_files/medium.css" rel="alternate stylesheet" type="text/css" title="A+" disabled="">
+<link href="./Custom PHP CAPTCHA generator - Scirra Forums_files/large.css" rel="alternate stylesheet" type="text/css" title="A++" disabled="">
+
+
+
+    <link rel="shortcut icon" href="https://static4.scirra.net/images/fresh/scirra-favicon-02.ico">
+    <link rel="apple-touch-icon" href="https://static4.scirra.net/images/fresh/scirra-favicon-57px-01.png">
+    <link href="./Custom PHP CAPTCHA generator - Scirra Forums_files/css" rel="stylesheet" type="text/css">
+    <link href="./Custom PHP CAPTCHA generator - Scirra Forums_files/css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.scirra.com/css/Fresh.css">
+    <link rel="stylesheet" href="https://www.scirra.com/css/phpbb.css">
+    <link rel="stylesheet" href="https://www.scirra.com/js/eventml/eventml.css">
+    
+        <link href="./Custom PHP CAPTCHA generator - Scirra Forums_files/Custom PHP CAPTCHA generator - Scirra Forums.html" rel="canonical">
+    
+    
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr" data-twttr-rendered="true">
+    
+
+
+<header>
+
+
+
+
+<div class="menu-wrapper">
+    <div class="content-wrap">
+        
+            <a class="topmenu-logo" href="https://www.scirra.com/"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/scirra-logo-small-01.png" width="101" height="28" alt="Scirra Logo Small"></a>
+        
+        <ul>
+            <li><a href="https://www.scirra.com/construct2">Construct 2</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/manual">Manual</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/tutorials">Tutorials</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/store">Store</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/arcade">Arcade</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/blog">Blog</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/forum">Forums</a></li><li class="split"></li>
+            <li><a href="https://www.scirra.com/education">Education</a></li><li class="split"></li>
+        </ul>
+        
+            <div class="guest-panel">
+                <a href="https://www.scirra.com/register" title="Create a Scirra account">Register</a> or <a href="https://www.scirra.com/login" title="Login to your Scirra account">Login</a>
+            </div>
+        
+        
+        <div class="clear"></div>
+        
+        
+        
+        <div id="AlertsDropDown" class="alerts-dropdown">
+	
+            <div class="dropdown-tip"></div>
+            <div class="dropdown-links c sm">
+                <a href="https://www.scirra.com/alerts">View All Alerts</a>
+            </div>
+            <div class="hr"></div>
+
+            <div id="alerthtmlwrap"></div>
+
+        
+</div>
+
+    </div>
+</div>
+</header>
+    
+    
+    
+<div class="navbar">
+    <div class="inner-content-size">
+    
+        <div id="page-header">
+            <ul class="linklist navlinks" style="width:100%">
+                
+                <li class="icon-home"><a href="https://www.scirra.com/forum" accesskey="h" style="margin-right:5px;">Board index</a>  <strong style="color:#c0c0c0">‹</strong> <a href="https://www.scirra.com/forum/game-development_f181?sid=a19ae6563f1cf1ca62a14701d65cfa27" style="margin-right:5px;">Game Development</a> <strong style="color:#c0c0c0">‹</strong> <a href="https://www.scirra.com/forum/game-development_f157?sid=a19ae6563f1cf1ca62a14701d65cfa27" style="margin-right:5px;">Tools and Resources</a></li>
+
+                <li class="rightside"><a href="https://www.scirra.com/forum/custom-php-captcha-generator_t93942#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+                <li class="rightside"><a href="https://www.scirra.com/forum/custom-php-captcha-generator_t93942?sid=a19ae6563f1cf1ca62a14701d65cfa27&view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+            </ul>
+
+            
+
+            <ul class="linklist rightside">
+                <li class="icon-faq"><a href="https://www.scirra.com/forum/faq.php?sid=a19ae6563f1cf1ca62a14701d65cfa27" title="Frequently Asked Questions">FAQ</a></li>
+                <li class="icon-members"><a href="https://www.scirra.com/forum/memberlist.php?sid=a19ae6563f1cf1ca62a14701d65cfa27" title="View complete list of members">Members</a></li><li class="icon-register"><a href="https://www.scirra.com/forum/ucp.php?mode=register&sid=a19ae6563f1cf1ca62a14701d65cfa27">Register</a></li>
+                <li class="icon-logout"><a href="https://www.scirra.com/forum/ucp.php?mode=login&sid=a19ae6563f1cf1ca62a14701d65cfa27" title="Login" accesskey="x">Login</a></li>
+                
+            </ul>
+        </div>
+        
+        <!--
+        
+			<div id="search-box">
+				<form action="./search.php?sid=a19ae6563f1cf1ca62a14701d65cfa27" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=a19ae6563f1cf1ca62a14701d65cfa27" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="a19ae6563f1cf1ca62a14701d65cfa27" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+        -->
+        <div class="clear"></div>
+
+    </div>
+</div>
+<div class="bottom-tear"></div>
+
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+        
+        
+        <div class="inner-content-size">
+<h1 class="topic-title" style="margin:20px 0 0 0;"><a href="https://www.scirra.com/forum/custom-php-captcha-generator_t93942?sid=a19ae6563f1cf1ca62a14701d65cfa27">Custom PHP CAPTCHA generator</a></h1>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Discussion of tools and resources for game developers<br></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="https://www.scirra.com/forum/posting.php?mode=reply&f=157&t=93942&sid=a19ae6563f1cf1ca62a14701d65cfa27" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="https://www.scirra.com/forum/search.php?sid=a19ae6563f1cf1ca62a14701d65cfa27">
+			<fieldset>
+				<input class="inputbox search tiny" type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value==&#39;Search this topic…&#39;)this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;)this.value=&#39;Search this topic…&#39;;">
+				<input class="button2" type="submit" value="Search">
+				<input type="hidden" name="t" value="93942">
+<input type="hidden" name="sf" value="msgonly">
+<input type="hidden" name="sid" value="a19ae6563f1cf1ca62a14701d65cfa27">
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			4 posts
+			 • Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+
+<div class="newforum-tbl-wrap postview">
+
+    
+    <div id="p730356" class="post bg2">
+        <div class="inner">
+
+            <div class="postbody">
+                
+                <a href="https://www.scirra.com/forum/custom-php-captcha-generator_t93942#p730356"></a>
+                
+            
+
+                    <h3 class="first">
+                    <!--<a href="#p730356">Custom PHP CAPTCHA generator</a>-->
+                    <p class="author"><a href="https://www.scirra.com/forum/custom-php-captcha-generator_p730356?&sid=a19ae6563f1cf1ca62a14701d65cfa27#p730356"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/post-icon-01.png" width="9" height="13" alt="Post" title="Post"></a> » Sat Jan 18, 2014 2:45 pm </p>
+                    </h3>
+
+   
+                
+
+                <div class="content">
+                    Hey guys, I wrote my own custom CAPTCHA image generator using PHP &amp; the GD library and wanted to share it with you, in case you need something like this on your own sites or apps.  It's a really simple implementation which you can see an example output here: http://10b.us/captchar.php<br><br>This PHP script generates a 150x80 PNG image consisting of a few random geometric shapes along with a CAPTCHA text string of 5 characters consisting of the numbers 0-9 and letters a-f.  If you needed more characters or different colors, you could easily extend this script.  The correct CAPTCHA value is stored in a session variable named "captchaval".  The font I'm using is called "aescrawl.ttf" which has a handwriting feel to it.  Substitute whatever font you'd like but it will need to be in the same directory as this script.<br><br>Implementation: Think of this file as just any other image that you'd insert into your HTML as an img src.  You would include this script inside that tag like this:<br>[code]&lt;img src="captchar.php" alt="CAPTCHA image" /&gt;[/code]<br><br>Here's the CAPTCHA PHP code itself:<br>[code]<br>&lt;?php<br><br>/********************************************************<br> *<br> *&nbsp;&nbsp;&nbsp;&nbsp;CAPTCHA generator v0.01, 2013<br> *&nbsp;&nbsp;&nbsp;&nbsp;Written by ionux (help@10b.us)<br> *<br> *&nbsp;&nbsp;&nbsp;&nbsp;This is free software released into the <br> *&nbsp;&nbsp;&nbsp;&nbsp;public domain. No warranty is implied or provided.<br> *<br> ********************************************************/<br><br>ob_start();<br>session_start();<br><br>$string = substr(md5(mt_rand(0,55)),5,5);<br>$spook = ':::::::::::';<br>$shape1_x = rand(0,145);<br>$shape1_y = rand(0,75);<br>$shape2_x = rand(0,145);<br>$shape2_y = rand(0,75);<br><br>$_SESSION['captchaval'] = $string;<br><br>header('Content-Type: image/png');<br><br>$im = <a href="https://www.scirra.com/handlers/fresh/newforum/profileredirect.ashx?u=imagec" title="View imagec&#39;s profile" class="ex-ref">@imagec</a>reate(150, 80) or die('Cannot Initialize new GD image stream');<br><br>$background_color = imagecolorallocate($im, 0, 0, 0);<br>$text_color = imagecolorallocate($im, 233, 233, 233);<br>$strange_color = imagecolorallocate($im, 101, 101, 101);<br>$shape1_color = imagecolorallocate($im, 191, 77, 224);<br>$shape2_color = imagecolorallocate($im, 200, 111, 43);<br><br>imagestring($im, 5, rand(3,100), rand(10,75), $spook, $strange_color);<br>imagestring($im, 5, rand(3,100), rand(10,75), $spook, $strange_color);<br>imageellipse($im, $shape1_x, $shape1_y, rand(46,100), rand(30,100), $shape1_color);<br>imageellipse($im, $shape2_x, $shape2_y, rand(46,100), rand(30,100), $shape2_color);<br>imagettftext($im, 34, rand(0,15), 10, 75, $text_color, 'aescrawl.ttf', $string);<br><br>imagepng($im);<br>imagedestroy($im);<br>[/code]<br><br>If this help anyone else, great!  I appreciate all the help you guys have given me with C2 so far.  :D<edited><editid>ionux</editid><editdate>2014-01-18 14:48:44</editdate></edited>
+                
+
+
+
+                
+                </div>
+                
+                
+
+
+            </div>
+            
+            
+
+            
+            <dl class="postprofile" id="profile730356">
+                
+
+
+                <div class="post-author-name">
+                    <a href="https://www.scirra.com/forum/memberlist.php?mode=viewprofile&u=55506&sid=a19ae6563f1cf1ca62a14701d65cfa27">ionux</a>
+                </div>
+                <div style="width:128px;margin:0 auto;padding:0;margin-bottom:5px;">
+                    <dt class="av-wrap" style="margin:0;">
+                        
+                        
+                        <a class="s stand-badge" href="https://www.scirra.com/store/construct2" title="ionux owns a Construct 2 license!  Hats off!"></a>
+                        
+                        <a href="https://www.scirra.com/users/ionux" title="View this users profile"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/963900439d602c417456461707a014b5.png" width="128" height="128"></a>
+
+                    </dt>
+                </div>
+    
+                
+                
+
+                <div class="auth-stats">
+                    
+                    
+                    <div class="badge-wrap" style="margin-bottom:12px;">
+                        
+                        <div class="pb pb-bronze" title="Bronze Badges">B</div><span>9</span>
+                        
+                    </div>
+                    <dd><strong>Posts:</strong> 24</dd>
+                    <dd><strong>Reputation:</strong> 492</dd>
+                    <!--
+                        <dd><strong>Joined:</strong> 31st May, 2015</dd>
+                    -->
+                    
+                </div>
+
+                
+
+            </dl>
+            
+
+                <div class="back2top"><a href="https://www.scirra.com/forum/custom-php-captcha-generator_t93942#wrap" class="top" title="Top">Top</a></div>
+
+            <span class="corners-bottom"><span></span></span></div>
+    </div>
+
+    <hr class="divider">
+    
+    <div id="p730357" class="post bg1">
+        <div class="inner">
+
+            <div class="postbody">
+                
+                <a href="https://www.scirra.com/forum/custom-php-captcha-generator_t93942#p730357"></a>
+                
+            
+
+                    <h3>
+                    <!--<a href="#p730357">Custom PHP CAPTCHA generator</a>-->
+                    <p class="author"><a href="https://www.scirra.com/forum/custom-php-captcha-generator_p730357?&sid=a19ae6563f1cf1ca62a14701d65cfa27#p730357"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/post-icon-01.png" width="9" height="13" alt="Post" title="Post"></a> » Mon Jan 20, 2014 12:37 am </p>
+                    </h3>
+
+   
+                
+
+                <div class="content">
+                    its possible to create captcha via events in C2?
+                
+
+
+
+                
+                </div>
+                
+                
+
+
+            </div>
+            
+            
+
+            
+            <dl class="postprofile" id="profile730357">
+                
+
+
+                <div class="post-author-name">
+                    <a href="https://www.scirra.com/forum/memberlist.php?mode=viewprofile&u=19560&sid=a19ae6563f1cf1ca62a14701d65cfa27">delgado</a>
+                </div>
+                <div style="width:128px;margin:0 auto;padding:0;margin-bottom:5px;">
+                    <dt class="av-wrap" style="margin:0;">
+                        
+                        
+                        <a class="s earlyadop-badge" href="http://www.scirra.com/badges/1/early-adopter" title="delgado bought a Construct 2 license during the early adopter phase!  Kudos!"></a>
+                        
+                        <a href="https://www.scirra.com/users/delgado" title="View this users profile"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/ce014928efb526e57412a4799eec10f8.png" width="128" height="128"></a>
+
+                    </dt>
+                </div>
+    
+                
+                
+
+                <div class="auth-stats">
+                    
+                    
+                    <div class="badge-wrap" style="margin-bottom:12px;">
+                        
+                        <div class="pb pb-bronze" title="Bronze Badges">B</div><span>77</span>
+                        
+                        <div class="pb pb-silver" title="Silver Badges">S</div><span>13</span>
+                        
+                        <div class="pb pb-gold" title="Gold Badges">G</div><span>12</span>
+                        
+                    </div>
+                    <dd><strong>Posts:</strong> 1,541</dd>
+                    <dd><strong>Reputation:</strong> 14,992</dd>
+                    <!--
+                        <dd><strong>Joined:</strong> 31st May, 2015</dd><dd><strong>Location:</strong> Poland</dd>
+                    -->
+                    
+                </div>
+
+                
+
+            </dl>
+            
+
+                <div class="back2top"><a href="https://www.scirra.com/forum/custom-php-captcha-generator_t93942#wrap" class="top" title="Top">Top</a></div>
+
+            <span class="corners-bottom"><span></span></span></div>
+    </div>
+
+    <hr class="divider">
+    
+    <div id="p730358" class="post bg2 online">
+        <div class="inner">
+
+            <div class="postbody">
+                
+                <a href="https://www.scirra.com/forum/custom-php-captcha-generator_t93942#p730358"></a>
+                
+            
+
+                    <h3>
+                    <!--<a href="#p730358">Custom PHP CAPTCHA generator</a>-->
+                    <p class="author"><a href="https://www.scirra.com/forum/custom-php-captcha-generator_p730358?&sid=a19ae6563f1cf1ca62a14701d65cfa27#p730358"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/post-icon-01.png" width="9" height="13" alt="Post" title="Post"></a> » Mon Jan 20, 2014 5:04 pm </p>
+                    </h3>
+
+   
+                
+
+                <div class="content">
+                    <a href="https://www.scirra.com/handlers/fresh/newforum/profileredirect.ashx?u=ionux" title="View ionux&#39;s profile" class="ex-ref">@ionux</a><br><br>EDIT:  nvm I realised I scripted forwarding my session values to cookies for some debugging.<br><br><br><a href="https://www.scirra.com/handlers/fresh/newforum/profileredirect.ashx?u=delgado" title="View delgado&#39;s profile" class="ex-ref">@delgado</a><br><br>ofc, you could easily add some effect to distort a text.<br>The idea is that image recognition should fail to recognise the captcha characters. As long as potential abusers cant find the value in the source code or directly by some recognition tool, then your set.<br><br><edited><editid>lennaert</editid><editdate>2014-01-20 17:16:03</editdate></edited>
+                
+
+
+
+                
+                </div>
+                <div style="height:1px;background:#c0c0c0;"></div><div id="sig730358" class="signature"><span style="font-style: italic">Who dares wins</span></div>
+                
+
+
+            </div>
+            
+            
+
+            
+            <dl class="postprofile" id="profile730358">
+                
+
+
+                <div class="post-author-name">
+                    <a href="https://www.scirra.com/forum/memberlist.php?mode=viewprofile&u=54900&sid=a19ae6563f1cf1ca62a14701d65cfa27">lennaert</a>
+                </div>
+                <div style="width:128px;margin:0 auto;padding:0;margin-bottom:5px;">
+                    <dt class="av-wrap" style="margin:0;">
+                        
+                        
+                        <a class="s stand-badge" href="https://www.scirra.com/store/construct2" title="lennaert owns a Construct 2 license!  Hats off!"></a>
+                        <div class="online-user"></div>
+                        <a href="https://www.scirra.com/users/lennaert" title="View this users profile"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/79c28c693959b8fb30a443ff9a0e4c3d.png" width="128" height="128"></a>
+
+                    </dt>
+                </div>
+    
+                
+                
+
+                <div class="auth-stats">
+                    
+                    
+                    <div class="badge-wrap" style="margin-bottom:12px;">
+                        
+                        <div class="pb pb-bronze" title="Bronze Badges">B</div><span>38</span>
+                        
+                        <div class="pb pb-silver" title="Silver Badges">S</div><span>8</span>
+                        
+                        <div class="pb pb-gold" title="Gold Badges">G</div><span>5</span>
+                        
+                    </div>
+                    <dd><strong>Posts:</strong> 1,371</dd>
+                    <dd><strong>Reputation:</strong> 9,020</dd>
+                    <!--
+                        <dd><strong>Joined:</strong> 31st May, 2015</dd><dd><strong>Location:</strong> Netherlands</dd>
+                    -->
+                    
+                </div>
+
+                
+
+                <dd style="display:block;width:100%;position:absolute;z-index:10;background:red;bottom:0;left:-8px;">
+                    <ul class="profile-icons">
+                        <li class="web-icon"><a href="http://lennaerthohe.nl/" title="WWW: http://lennaerthohe.nl"><span>Website</span></a></li>
+                    </ul>
+                </dd>
+                <div style="height:40px;"></div>
+                
+
+            </dl>
+            
+
+                <div class="back2top"><a href="https://www.scirra.com/forum/custom-php-captcha-generator_t93942#wrap" class="top" title="Top">Top</a></div>
+
+            <span class="corners-bottom"><span></span></span></div>
+    </div>
+
+    <hr class="divider">
+    
+    <div style="height:4px;"></div>
+</div>
+<div style="height:5px;"></div>
+
+
+	<form id="viewtopic" method="post" action="https://www.scirra.com/forum/viewtopic.php?f=157&t=93942&sid=a19ae6563f1cf1ca62a14701d65cfa27">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2"></label>
+		
+	</fieldset>
+
+	</form>
+	<hr>
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="https://www.scirra.com/forum/posting.php?mode=reply&f=157&t=93942&sid=a19ae6563f1cf1ca62a14701d65cfa27" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+    
+
+        <div class="pagination">
+            4 posts
+             • Page <strong>1</strong> of <strong>1</strong>
+        </div>
+        
+
+	
+</div><div class="clear"></div>
+
+
+	<p></p><p><a href="https://www.scirra.com/forum/tools-and-resources_f157?sid=a19ae6563f1cf1ca62a14701d65cfa27" class="left-box left" accesskey="r">Return to Tools and Resources</a></p>
+
+	<form method="post" id="jumpbox" action="https://www.scirra.com/forum/viewforum.php?sid=a19ae6563f1cf1ca62a14701d65cfa27" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms[&#39;jumpbox&#39;].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="145">Construct 2</option>
+			
+				<option value="146">&nbsp; &nbsp;Construct 2 General</option>
+			
+				<option value="147">&nbsp; &nbsp;How do I....?</option>
+			
+				<option value="178">&nbsp; &nbsp;&nbsp; &nbsp;Beginner's Questions</option>
+			
+				<option value="149">&nbsp; &nbsp;Education and Construct 2</option>
+			
+				<option value="151">&nbsp; &nbsp;Bugs</option>
+			
+				<option value="152">&nbsp; &nbsp;&nbsp; &nbsp;Closed bugs</option>
+			
+				<option value="179">Construct 2 Creations</option>
+			
+				<option value="148">&nbsp; &nbsp;Completed Creations</option>
+			
+				<option value="180">&nbsp; &nbsp;Works in Progress/Feedback Requests</option>
+			
+				<option value="181">Game Development</option>
+			
+				<option value="159">&nbsp; &nbsp;Game Development, Design &amp; Ideas</option>
+			
+				<option value="182">&nbsp; &nbsp;Distribution and Publishing</option>
+			
+				<option value="157" selected="selected">&nbsp; &nbsp;Tools and Resources</option>
+			
+				<option value="160">&nbsp; &nbsp;Job Offers and Team Requests</option>
+			
+				<option value="150">Extending Construct 2</option>
+			
+				<option value="153">&nbsp; &nbsp;Completed Addons</option>
+			
+				<option value="183">&nbsp; &nbsp;Work in Progress Addons</option>
+			
+				<option value="184">&nbsp; &nbsp;Effects</option>
+			
+				<option value="154">&nbsp; &nbsp;Javascript SDK</option>
+			
+				<option value="155">General</option>
+			
+				<option value="156">&nbsp; &nbsp;Open Topic</option>
+			
+				<option value="185">&nbsp; &nbsp;Game Discussions</option>
+			
+				<option value="186">Scirra Website</option>
+			
+				<option value="158">&nbsp; &nbsp;Website Issues and Feedback</option>
+			
+				<option value="189">&nbsp; &nbsp;Scirra Store</option>
+			
+				<option value="161">Construct Classic</option>
+			
+				<option value="163">&nbsp; &nbsp;Construct Classic Discussion</option>
+			
+				<option value="162">&nbsp; &nbsp;&nbsp; &nbsp;Help &amp; Support using Construct Classic</option>
+			
+				<option value="164">&nbsp; &nbsp;&nbsp; &nbsp;Your tutorials &amp; example files</option>
+			
+				<option value="165">&nbsp; &nbsp;&nbsp; &nbsp;Completed addons</option>
+			
+				<option value="166">&nbsp; &nbsp;&nbsp; &nbsp;Work-in-progress addons</option>
+			
+				<option value="167">&nbsp; &nbsp;&nbsp; &nbsp;Your Creations</option>
+			
+				<option value="168">&nbsp; &nbsp;&nbsp; &nbsp;Construct engineering</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2">
+		</fieldset>
+	</form>
+
+
+    <div class="clear"></div>
+    <div class="newforum-tbl-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <h3><a href="https://www.scirra.com/forum/viewonline.php?sid=a19ae6563f1cf1ca62a14701d65cfa27">Who is online</a></h3>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Users browsing this forum: No registered users and 0 guests</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+
+<div style="height:30px;"></div>
+
+<div class="clear"></div>
+<div style="margin-bottom:-60px;position:relative;z-index:999">
+    <div class="dark-tear"></div>
+    <div class="navbar">
+        <div class="inner-content-size">
+            <ul class="linklist">
+                <li class="icon-home"><a href="https://www.scirra.com/forum" accesskey="h">Board index</a></li>
+                
+                <li class="rightside"></li>
+            </ul>
+            <div style="height: 331px; background-image: url(&#39;//static1.scirra.net/images/fresh/forum-footer-center-01.jpg&#39;);background-position:center;position:relative;text-align: center;top:15px;margin-top:-15px;background-repeat: no-repeat">
+                
+                    <div class="phpbb_copyright" style="position:relative;top: 290px;">
+
+                        Powered by <a href="https://www.phpbb.com/">phpBB</a>® Forum Software © phpBB Group
+                        
+                        <br>
+                        <a href="https://www.scirra.com/forum/ucp.php?mode=delete_cookies&sid=a19ae6563f1cf1ca62a14701d65cfa27">Delete all board cookies</a> • All times are UTC 
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
+    
+    <div class="dark-tear-2"></div>
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+<footer>
+
+    <div class="footer-wrap">
+
+
+        <div class="content-wrap">
+            <ul>
+                <li>
+                    <h2>Make Games</h2>
+                    <ul>
+                        <li><a href="https://www.scirra.com/construct2">Construct 2</a></li>
+                        <li><a href="https://www.scirra.com/construct2/releases">Download Construct 2</a></li>
+                        <li><a href="https://www.scirra.com/store/construct-2">Pricing</a></li>
+                        <li><a href="https://www.scirra.com/store/construct-2">Compare Features</a></li>
+                        <li><a href="https://www.scirra.com/manual">Online Manual</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Play Games</h2>
+                    <ul>
+                        <li><a href="https://www.scirra.com/arcade">Arcade</a></li>
+                        <li><a href="https://www.scirra.com/arcade/submit">Upload a Game</a></li>
+                        <li><a href="https://www.scirra.com/forum/arcade_forum48.html">Discuss</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Download</h2>
+                    <ul>
+                        <li><a href="https://www.scirra.com/construct2/releases/r206">Stable Release (r206)</a></li>
+                        <li></li>
+                    </ul>
+                    <div class="total-dl-wrap" title="Construct 2 has been downloaded 2,232,689 times to date"><div class="ch">2</div><div class="chs"></div><div class="ch">2</div><div class="ch">3</div><div class="ch">2</div><div class="chs"></div><div class="ch">6</div><div class="ch">8</div><div class="ch">9</div><p title="Aggregate total from Scirra.com website and large distributors">Total downloads</p></div>
+                    <h2 style="margin-top:5px;margin-bottom:0px;">Game Assets</h2>
+                    <ul>
+                        <li><a href="https://www.scirra.com/freebundle.zip" target="_blank">Free Bundle (13mb)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Community</h2>
+                    <ul>
+                        <li><a href="https://www.scirra.com/blog">Blog</a></li>
+                        <li><a href="https://www.scirra.com/forum">Forums</a></li>
+                        <li><a href="https://www.scirra.com/tutorials">Tutorials</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>About Scirra</h2>
+                    <ul>
+                        <li><a href="https://www.scirra.com/about">About Scirra</a></li>
+                        <li><a href="https://www.scirra.com/careers">Careers</a></li>
+                        <li><a href="https://www.scirra.com/contact">Contact Us</a></li>
+                        <li><a href="https://www.scirra.com/press-kit">Press Kit</a></li>
+                        <li><a href="https://www.scirra.com/people">The Team</a></li>
+                        <li><a href="https://www.scirra.com/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="https://www.scirra.com/terms-and-conditions">Terms and Conditions</a></li>
+                        <li><a href="https://www.scirra.com/sitemap">Site Map</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+                
+            <div class="footer-item-wrap">
+                <div>
+                    <a href="https://www.scirra.com/"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/footer-scirra-logo-01.png" width="177" height="44" alt="Scirra Logo"></a>
+                </div>
+                <div class="address">
+                    Scirra Ltd, Electroline House<br>
+                    15 Lion Road, London, TW1 4JH
+                </div>
+                <div class="postcard">
+                    <a href="https://www.scirra.com/badges/45/postcard">Send us a postcard!</a>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ScirraOfficial" target="_blank"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/footer-facebook-icon-01.png" width="34" height="35"></a></li>
+                        <li><a href="https://twitter.com/scirra" target="_blank"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/footer-twitter-icon-01.png" width="34" height="35"></a></li>
+                        <li><a href="https://plus.google.com/105404553461194404336/posts" target="_blank"><img src="./Custom PHP CAPTCHA generator - Scirra Forums_files/footer-google-plus-icons-01.png" width="34" height="35"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="copyright" style="color:white;">Copyright © 2014 Scirra Ltd, All rights reserved.</div>
+
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="./Custom PHP CAPTCHA generator - Scirra Forums_files/jquery.min.js"></script>
+     <script>
+         var RelPath = "../";
+         var Domainroot = "http://www.scirra.com";
+     </script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21804850-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    function plusone_callback(response) {
+        $.ajax({
+            url: RelPath + "handlers/gp1.ashx?o=" + response.state + "&u=" + response.href,
+            context: document.body,
+            success: function () {
+
+            }
+        });
+    }
+    
+</script>
+ <script type="text/javascript">
+
+
+     var alertsMarked = false;
+     var loadedUserDropdown = false;
+     var loadedAlertsDropdown = false;
+     $(document).ready(function () {
+
+
+         var currentUserID = 1;
+         var currentUsername = 'Anonymous';
+         
+         
+         var regEx = new RegExp("@(" + currentUsername + ")( |\n|[\<br /\>]|[\<br\>]|[\<br/\>]|\r|!|\\,|\\.|\\)|;|:|\\?)", "ig");
+         var replaceMask = '<div class="self-ref">@$1</div>$2';
+             
+         var regEx2 = new RegExp("([\<br /\>]|[\<br\>]|[\<br/\>]| |\n|\r|!|\\,|\\.|\\)|;|:|\\?)@(?!" + currentUsername + ")([a-z0-9_-]{3,})( |\n|\r|!|\\,|\\.|\\)|;|:|\\?|[\<br /\>]|[\<br\>]|[\<br/\>])", "ig");
+         var replaceMask2 = '$1<a href="../../handlers/fresh/newforum/profileredirect.ashx?u=$2" title="View $2\'s profile" class="ex-ref">@$2</a>$3';
+        $('.postbody .content').each(function(index) {
+            var replaced = $(this).html();
+            
+            // Self reds
+            if(currentUserID > 1)
+                replaced = replaced.replace(regEx, replaceMask);
+            
+            // Other user refs
+            replaced = replaced.replace(regEx2, replaceMask2);
+            
+            $(this).html(replaced);
+        });
+
+
+         $('#fblikeframe').html('<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.scirra.com&send=false&layout=button_count&width=150&show_faces=true&action=like&colorscheme=light&font&height=21&appId=197624256970598" height="21" scrolling="no" frameborder="0" allowTransparency="true"></iframe>');
+         !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+
+         
+         $('#AlertBoxLink').click(function () {
+
+             if ($('#AlertsDropDown').is(':visible')) {
+                 hideAlertsDropDown();
+             } else {
+                 showAlertsDropDown();
+                 hideUserDropDown();
+             }
+             return false;
+         });
+
+         $('#UserDropdownLink').click(function () {
+
+             if ($('#UserDropDown').is(':visible')) {
+                 hideUserDropDown();
+             } else {
+                 showUserDropDown();
+                 hideAlertsDropDown();
+             }
+             return false;
+         });
+         function hideUserDropDown() {
+             $('#UserDropDown').slideUp('fast');
+         }
+
+         function showAlertsDropDown() {
+
+             if (!loadedAlertsDropdown) {
+
+                 $.ajax({
+                     dataType: "json",
+                     url: "../handlers/fresh/getuseralertsdropdown.ashx",
+                     data: "",
+                     success: function (json) {
+
+                         var alertHTML = "";
+
+                         $.each(json.recentalerts, function (i, item) {
+                             var cssClass = "alert";
+                             if (json.recentalerts[i].read === "1") cssClass += " red-alert";
+                             alertHTML += "<div class=\"alert\">" +
+                                          "<img src=\"" + json.recentalerts[i].typeicon + "\" width=\"" + json.recentalerts[i].typeiconwidth + "\" height=\"" + json.recentalerts[i].typeiconheight + "\">" +
+                                          "<a class=\"" + cssClass + "\" style=\"padding-left:0;\" href=\"" + json.recentalerts[i].url + "\">" +
+                                          json.recentalerts[i].title + "</a>" +
+                                          "<p><em>" + json.recentalerts[i].message + "</em></p>" +
+                                         "<div class=\"alert-timeago\">" + json.recentalerts[i].date + "</div>" +
+                                         "<div class=\"clear\"></div></div><div class=\"hr\"></div>";
+
+                         });
+
+                         $('#alerthtmlwrap').html(alertHTML);
+                     }
+                 });
+
+                 loadedAlertsDropdown = true;
+             }
+
+             $('#AlertsDropDown').slideDown('fast');
+
+
+         }
+
+
+         function showUserDropDown() {
+
+             if (!loadedUserDropdown) {
+                 $.ajax({
+                     dataType: "json",
+                     url: "../handlers/fresh/getuserdropdowndetails.ashx?userID=1",
+                     data: "",
+                     success: function(json) {
+
+                         $('#MyProfileLink').attr("href", "/users/" + json.seousername);
+                         $('#DropDownAvatar').attr("src", json.avatar);
+
+                         var newPMs = parseInt(json.unreadpms);
+                         if (newPMs === 0) {
+                             $('#DropDownInbox').html("Inbox (0)");
+                         } else {
+                             $('#DropDownInbox').html("Inbox <strong>(" + newPMs + ")</strong>");
+                         }
+
+                         var sellerID = parseInt(json.sellerid);
+                            
+                         if (sellerID != 0) {
+                             $('#DropDownSellerLink').attr("style", "");
+                         }
+
+                         $('#DropDownBadges').html("<div class=\"medal gold\"></div> " + json.goldbadges + " <div class=\"medal silver\"></div> " + json.silverbadges + " <div class=\"medal bronze\"></div> " + json.bronzebadges);
+                         $('#DropDownRep').html(json.reputation);
+                     }
+                 });
+                 loadedUserDropdown = true;
+             }
+
+             $('#UserDropDown').slideDown('fast');
+         }
+
+
+            
+         $
+
+         $('#UserDropDown').click(function (event) {
+             event.stopPropagation();
+         });
+         $('#AlertsDropDown').click(function (event) {
+             event.stopPropagation();
+         });
+            
+         $('body').click(function (e) {
+             hideUserDropDown();
+             hideAlertsDropDown();
+         });
+
+     });
+        
+     function hideAlertsDropDown() {
+         $('#AlertsDropDown').slideUp('fast');
+     }
+
+
+     function plusone_callback(response) {
+         $.ajax({
+             url: RelPath + "../handlers/gp1.ashx?o=" + response.state + "&u=" + response.href,
+             context: document.body,
+             success: function () {
+                 $(this).addClass("done");
+             }
+         });
+
+     }
+
+    </script>
+    <script>
+        // Site notification
+        $(document).ready(function () {
+            var isMobile = /(iphone|ipod|ipad|android|blackberry|bb10|playbook|palm|symbian|nokia|windows\s+ce|phone|mobile|tablet)/i.test(navigator.userAgent);
+            if (!isMobile)
+                $('#sitewide-notice').slideDown("slow");
+        });
+        function remSiteNotice(noticeID) {
+            $('#sitewide-notice').slideUp("fast");
+            var today = new Date();
+            var expire = new Date();
+            expire.setTime(today.getTime() + 3600000 * 24 * 120);
+            document.cookie = "ln=" + noticeID + ";expires=" + expire.toGMTString();
+        }
+    </script>
+<script type="text/javascript" src="./Custom PHP CAPTCHA generator - Scirra Forums_files/eventml.js"></script>
+
+</body></html>

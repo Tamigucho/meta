@@ -1,0 +1,43 @@
+Normal, Flying, Bug etc won't be elemental types on Tamigucho, but physical/bodily types.
+-
+Tamigucho types:
+Neutral (weakness: salt, fire, electric)
+Salt (weakness: water / effectiveness: neutral)
+Rubber (weakness: fire)
+Paper (weakness: fire, water, flying/wind, psychic / effectiveness: rock, neutral) - attack: Paper Sword
+Plastic (weakness: fire / resistance: water / effectiveness: neutral) - attack: Feetlego
+Steel (weakness: fire / effectiveness: paper, neutral)
+Silicon (resistance: electric) ?
+-
+Normal -> Common(/Neutral?)
+Psychic -> Mind
+Grass -> Vegetable (plant, grass, wood, fruit)
+Water -> Liquid? (can be water or others)
+Ghost -> Spirit
+Electric
+Fire
+Flying (Bird is a bodily type and is effective against bug)
+Fish?
+Crustacean? Insect?
+Mammal?
+Reptile? (can be dragon; reptile is resistant to water)
+Metal (can be iron, steel, gold)
+Mineral? (rock, diamond)
+Soil (ground, sand, marsh/mud)
+-
+Add:
+Paper
+Plastic (solid, flexible, glass-like)
+Rubber (solid, elastic)
+Light?
+Glass
+Candy
+-
+Special and bodily types.
+
+Tamigucho Competitive Simulator (Tamiguchos and their stats; types - special and bodily - and their effectiveness/resistance/weakness; atks, their types, PP/morale/histamine? and stats; evasive/dodging, attack elementary combinations and their timing/chance)
+Best Tamiguchos for starting the Tami CS:
+- Froquirrel (water/electric, rubber - uses its rubber cheeks)
+- Treearth (vegetable, plant/grass/wood - fire atks are stronger in the leaves than in the wood)
+- Sprouterra (vegetable/soil/water - fire atks are less effective in the soil while electric atks are effectless)
+- Petalrock (mineral/rock, vegetable - uses its algaes to protect agaisnt water. the more water is algaes get, the more they cover its body)

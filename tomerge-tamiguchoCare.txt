@@ -1,0 +1,26 @@
+TamiguchoGPT/Care
+- anti-cheat server
+- COPA-compliant
+- ptl drawing with parts and animations
+- rub your mons (they react depending on the part)
+- Tamigucho statuses: Happiness, Feed, Fear, HP, PP, Morale?, Histamin?
+- ptl is rare to get algaes (unless it gets enough garden time every sunny day), but implement the function to register it before implementing the algaes
+- colors of Petalrock: 50% white with possible algaes; others are gray (20% - have 50% less algaes), brown (20% - 75% less algaes), pink (5% - 50% if player is girl), blue (5% - 50% if player is boy) (pink and blue Petalrock are Brava region exclusives)
+- cozy
+- bedroom
+- shop
+- playroom
+- garden
+- plantable berries and other vegetables
+- Cozy time
+- battles (Probability of same-time attacks, combinations)
+-
+?Tamigucho Fire 🔥 (Syamagma, Bulbomb, Firember), Water 💧(Waterabbit, Waterain, Dewhale), Leaf 🍃 (Bulball)?
+Can choose only one mon per game, and NFT'ing them will depend on KYC
+
+Initially, Tamigucho app will come with limited breeding (eggs won't hatch until an update) and without metamorphing.
+Tamiguchos that should undergo two morphs after the update, will receive a bonus Level Candy 🍭 so instantly going 3rd stage
+- add at least 11 Tamiguchos to each egg group. a fusion can generate two different Tamiguchos and follows Mendel Law
+-
+TamiRanch will support up to ? Tamiguchos (because of fusion essence breeding + albino (custom) + radio (custom) + glowing (inverted colors filter))
+TamiRanch will support up to ? Tamis!

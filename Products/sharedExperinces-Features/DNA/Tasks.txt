@@ -1,1 +1,14 @@
 - Tamigucho phenotype: weight; genotype: weight-range-standard (random uncommon factors may make phenotype weight greater or lower)
+
+Natures, IVs, EVs? Atk, Def, Speed, Spcl Atk and Spcl Def? Shinies/albs? Gender ratios by species? Gender physical differences by species?
+
+Tamigucho DNA stats:
+- Memory
+- Learn-willingness
+These will be enforced by species but can slighly (or in rare variations highly) vary according to individuals
+- personality/nature
+
+tami care app ideas:
+- Tamigucho will have OT (Original Tamer), a history of ownership transfers, and Current Tamer (CT).
+
+Insp Tamigucho pet nfts: https://app.zerion.io/nfts/polygon/0x9928a8ea82d86290dfd1920e126b3872890525b3:218497

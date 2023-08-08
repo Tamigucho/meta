@@ -1,0 +1,3 @@
+in fusedbreeding, attacks (depending on their type) should be fuseable as well (same for the Kyusion phenomona)
+it will always be based in the female, except when using Wormorph.
+New Wormorphs can be created when breeding solely with Wormorphs

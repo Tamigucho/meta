@@ -1,14 +1,4 @@
-Insp tazos:
-https://nintendosoup.com/wp-content/uploads/2022/11/Switch-Online-Pokemon-SV-Wave-2-1038x576.jpg
-https://nintendosoup.com/wp-content/uploads/2022/11/Pokemon-SV-Switch-Icons-1038x576.jpg
-
-- Tamigucho Chimp & Bono (Afrah)
-- Tamigucho A & B (Munnah)
-- Tamigucho Mercury & ? (Valorium)
-- Tamigucho Bow & Arrow (Brava)
-- Tamigucho Carbon & Oxygen
-
-- first post of tamigucho inst (Petalrock official design and descriptions)
+- first post of tamigucho instagram (Petalrock official design and descriptions)
 
 Tamigucho Pink & Blue comes first.
 Santapolos: get a BrasPass and make a street store; Pq Vllbs gray
@@ -73,7 +63,6 @@ Tamigucho Cyan & Magenta (3D remakes of Pink & Blue)
 The next games will require game engine to migrate to React Native (Unreal). Then, they'll work on phones but'll only show their true power on PCs/PS/XB. They'll have photorealistic graphics and VR
 -
 - Descriptions and types at phonemon.eth (also collapsibles)
-
 - TamiStorage: Stickerffects
 
 I feel me ashamed for what I believe; for what I'm doing.
@@ -328,7 +317,7 @@ phrases by NPCs:
 Tamiguchos favours for Pokémon:
 - Expand it
 - Show the B side of it, a broader universe to be explored
-- Explain some things about Pokémon that aren't detailed in Pokémon
+- Explain some things about Pokémon that aren't detailed in Pokémon itself
 - Defend the monverse from the controverses it was involved
 -
 Merging with or accepting that Tamigucho exist isnt their choice.
@@ -376,11 +365,11 @@ Challenges of musics for Tamigucho A & B:
 - New Palleaf [ready to humming]
 
 Challenges for Tamigucho TCG:
-- various modes: cards loaded with Tamiguchos, random cards (like Poké TCG), family-friendly (like Super Trunfo - insp in BágDex)
+- various modes: cards loaded with Tamiguchos, random cards (like Poké TCG), family-friendly (like Super Trunfo/UNO - insp in BágDex)
 
 Challenges of prog. complexity - Tamigucho Pink & Blue:
 - Tamiguchos can understand what to use as shield (such as Froquirrel cheeks)
-- "Wild battle", egg laying and petshop adopting: generate Tamiguchos using Golem
+- "Wild battle", egg laying and petshop adopting: generate Tamiguchos using Golem on Polygon
 - avoid cheating in NPC battles (Golem)
 - conditional/dynamic EXP generating (based on battle difficulty, lessons, feats, etc)
 
@@ -413,6 +402,17 @@ Challenges of criticism:
 - Storage (workaround: stop at TamiBlocks and privilege TamiCards - Severity: HIGH)
 - Names (junctions - workaround: ?? - Severity: LOW/MEDIUM)
 
+Normal, Flying, Bug etc won't be elemental types on Tamigucho, but physical/bodily types.
+-
+Tamigucho types:
+Neutral (weakness: salt, fire, electric)
+Salt (weakness: water / effectiveness: neutral)
+Rubber (weakness: fire)
+Paper (weakness: fire, water, flying/wind, psychic / effectiveness: rock, neutral) - attack: Paper Sword
+Plastic (weakness: fire / resistance: water / effectiveness: neutral) - attack: Feetlego
+Steel (weakness: fire / effectiveness: paper, neutral)
+Silicon (resistance: electric) ?
+-
 Normal -> Common(/Neutral?)
 Psychic -> Mind
 Grass -> Vegetable (plant, grass, wood, fruit)
@@ -446,13 +446,14 @@ Best Tamiguchos for starting the Tami CS:
 - Sprouterra (vegetable/soil/water - fire atks are less effective in the soil while electric atks are effectless)
 - Petalrock (mineral/rock, vegetable - uses its algaes to protect agaisnt water. the more water is algaes get, the more they cover its body)
 
+Kind of a gimmick, but its a new battle mode:
 Bond link between tamigucho and tamer
 This enables them to fight in real time without RPG
 This resource can only be used if the other tamer have it too; also, it only works if the tamer and the tamigucho share a strong bond. From both tamers, it will require a special device.
 
 Tamigucho anime, based in: https://twitter.com/pokeyugami/status/1527576053014618112
 Episodes:
-- Pilot (learning skate: - you are good for someone who is still learning - ah, its just about using all of the same interior force and meditation from when you are learning bike!)
+- Pilot (learning skate: - you are good for someone who's still learning - ah, its just about using all of the same interior force and meditation from when you are learning bike!)
 - introduce disabled characters in next episodes
 - (visit to the Botami Garden, where the character buys a dogs nest to protect hr skirt)
 - Tell the story of Isaac Newmon and his favorite apple tree (which later he discovers is a Treearth, and the rock he was sitting is Petalrock).
@@ -462,14 +463,12 @@ Newmon presents the real perspective about what is a mon "evolving" (wasn't it D
 -
 2nd generation will have episode about how TamiBalls were invented
 
-4 gen: Tamigucho Salt & Sugar
-
 Tamigucho site:
 - Fix the mistakes done from Pokémon (no NFTs for pets like Mew, bias)
 - Bring diversity to the already flourishing niche/genre of mon-catching
 - Stablish a linked multiverse for interoperability
 
-Tami Journey app (like Pokemon Go, but safer and incentive to travel with the uber of buses!)
+Tami Journey app (like Pokemon Go, but safer and incentive to travel with the uber of buses!) - this was inspiration from a real life dream I had in the time being, probably early 2022
 Tamigucho 3D with chubbyKen graphics
 
  | Redrawn version by <a href="https://www.instagram.com/dultrart/" target="_blank">Adriano Dultra</a>: <img width="500px" src="creatures/2022/Potaseal (copy).png"/>
@@ -516,16 +515,6 @@ https://itch.io/game-assets/tag-pokemon
 https://www.fiverr.com/pikatchoum/draw-a-pixel-pokemon-battle-background
 
 Super Gem (Super Morph), X Gem (X Moves)
-Normal, Flying, Bug etc won't be elemental types on Tamigucho, but physical/bodily types.
--
-Tamigucho types:
-Neutral (weakness: salt, fire, electric)
-Salt (weakness: water / effectiveness: neutral)
-Rubber (weakness: fire)
-Paper (weakness: fire, water, flying/wind, psychic / effectiveness: rock, neutral) - attack: Paper Sword
-Plastic (weakness: fire / resistance: water / effectiveness: neutral) - attack: Feetlego
-Steel (weakness: fire / effectiveness: paper, neutral)
-Silicon (resistance: electric) ?
 
 tamigucho DS gba sound composer discord chat link, add to Pink&Blue Team file
 
@@ -556,6 +545,8 @@ Tami XPB anime protgn team: Dewhale
 Tami Pink & Blue anime protgn team: Chockatiel (backstory: it was bullied by other bird tamiguchos, aimed at its cheeks), Dewhale, Treearth
 Tami anm will introduce Neurus Phone
 
+Tami PB episodes will have ~20 min, while XPB will have ~40 min
+
 new gimmick: Kyusion (call a 9th tamigucho outside the party, to be fused with a tamigucho in the party)
 
 league rules for balance: a tamer with a gimmick can't use it against a tamer that don't have one. a tamer is limited to only use a gimmick amount the opponent have as well.
@@ -564,13 +555,9 @@ in fusedbreeding, attacks (depending on their type) should be fuseable as well (
 it will always be based in the female, except when using Wormorph.
 New Wormorphs can be created when breeding solely with Wormorphs
 
-Chockatiel's morph will have AR colors (but normal in the Brava regional variant) ; finally it will morph into Eleagle
-
 Tamigucho's Pink & Blue 6 starters:
 1st row: Sprouterra (ground), Dewhale (water), Birdumont-pre? (air), Firember (fire)
 2nd row: Petalrock (plant), Chockatiel (electric)
-
-change Wormorph's color (now like Bx)
 
 screen after first wild battle: "Wild battle music style: 🔴 Army 🟣 Dancing"
 
@@ -671,3 +658,21 @@ Applies both to graphics and music
 (except for cartoon and 3D when it comes to music)
 
 Merge TamiAnime (PB, PBX) repos, pblsh
+
+Tamigucho Trello/Discord board:
+- Logotype
+- Name
+- Typing
+- Games naming (Tamigucho Pink&Blue or Tamigucho 2023?)
+-
+https://www.google.com/search?channel=fs&client=ubuntu-sn&q=Trello+voting
+https://www.google.com/search?channel=fs&client=ubuntu-sn&q=trello+discussion+board
+
+Qatum/qbit will come at 1st gen, while Qrosstum in 4th
+
+Tamigucho 1st gen music inspired by brazilian mms (lale, larie)
+
+Tamigucho work like a spin-off of that franchise
+
+at the glitch city, player will able to see a red ball then upon approaching it it changes place and disappear
+same for a book about Ditto with a purple bird
